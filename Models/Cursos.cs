@@ -10,6 +10,8 @@ namespace GalacticApi.Models
         [Required]
         public string NombreCurso { get; set;}
 
+        public List<Asignatura> asignaturas{ get; set;}
+
         public Curso(){
             
         }

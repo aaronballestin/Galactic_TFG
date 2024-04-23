@@ -12,6 +12,8 @@ namespace GalacticApi.Models
         [Required]
         public int CodigoJuego {get; set; }//este de aquí tiene que ver con el codigo del juego donde se consigue
 
+        public List<Usuario> usuarios{ get; set; }
+
         public Avatar(){
 
         }

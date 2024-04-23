@@ -15,8 +15,10 @@ namespace GalacticApi.Models
 
         public Curso curso{ get; set;}
 
+        public List<AsignaturaJuego> asignaturaJuegos{ get; set;}
+
         public Asignatura(){
-            
+
         }
     }
 }

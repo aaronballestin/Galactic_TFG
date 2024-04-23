@@ -17,6 +17,8 @@ namespace GalacticApi.Models
         public int AvatarId { get; set;}
 
         public Avatar avatar{ get; set;}
+
+        public List<ResultadosPartida> resultadosPartidas{ get; set;}
         public Usuario (){
 
         }

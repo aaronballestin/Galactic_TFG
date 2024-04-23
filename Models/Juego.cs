@@ -15,6 +15,8 @@ namespace GalacticApi.Models
 
         public AsignaturaJuego asignaturaJuego{ get; set;}
 
+        public List<ResultadosPartida> resultadosPartidas{ get; set;}
+
         public Juego(){
 
         }
