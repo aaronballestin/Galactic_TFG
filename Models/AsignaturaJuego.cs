@@ -12,9 +12,11 @@ namespace GalacticApi.Models
 
         [ForeignKey("IdAsignatura")]
         public int IdAsignatura { get; set;}
+        [ForeignKey("IdTipoJuego")]
+        public int IdTipoJuego {get; set;}
 
         public Asignatura asignatura{ get; set;}
-
+        public TipoJuego tipoJuego{ get; set;}
         public List<Juego> juegos{ get; set;}
         public AsignaturaJuego(){
 
