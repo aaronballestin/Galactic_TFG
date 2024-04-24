@@ -16,9 +16,9 @@ namespace GalacticApi.Models
         [ForeignKey("AvatarId")]
         public int AvatarId { get; set;}
 
-        public Avatar avatar{ get; set;}
 
-        public List<ResultadosPartida> resultadosPartidas{ get; set;}
+        public Avatar Avatar{ get; set;}
+        public List<ResultadosPartida> ResultadosPartidas{ get; set;}
         public Usuario (){
 
         }

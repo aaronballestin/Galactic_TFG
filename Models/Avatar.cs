@@ -10,9 +10,9 @@ namespace GalacticApi.Models
         [Required]
         public char Premium { get; set; }
         [Required]
-        public int CodigoJuego {get; set; }//este de aquí tiene que ver con el codigo del juego donde se consigue
+        public string CodigoJuego {get; set; }//este de aquí tiene que ver con el codigo del juego donde se consigue
 
-        public List<Usuario> usuarios{ get; set; }
+        public List<Usuario> Usuarios{ get; set; }
 
         public Avatar(){
 

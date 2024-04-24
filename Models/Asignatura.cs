@@ -13,9 +13,9 @@ namespace GalacticApi.Models
         [ForeignKey("IdCurso")]
         public int IdCurso { get; set;}
 
-        public Curso curso{ get; set;}
+        public Curso Curso{ get; set;}
 
-        public List<AsignaturaJuego> asignaturaJuegos{ get; set;}
+        public List<AsignaturaJuego> AsignaturaJuegos{ get; set;}
 
         public Asignatura(){
 

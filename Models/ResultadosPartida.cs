@@ -4,13 +4,15 @@ namespace GalacticApi.Models
 {
     public class ResultadosPartida{
 
-        [ForeignKey("UsuarioId")]
-        public int UsuarioId { get; set;}
-        [ForeignKey("JuegoId")]
-        public int JuegoId { get; set;}
+        [ForeignKey("IdUsuario")]
+        public int IdUsuario { get; set;}
+        [ForeignKey("IdJuego")]
+        public int IdJuego { get; set;}
 
-        public Usuario usuario{ get; set;}
-        public Juego juego{ get; set;}
+        public double Resultado  {get; set;}
+
+        public Usuario Usuario{ get; set;}
+        public Juego Juego{ get; set;}
 
         public ResultadosPartida(){
             
