@@ -1,8 +1,12 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GalacticApi.Models
 {
-    public class ResultadosPartida{
+    public class Resultados{
+
+        [Key]
+        public int Id { get; set; }
 
         [ForeignKey("IdUsuario")]
         public int IdUsuario { get; set;}
@@ -14,7 +18,7 @@ namespace GalacticApi.Models
         public Usuario Usuario{ get; set;}
         public Juego Juego{ get; set;}
 
-        public ResultadosPartida(){
+        public Resultados(){
             
         }
     }

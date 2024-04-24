@@ -13,8 +13,8 @@ namespace GalacticApi.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Usuario>().HasData(
-                new Usuario { Id = 1, Name = "Aaron", Email = "aaron@svalero.com", Password = "1234" },
-                new Usuario { Id = 2, Name = "Antonio", Email = "antonio@svalero.com", Password = "1234" }
+                new Usuario { Id = 1, Name = "Aaron", Email = "aaron@svalero.com", Password = "1234", AvatarId = 1 },
+                new Usuario { Id = 2, Name = "Antonio", Email = "antonio@svalero.com", Password = "1234", AvatarId = 1 }
             );
 
             modelBuilder.Entity<Avatar>().HasData(
@@ -31,11 +31,6 @@ namespace GalacticApi.Data
             );
 
             modelBuilder.Entity<Asignatura>().HasData(
-                new Asignatura { Id = 1, NombreAsignatura = "Lengua", IdCurso = 1 },
-                new Asignatura { Id = 2, NombreAsignatura = "Matematicas", IdCurso = 1 },
-                new Asignatura { Id = 3, NombreAsignatura = "Conocimiento del medio", IdCurso = 1 },
-                new Asignatura { Id = 4, NombreAsignatura = "Educación Artística", IdCurso = 1 },
-                new Asignatura { Id = 5, NombreAsignatura = "Ingles", IdCurso = 1 },
                 new Asignatura { Id = 1, NombreAsignatura = "Lengua", IdCurso = 1 },
                 new Asignatura { Id = 2, NombreAsignatura = "Matematicas", IdCurso = 1 },
                 new Asignatura { Id = 3, NombreAsignatura = "Conocimiento del medio", IdCurso = 1 },
@@ -113,8 +108,8 @@ namespace GalacticApi.Data
                 new Juego { Id = 1, IdAsignaturaJuego = 1, TemaJuego = "Autores", Codigo = "XXXXXX" }
             );
 
-            modelBuilder.Entity<ResultadosPartida>().HasData(
-                new ResultadosPartida { IdJuego = 1, IdUsuario = 1 }
+            modelBuilder.Entity<Resultados>().HasData(
+                new Resultados {Id = 1, IdJuego = 1, IdUsuario = 1, Resultado = 0.00 }
             );
 
             modelBuilder.Entity<Pasapalabra>().HasData(
@@ -185,6 +180,17 @@ namespace GalacticApi.Data
                 .HasForeignKey(pp => pp.IdPasapalabra)
                 .IsRequired();
 
+            //Relaciones de Resultados
+            modelBuilder.Entity<Resultados>()
+                .HasOne(pp => pp.Juego)
+                .WithMany(p => p.Resultados)
+                .HasForeignKey(pp => pp.IdJuego)
+                .IsRequired();
+            modelBuilder.Entity<Resultados>()
+                .HasOne(pp => pp.Usuario)
+                .WithMany(p => p.Resultados)
+                .HasForeignKey(pp => pp.IdUsuario)
+                .IsRequired();
 
         }
         public DbSet<Usuario> Usuarios { get; set; }
@@ -196,6 +202,7 @@ namespace GalacticApi.Data
         public DbSet<Juego> Juegos { get; set; }
         public DbSet<Pasapalabra> Pasapalabras { get; set; }
         public DbSet<PreguntaPasapalabra> PreguntaPasapalabras { get; set; }
+        public DbSet <Resultados> resultados{ get; set; }
 
 
     }
