@@ -1,4 +1,5 @@
 using GalacticApi.Data;
+using GalacticApi.Models;
 using GalacticApi.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddScoped<IUsuarioService, UsuarioService>(); 
+builder.Services.AddScoped<ICursoService, CursoService>(); 
+
 
 
 
@@ -15,6 +18,8 @@ var connectionString = builder.Configuration.GetConnectionString("ServerDB");
 builder.Services.AddDbContext<GalacticApiContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>(); 
+builder.Services.AddScoped<ICursoRepository, CursoRepository>(); 
+
 
 
 

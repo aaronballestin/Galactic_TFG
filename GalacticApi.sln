@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalacticApi.Models", "Models\GalacticApi.Models.csproj", "{C70B7902-D19F-48C5-B75F-3552F1C4E5F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalacticApi.Services", "Services\GalacticApi.Services.csproj", "{3B503494-174F-43A9-8E41-5586A5C0E39B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalacticApi.Services", "Business\GalacticApi.Services.csproj", "{3B503494-174F-43A9-8E41-5586A5C0E39B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalacticApi.Data", "Data\GalacticApi.Data.csproj", "{A9C33A4A-4591-457D-93B5-F55740FE3E29}"
 EndProject
