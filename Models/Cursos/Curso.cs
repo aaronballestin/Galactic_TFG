@@ -5,7 +5,7 @@ namespace GalacticApi.Models
     public class Curso{
 
         [Key]
-        public int Id { get; set;}
+        public int CursoId { get; set;}
         
         [Required]
         public string NombreCurso { get; set;}

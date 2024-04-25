@@ -22,14 +22,23 @@ namespace GalacticApi.Services
             _cursoRepository.DeleteCurso(curso);
         }
 
-        public Curso GetCursoById(int id)
+        public GetCurso GetCursoById(int id)
         {
-            return _cursoRepository.GetCursoById(id);
+            var curso = _cursoRepository.GetCursoById(id);
+            var asignaturas = new List<AsignaturaCursoDTO>();
+            foreach (var asignatura in curso.Asignaturas)
+            {
+                var asignaturaDTO = new AsignaturaCursoDTO{Id = asignatura.Id, NombreAsignatura = asignatura.NombreAsignatura};
+                asignaturas.Add(asignaturaDTO);
+            }
+            return new GetCurso{Id =curso.CursoId, Asignaturas=asignaturas, NombreCurso = curso.NombreCurso};
+
+
         }
 
         public List<GetCursos> GetCursos()
         {
-            return _cursoRepository.GetCursos().Select(c => new GetCursos {Id = c.Id, NombreCurso =c.NombreCurso}).ToList();
+            return _cursoRepository.GetCursos().Select(c => new GetCursos {Id = c.CursoId, NombreCurso =c.NombreCurso}).ToList();
         }
 
         public void UpdateCurso(Curso curso)

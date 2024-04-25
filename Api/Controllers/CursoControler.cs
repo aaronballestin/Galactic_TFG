@@ -35,7 +35,7 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Curso> GetObra(int id)
+        public ActionResult<GetCurso> GetObra(int id)
         {
             
             try
@@ -75,8 +75,8 @@ namespace GalacticApi.Api
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
             try
             {
-                Curso curso1 = _cursoService.GetCursoById(id);
-                if (id != curso1.Id)
+                //Curso curso1 = _cursoService.GetCursoById(id);
+                //if (id != curso1.Id)
                 {
                     return BadRequest();
                 }

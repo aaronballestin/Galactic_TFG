@@ -22,45 +22,45 @@ namespace GalacticApi.Data
             );
 
             modelBuilder.Entity<Curso>().HasData(
-                new Curso { Id = 1, NombreCurso = "1º Primaria" },
-                new Curso { Id = 2, NombreCurso = "2º Primaria" },
-                new Curso { Id = 3, NombreCurso = "3º Primaria" },
-                new Curso { Id = 4, NombreCurso = "4º Primaria" },
-                new Curso { Id = 5, NombreCurso = "5º Primaria" },
-                new Curso { Id = 6, NombreCurso = "6º Primaria" }
+                new Curso { CursoId = 1, NombreCurso = "1º Primaria" },
+                new Curso { CursoId = 2, NombreCurso = "2º Primaria" },
+                new Curso { CursoId = 3, NombreCurso = "3º Primaria" },
+                new Curso { CursoId = 4, NombreCurso = "4º Primaria" },
+                new Curso { CursoId = 5, NombreCurso = "5º Primaria" },
+                new Curso { CursoId = 6, NombreCurso = "6º Primaria" }
             );
 
             modelBuilder.Entity<Asignatura>().HasData(
-                new Asignatura { Id = 1, NombreAsignatura = "Lengua", IdCurso = 1 },
-                new Asignatura { Id = 2, NombreAsignatura = "Matematicas", IdCurso = 1 },
-                new Asignatura { Id = 3, NombreAsignatura = "Conocimiento del medio", IdCurso = 1 },
-                new Asignatura { Id = 4, NombreAsignatura = "Educación Artística", IdCurso = 1 },
-                new Asignatura { Id = 5, NombreAsignatura = "Ingles", IdCurso = 1 },
-                new Asignatura { Id = 6, NombreAsignatura = "Lengua", IdCurso = 2 },
-                new Asignatura { Id = 7, NombreAsignatura = "Matematicas", IdCurso = 2 },
-                new Asignatura { Id = 8, NombreAsignatura = "Conocimiento del medio", IdCurso = 2 },
-                new Asignatura { Id = 9, NombreAsignatura = "Educación Artística", IdCurso = 2 },
-                new Asignatura { Id = 10, NombreAsignatura = "Ingles", IdCurso = 2 },
-                new Asignatura { Id = 11, NombreAsignatura = "Lengua", IdCurso = 3 },
-                new Asignatura { Id = 12, NombreAsignatura = "Matematicas", IdCurso = 3 },
-                new Asignatura { Id = 13, NombreAsignatura = "Conocimiento del medio", IdCurso = 3 },
-                new Asignatura { Id = 14, NombreAsignatura = "Educación Artística", IdCurso = 3 },
-                new Asignatura { Id = 15, NombreAsignatura = "Ingles", IdCurso = 3 },
-                new Asignatura { Id = 16, NombreAsignatura = "Lengua", IdCurso = 4 },
-                new Asignatura { Id = 17, NombreAsignatura = "Matematicas", IdCurso = 4 },
-                new Asignatura { Id = 18, NombreAsignatura = "Conocimiento del medio", IdCurso = 4 },
-                new Asignatura { Id = 19, NombreAsignatura = "Educación Artística", IdCurso = 4 },
-                new Asignatura { Id = 20, NombreAsignatura = "Ingles", IdCurso = 4 },
-                new Asignatura { Id = 21, NombreAsignatura = "Lengua", IdCurso = 5 },
-                new Asignatura { Id = 22, NombreAsignatura = "Matematicas", IdCurso = 5 },
-                new Asignatura { Id = 23, NombreAsignatura = "Conocimiento del medio", IdCurso = 5 },
-                new Asignatura { Id = 24, NombreAsignatura = "Educación Artística", IdCurso = 5 },
-                new Asignatura { Id = 25, NombreAsignatura = "Ingles", IdCurso = 5 },
-                new Asignatura { Id = 26, NombreAsignatura = "Lengua", IdCurso = 6 },
-                new Asignatura { Id = 27, NombreAsignatura = "Matematicas", IdCurso = 6 },
-                new Asignatura { Id = 28, NombreAsignatura = "Conocimiento del medio", IdCurso = 6 },
-                new Asignatura { Id = 29, NombreAsignatura = "Educación Artística", IdCurso = 6 },
-                new Asignatura { Id = 30, NombreAsignatura = "Ingles", IdCurso = 6 }
+                new Asignatura { Id = 1, NombreAsignatura = "Lengua", CursoId = 1 },
+                new Asignatura { Id = 2, NombreAsignatura = "Matematicas", CursoId = 1 },
+                new Asignatura { Id = 3, NombreAsignatura = "Conocimiento del medio", CursoId = 1 },
+                new Asignatura { Id = 4, NombreAsignatura = "Educación Artística", CursoId = 1 },
+                new Asignatura { Id = 5, NombreAsignatura = "Ingles", CursoId = 1 },
+                new Asignatura { Id = 6, NombreAsignatura = "Lengua", CursoId = 2 },
+                new Asignatura { Id = 7, NombreAsignatura = "Matematicas", CursoId = 2 },
+                new Asignatura { Id = 8, NombreAsignatura = "Conocimiento del medio", CursoId = 2 },
+                new Asignatura { Id = 9, NombreAsignatura = "Educación Artística", CursoId = 2 },
+                new Asignatura { Id = 10, NombreAsignatura = "Ingles", CursoId = 2 },
+                new Asignatura { Id = 11, NombreAsignatura = "Lengua", CursoId = 3 },
+                new Asignatura { Id = 12, NombreAsignatura = "Matematicas", CursoId = 3 },
+                new Asignatura { Id = 13, NombreAsignatura = "Conocimiento del medio", CursoId = 3 },
+                new Asignatura { Id = 14, NombreAsignatura = "Educación Artística", CursoId = 3 },
+                new Asignatura { Id = 15, NombreAsignatura = "Ingles", CursoId = 3 },
+                new Asignatura { Id = 16, NombreAsignatura = "Lengua", CursoId = 4 },
+                new Asignatura { Id = 17, NombreAsignatura = "Matematicas", CursoId = 4 },
+                new Asignatura { Id = 18, NombreAsignatura = "Conocimiento del medio", CursoId = 4 },
+                new Asignatura { Id = 19, NombreAsignatura = "Educación Artística", CursoId = 4 },
+                new Asignatura { Id = 20, NombreAsignatura = "Ingles", CursoId = 4 },
+                new Asignatura { Id = 21, NombreAsignatura = "Lengua", CursoId = 5 },
+                new Asignatura { Id = 22, NombreAsignatura = "Matematicas", CursoId = 5 },
+                new Asignatura { Id = 23, NombreAsignatura = "Conocimiento del medio", CursoId = 5 },
+                new Asignatura { Id = 24, NombreAsignatura = "Educación Artística", CursoId = 5 },
+                new Asignatura { Id = 25, NombreAsignatura = "Ingles", CursoId = 5 },
+                new Asignatura { Id = 26, NombreAsignatura = "Lengua", CursoId = 6 },
+                new Asignatura { Id = 27, NombreAsignatura = "Matematicas", CursoId = 6 },
+                new Asignatura { Id = 28, NombreAsignatura = "Conocimiento del medio", CursoId = 6 },
+                new Asignatura { Id = 29, NombreAsignatura = "Educación Artística", CursoId = 6 },
+                new Asignatura { Id = 30, NombreAsignatura = "Ingles", CursoId = 6 }
             );
 
             modelBuilder.Entity<TipoJuego>().HasData(
@@ -130,11 +130,11 @@ namespace GalacticApi.Data
                 .IsRequired();
 
             // Relación entre Curso y Asignatura
-            modelBuilder.Entity<Curso>()
-                .HasMany(c => c.Asignaturas)
-                .WithOne(a => a.Curso)
-                .HasForeignKey(a => a.IdCurso)
-                .IsRequired();
+            // modelBuilder.Entity<Curso>()
+            //     .HasMany(c => c.Asignaturas)
+            //     .WithOne(a => a.Curso)
+            //     .HasForeignKey(a => a.IdCurso)
+            //     .IsRequired();
 
             // Relación entre Asignatura y AsignaturaJuego
             modelBuilder.Entity<Asignatura>()
