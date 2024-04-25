@@ -4,7 +4,7 @@
 
 namespace GalacticApi.Data.Migrations
 {
-    public partial class BBDD2 : Migration
+    public partial class BBDD : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,13 +27,13 @@ namespace GalacticApi.Data.Migrations
                 name: "Cursos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    CursoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreCurso = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cursos", x => x.Id);
+                    table.PrimaryKey("PK_Cursos", x => x.CursoId);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,16 +78,16 @@ namespace GalacticApi.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreAsignatura = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdCurso = table.Column<int>(type: "int", nullable: false)
+                    CursoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Asignaturas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Asignaturas_Cursos_IdCurso",
-                        column: x => x.IdCurso,
+                        name: "FK_Asignaturas_Cursos_CursoId",
+                        column: x => x.CursoId,
                         principalTable: "Cursos",
-                        principalColumn: "Id",
+                        principalColumn: "CursoId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -215,7 +215,7 @@ namespace GalacticApi.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Cursos",
-                columns: new[] { "Id", "NombreCurso" },
+                columns: new[] { "CursoId", "NombreCurso" },
                 values: new object[,]
                 {
                     { 1, "1º Primaria" },
@@ -233,7 +233,7 @@ namespace GalacticApi.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Asignaturas",
-                columns: new[] { "Id", "IdCurso", "NombreAsignatura" },
+                columns: new[] { "Id", "CursoId", "NombreAsignatura" },
                 values: new object[,]
                 {
                     { 1, 1, "Lengua" },
@@ -345,9 +345,9 @@ namespace GalacticApi.Data.Migrations
                 column: "IdTipoJuego");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Asignaturas_IdCurso",
+                name: "IX_Asignaturas_CursoId",
                 table: "Asignaturas",
-                column: "IdCurso");
+                column: "CursoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Juegos_IdAsignaturaJuego",

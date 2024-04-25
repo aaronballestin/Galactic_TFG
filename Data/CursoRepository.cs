@@ -18,7 +18,9 @@ namespace GalacticApi.Models
 
         public Curso GetCursoById(int id)
         {
-            return _context.Cursos.FirstOrDefault(c => c.CursoId == id);
+            var curso = _context.Cursos.FirstOrDefault(c => c.CursoId == id);
+            curso.Asignaturas= _context.Asignaturas.Where(a => a.CursoId== curso.CursoId).ToList();
+            return curso;
         }
         public List<Curso> GetCursos()
         {

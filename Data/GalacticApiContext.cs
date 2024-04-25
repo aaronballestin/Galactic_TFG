@@ -133,7 +133,7 @@ namespace GalacticApi.Data
             // modelBuilder.Entity<Curso>()
             //     .HasMany(c => c.Asignaturas)
             //     .WithOne(a => a.Curso)
-            //     .HasForeignKey(a => a.IdCurso)
+            //     .HasForeignKey(a => a.CursoId)
             //     .IsRequired();
 
             // Relación entre Asignatura y AsignaturaJuego

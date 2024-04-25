@@ -29,7 +29,7 @@ namespace GalacticApi.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("IdCurso")
+                    b.Property<int>("CursoId")
                         .HasColumnType("int");
 
                     b.Property<string>("NombreAsignatura")
@@ -38,7 +38,7 @@ namespace GalacticApi.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdCurso");
+                    b.HasIndex("CursoId");
 
                     b.ToTable("Asignaturas");
 
@@ -46,181 +46,181 @@ namespace GalacticApi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            IdCurso = 1,
+                            CursoId = 1,
                             NombreAsignatura = "Lengua"
                         },
                         new
                         {
                             Id = 2,
-                            IdCurso = 1,
+                            CursoId = 1,
                             NombreAsignatura = "Matematicas"
                         },
                         new
                         {
                             Id = 3,
-                            IdCurso = 1,
+                            CursoId = 1,
                             NombreAsignatura = "Conocimiento del medio"
                         },
                         new
                         {
                             Id = 4,
-                            IdCurso = 1,
+                            CursoId = 1,
                             NombreAsignatura = "Educación Artística"
                         },
                         new
                         {
                             Id = 5,
-                            IdCurso = 1,
+                            CursoId = 1,
                             NombreAsignatura = "Ingles"
                         },
                         new
                         {
                             Id = 6,
-                            IdCurso = 2,
+                            CursoId = 2,
                             NombreAsignatura = "Lengua"
                         },
                         new
                         {
                             Id = 7,
-                            IdCurso = 2,
+                            CursoId = 2,
                             NombreAsignatura = "Matematicas"
                         },
                         new
                         {
                             Id = 8,
-                            IdCurso = 2,
+                            CursoId = 2,
                             NombreAsignatura = "Conocimiento del medio"
                         },
                         new
                         {
                             Id = 9,
-                            IdCurso = 2,
+                            CursoId = 2,
                             NombreAsignatura = "Educación Artística"
                         },
                         new
                         {
                             Id = 10,
-                            IdCurso = 2,
+                            CursoId = 2,
                             NombreAsignatura = "Ingles"
                         },
                         new
                         {
                             Id = 11,
-                            IdCurso = 3,
+                            CursoId = 3,
                             NombreAsignatura = "Lengua"
                         },
                         new
                         {
                             Id = 12,
-                            IdCurso = 3,
+                            CursoId = 3,
                             NombreAsignatura = "Matematicas"
                         },
                         new
                         {
                             Id = 13,
-                            IdCurso = 3,
+                            CursoId = 3,
                             NombreAsignatura = "Conocimiento del medio"
                         },
                         new
                         {
                             Id = 14,
-                            IdCurso = 3,
+                            CursoId = 3,
                             NombreAsignatura = "Educación Artística"
                         },
                         new
                         {
                             Id = 15,
-                            IdCurso = 3,
+                            CursoId = 3,
                             NombreAsignatura = "Ingles"
                         },
                         new
                         {
                             Id = 16,
-                            IdCurso = 4,
+                            CursoId = 4,
                             NombreAsignatura = "Lengua"
                         },
                         new
                         {
                             Id = 17,
-                            IdCurso = 4,
+                            CursoId = 4,
                             NombreAsignatura = "Matematicas"
                         },
                         new
                         {
                             Id = 18,
-                            IdCurso = 4,
+                            CursoId = 4,
                             NombreAsignatura = "Conocimiento del medio"
                         },
                         new
                         {
                             Id = 19,
-                            IdCurso = 4,
+                            CursoId = 4,
                             NombreAsignatura = "Educación Artística"
                         },
                         new
                         {
                             Id = 20,
-                            IdCurso = 4,
+                            CursoId = 4,
                             NombreAsignatura = "Ingles"
                         },
                         new
                         {
                             Id = 21,
-                            IdCurso = 5,
+                            CursoId = 5,
                             NombreAsignatura = "Lengua"
                         },
                         new
                         {
                             Id = 22,
-                            IdCurso = 5,
+                            CursoId = 5,
                             NombreAsignatura = "Matematicas"
                         },
                         new
                         {
                             Id = 23,
-                            IdCurso = 5,
+                            CursoId = 5,
                             NombreAsignatura = "Conocimiento del medio"
                         },
                         new
                         {
                             Id = 24,
-                            IdCurso = 5,
+                            CursoId = 5,
                             NombreAsignatura = "Educación Artística"
                         },
                         new
                         {
                             Id = 25,
-                            IdCurso = 5,
+                            CursoId = 5,
                             NombreAsignatura = "Ingles"
                         },
                         new
                         {
                             Id = 26,
-                            IdCurso = 6,
+                            CursoId = 6,
                             NombreAsignatura = "Lengua"
                         },
                         new
                         {
                             Id = 27,
-                            IdCurso = 6,
+                            CursoId = 6,
                             NombreAsignatura = "Matematicas"
                         },
                         new
                         {
                             Id = 28,
-                            IdCurso = 6,
+                            CursoId = 6,
                             NombreAsignatura = "Conocimiento del medio"
                         },
                         new
                         {
                             Id = 29,
-                            IdCurso = 6,
+                            CursoId = 6,
                             NombreAsignatura = "Educación Artística"
                         },
                         new
                         {
                             Id = 30,
-                            IdCurso = 6,
+                            CursoId = 6,
                             NombreAsignatura = "Ingles"
                         });
                 });
@@ -500,49 +500,49 @@ namespace GalacticApi.Data.Migrations
 
             modelBuilder.Entity("GalacticApi.Models.Curso", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("CursoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CursoId"), 1L, 1);
 
                     b.Property<string>("NombreCurso")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("CursoId");
 
                     b.ToTable("Cursos");
 
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            CursoId = 1,
                             NombreCurso = "1º Primaria"
                         },
                         new
                         {
-                            Id = 2,
+                            CursoId = 2,
                             NombreCurso = "2º Primaria"
                         },
                         new
                         {
-                            Id = 3,
+                            CursoId = 3,
                             NombreCurso = "3º Primaria"
                         },
                         new
                         {
-                            Id = 4,
+                            CursoId = 4,
                             NombreCurso = "4º Primaria"
                         },
                         new
                         {
-                            Id = 5,
+                            CursoId = 5,
                             NombreCurso = "5º Primaria"
                         },
                         new
                         {
-                            Id = 6,
+                            CursoId = 6,
                             NombreCurso = "6º Primaria"
                         });
                 });
@@ -764,7 +764,7 @@ namespace GalacticApi.Data.Migrations
                 {
                     b.HasOne("GalacticApi.Models.Curso", "Curso")
                         .WithMany("Asignaturas")
-                        .HasForeignKey("IdCurso")
+                        .HasForeignKey("CursoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

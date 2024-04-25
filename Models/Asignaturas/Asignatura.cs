@@ -10,7 +10,7 @@ namespace GalacticApi.Models
         [Required]
         public string NombreAsignatura { get; set;}
         
-        [ForeignKey("Curso")]
+        [ForeignKey("CursoId")]
         public int CursoId { get; set;}
 
         public Curso Curso{ get; set;}
