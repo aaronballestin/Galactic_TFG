@@ -7,24 +7,24 @@ namespace GalacticApi.Api
 {
     [ApiController]
     [Route("[controller]")]
-    public class CursoController : ControllerBase
+    public class AsignaturaController : ControllerBase
     {
-        private readonly ICursoService _cursoService;
+        private readonly IAsignaturaService _asignaturaService;
 
 
-        public CursoController(ICursoService cursoService)
+        public AsignaturaController(IAsignaturaService asignaturaService)
         {
-            _cursoService = cursoService;
+            _asignaturaService = asignaturaService;
         }
 
 
         [HttpGet]
-        public ActionResult<List<GetCursosDTO>> GetCursos()
+        public ActionResult<List<GetAsignaturasDTO>> GetCursos()
         {
             try
             {
-                var cursos = _cursoService.GetCursos();
-                return Ok(cursos);
+                var asignaturas = _asignaturaService.GetAsignaturas();
+                return Ok(asignaturas);
 
             }
             catch (KeyNotFoundException ex)
@@ -35,13 +35,13 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("{id}")]
-        public ActionResult<GetCursoDTO> GetObra(int id)
+        public ActionResult<GetAsignaturaDTO> GetObra(int id)
         {
             
             try
             {
-                var curso = _cursoService.GetCursoById(id);
-                return Ok(curso);
+                var asignatura = _asignaturaService.GetAsignaturaById(id);
+                return Ok(asignatura);
             }
             catch (KeyNotFoundException ex)
             {
@@ -52,13 +52,13 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddCurso(Curso curso)
+        public ActionResult AddAsignatura(Asignatura asignatura)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
             try
             {
-                _cursoService.AddCurso(curso);
+                _asignaturaService.AddAsignatura(asignatura);
                 return NoContent();
             }
             catch (Exception ex)
@@ -70,7 +70,7 @@ namespace GalacticApi.Api
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateObra(int id, Curso curso)
+        public ActionResult UpdateAsignatura(int id, Asignatura asignatura)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
             try
@@ -82,7 +82,7 @@ namespace GalacticApi.Api
                 }
 
                 
-                _cursoService.UpdateCurso(curso);
+                _asignaturaService.UpdateAsignatura(asignatura);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)
@@ -94,11 +94,11 @@ namespace GalacticApi.Api
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteObra(int id)
+        public IActionResult DeleteAsignatura(int id)
         {
             try
             {
-                _cursoService.DeleteCurso(id);
+                _asignaturaService.DeleteAsignatura(id);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)

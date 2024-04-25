@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GalacticApi.Models
 {
-    public class AsignaturaCursoDTO{
+    public class GetAsignaturasDTO{
 
         public int Id { get; set;}
         public string NombreAsignatura { get; set;}
         
-        public AsignaturaCursoDTO(){
+        public GetAsignaturasDTO(){
 
         }
     }

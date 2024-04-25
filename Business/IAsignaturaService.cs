@@ -4,8 +4,8 @@ namespace GalacticApi.Services
 {
     public interface IAsignaturaService
     {
-        Asignatura GetAsignaturaById(int id);
-        List<Asignatura> GetAsignaturas();
+        GetAsignaturaDTO GetAsignaturaById(int id);
+        List<GetAsignaturasDTO> GetAsignaturas();
         void DeleteAsignatura(int id);
         void AddAsignatura(Asignatura asignatura);
         void UpdateAsignatura(Asignatura asignatura);

@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IUsuarioService, UsuarioService>(); 
 builder.Services.AddScoped<ICursoService, CursoService>(); 
+builder.Services.AddScoped<IAsignaturaService, AsignaturaService>(); 
+
 
 
 
@@ -18,7 +20,9 @@ var connectionString = builder.Configuration.GetConnectionString("ServerDB");
 builder.Services.AddDbContext<GalacticApiContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>(); 
-builder.Services.AddScoped<ICursoRepository, CursoRepository>(); 
+builder.Services.AddScoped<ICursoRepository, CursoRepository>();
+builder.Services.AddScoped<IAsignaturaRepository, AsignaturaRepository>(); 
+
 
 
 

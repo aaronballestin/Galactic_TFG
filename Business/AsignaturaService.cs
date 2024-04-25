@@ -22,15 +22,22 @@ namespace GalacticApi.Services
             _asignaturaRepository.DeleteAsignatura(asignatura);
         }
 
-        public Asignatura GetAsignaturaById(int id)
+        public GetAsignaturaDTO GetAsignaturaById(int id)
         {
-            return _asignaturaRepository.GetAsignaturaById(id);
+            var asignatura = _asignaturaRepository.GetAsignaturaById(id);
+            var asignaturaJuego = new List<GetAsignaturasJuegosDTO>();
+            foreach (var a in asignatura.AsignaturaJuegos)
+            {
+                var asignaturaJuegoDTO = new GetAsignaturasJuegosDTO  {Id = a.Id, JuegoAsignatura = a.JuegoAsignatura};
+                asignaturaJuego.Add(asignaturaJuegoDTO);
+            }
+            return new GetAsignaturaDTO {Id = asignatura.Id, NombreAsignatura = asignatura.NombreAsignatura, AsignaturasJuegos = asignaturaJuego};
 
         }
 
-        public List<Asignatura> GetAsignaturas()
+        public List<GetAsignaturasDTO> GetAsignaturas()
         {
-            return _asignaturaRepository.GetAsignaturas();
+            return _asignaturaRepository.GetAsignaturas().Select(s => new GetAsignaturasDTO {Id = s.Id, NombreAsignatura = s.NombreAsignatura}).ToList();
         }
 
         public void UpdateAsignatura(Asignatura asignatura)
