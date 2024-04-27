@@ -160,7 +160,7 @@ namespace GalacticApi.Data
             // Relación entre AsignaturaJuego y Juego
             modelBuilder.Entity<Juego>()
                 .HasOne(j => j.AsignaturaJuego)
-                .WithMany(aj => aj.Juego)
+                .WithMany(aj => aj.Juegos)
                 .HasForeignKey(j => j.IdAsignaturaJuego)
                 .IsRequired();
 

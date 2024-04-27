@@ -17,7 +17,7 @@ namespace GalacticApi.Models
 
         public Asignatura Asignatura{ get; set;}
         public TipoJuego TipoJuego{ get; set;}
-        public List<Juego> Juego{ get; set;}
+        public List<Juego> Juegos{ get; set;}
         public AsignaturaJuego(){
 
         }

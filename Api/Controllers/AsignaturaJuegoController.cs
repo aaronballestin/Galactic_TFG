@@ -7,23 +7,23 @@ namespace GalacticApi.Api
 {
     [ApiController]
     [Route("[controller]")]
-    public class AsignaturaController : ControllerBase
+    public class AsignaturaJuegoController : ControllerBase
     {
-        private readonly IAsignaturaService _asignaturaService;
+        private readonly IAsignaturaJuegoService _asignaturaService;
 
 
-        public AsignaturaController(IAsignaturaService asignaturaService)
+        public AsignaturaJuegoController(IAsignaturaJuegoService asignaturaService)
         {
             _asignaturaService = asignaturaService;
         }
 
 
         [HttpGet]
-        public ActionResult<List<GetAsignaturasDTO>> GetAsignaturas()
+        public ActionResult<List<GetAsignaturasJuegosDTO>> GetCursos()
         {
             try
             {
-                var asignaturas = _asignaturaService.GetAsignaturas();
+                var asignaturas = _asignaturaService.GetAsignaturaJuegos();
                 return Ok(asignaturas);
 
             }
@@ -35,12 +35,12 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("{id}")]
-        public ActionResult<GetAsignaturaDTO> GetAsignatura(int id)
+        public ActionResult<GetAsignaturaJuegoDTO> GetObra(int id)
         {
             
             try
             {
-                var asignatura = _asignaturaService.GetAsignaturaById(id);
+                var asignatura = _asignaturaService.GetAsignaturaJuegoById(id);
                 return Ok(asignatura);
             }
             catch (KeyNotFoundException ex)
@@ -52,13 +52,13 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddAsignatura(Asignatura asignatura)
+        public ActionResult AddAsignaturaJuego(AsignaturaJuego asignatura)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
             try
             {
-                _asignaturaService.AddAsignatura(asignatura);
+                _asignaturaService.AddAsignaturaJuego(asignatura);
                 return NoContent();
             }
             catch (Exception ex)
@@ -70,7 +70,7 @@ namespace GalacticApi.Api
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateAsignatura(int id, Asignatura asignatura)
+        public ActionResult UpdateAsignaturaJuego(int id, AsignaturaJuego asignatura)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
             try
@@ -82,7 +82,7 @@ namespace GalacticApi.Api
                 }
 
                 
-                _asignaturaService.UpdateAsignatura(asignatura);
+                _asignaturaService.UpdateAsignaturaJuego(asignatura);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)
@@ -98,7 +98,7 @@ namespace GalacticApi.Api
         {
             try
             {
-                _asignaturaService.DeleteAsignatura(id);
+                _asignaturaService.DeleteAsignaturaJuego(id);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)

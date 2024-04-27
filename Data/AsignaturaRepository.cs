@@ -18,7 +18,7 @@ namespace GalacticApi.Data
         public Asignatura GetAsignaturaById(int id)
         {
             var asignatura = _context.Asignaturas.FirstOrDefault(c => c.Id == id);
-            asignatura.AsignaturaJuegos = _context.AsignaturaJuegos.Where(c => c.Id == asignatura.Id).ToList();
+            asignatura.AsignaturaJuegos = _context.AsignaturaJuegos.Where(c => c.IdAsignatura == asignatura.Id).ToList();
             return asignatura;
         }
         public List<Asignatura> GetAsignaturas()

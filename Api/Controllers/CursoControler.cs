@@ -35,7 +35,7 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("{id}")]
-        public ActionResult<GetCursoDTO> GetObra(int id)
+        public ActionResult<GetCursoDTO> GetCurso(int id)
         {
             
             try
@@ -94,7 +94,7 @@ namespace GalacticApi.Api
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteObra(int id)
+        public IActionResult DeleteCurso(int id)
         {
             try
             {

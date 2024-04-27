@@ -10,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IUsuarioService, UsuarioService>(); 
 builder.Services.AddScoped<ICursoService, CursoService>(); 
 builder.Services.AddScoped<IAsignaturaService, AsignaturaService>(); 
+builder.Services.AddScoped<IAsignaturaJuegoService, AsignaturaJuegoService>(); 
+
 
 
 
@@ -22,6 +24,8 @@ builder.Services.AddDbContext<GalacticApiContext>(options =>
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>(); 
 builder.Services.AddScoped<ICursoRepository, CursoRepository>();
 builder.Services.AddScoped<IAsignaturaRepository, AsignaturaRepository>(); 
+builder.Services.AddScoped<IAsignaturaJuegoRepository, AsignaturaJuegoRepository>(); 
+
 
 
 
