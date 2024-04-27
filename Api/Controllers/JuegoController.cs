@@ -7,24 +7,24 @@ namespace GalacticApi.Api
 {
     [ApiController]
     [Route("[controller]")]
-    public class CursoController : ControllerBase
+    public class JuegoController : ControllerBase
     {
-        private readonly ICursoService _cursoService;
+        private readonly IJuegoService _juegoService;
 
 
-        public CursoController(ICursoService cursoService)
+        public JuegoController(IJuegoService juegoService)
         {
-            _cursoService = cursoService;
+            _juegoService = juegoService;
         }
 
 
         [HttpGet]
-        public ActionResult<List<GetCursosDTO>> GetCursos()
+        public ActionResult<List<GetJuegosDTO>> GetJuegos()
         {
             try
             {
-                var cursos = _cursoService.GetCursos();
-                return Ok(cursos);
+                var juegos = _juegoService.GetJuegos();
+                return Ok(juegos);
 
             }
             catch (KeyNotFoundException ex)
@@ -35,13 +35,13 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("{id}")]
-        public ActionResult<GetCursoDTO> GetCurso(int id)
+        public ActionResult<GetJuegoDTO> GetJuego(int id)
         {
             
             try
             {
-                var curso = _cursoService.GetCursoById(id);
-                return Ok(curso);
+                var juego = _juegoService.GetJuegoById(id);
+                return Ok(juego);
             }
             catch (KeyNotFoundException ex)
             {
@@ -52,13 +52,13 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddCurso(Curso curso)
+        public ActionResult AddJuego(Juego juego)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
             try
             {
-                _cursoService.AddCurso(curso);
+                _juegoService.AddJuego(juego);
                 return NoContent();
             }
             catch (Exception ex)
@@ -70,7 +70,7 @@ namespace GalacticApi.Api
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateJuego(int id, Curso curso)
+        public ActionResult UpdateJuego(int id, Juego juego)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
             try
@@ -82,7 +82,7 @@ namespace GalacticApi.Api
                 }
 
                 
-                _cursoService.UpdateCurso(curso);
+                _juegoService.UpdateJuego(juego);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)
@@ -94,11 +94,11 @@ namespace GalacticApi.Api
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteCurso(int id)
+        public IActionResult DeleteJuego(int id)
         {
             try
             {
-                _cursoService.DeleteCurso(id);
+                _juegoService.DeleteJuego(id);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)

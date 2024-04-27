@@ -4,43 +4,42 @@ using Microsoft.Extensions.Logging;
 
 namespace GalacticApi.Models
 {
-    public class CursoRepository : ICursoRepository
+    public class JuegoRepository : IJuegoRepository
     {
         private readonly GalacticApiContext _context;
 
-        private readonly ILogger<CursoRepository> _logger;
+        private readonly ILogger<JuegoRepository> _logger;
 
-        public CursoRepository(ILogger<CursoRepository> logger, GalacticApiContext context)
+        public JuegoRepository(ILogger<JuegoRepository> logger, GalacticApiContext context)
         {
             _context = context;
             _logger = logger;
         }
 
-        public Curso GetCursoById(int id)
+        public Juego GetJuegoById(int id)
         {
-            var curso = _context.Cursos.FirstOrDefault(c => c.CursoId == id);
-            curso.Asignaturas= _context.Asignaturas.Where(a => a.CursoId== curso.CursoId).ToList();
-            return curso;
+            var juego = _context.Juegos.FirstOrDefault(c => c.Id == id);
+            return juego;
         }
-        public List<Curso> GetCursos()
+        public List<Juego> GetJuegos()
         {
-            return _context.Cursos.ToList();
+            return _context.Juegos.ToList();
         }
-        public void DeleteCurso(Curso curso)
+        public void DeleteJuego(Juego juego)
         {
-            _context.Cursos.Remove(curso);
+            _context.Juegos.Remove(juego);
             _context.SaveChanges();
 
         }
-        public void AddCurso(Curso curso)
+        public void AddJuego(Juego juego)
         {
-            _context.Cursos.Add(curso);
+            _context.Juegos.Add(juego);
             _context.SaveChanges();
 
         }
-        public void UpdateCurso(Curso curso)
+        public void UpdateJuego(Juego juego)
         {
-            _context.Entry(curso).State = EntityState.Modified;
+            _context.Entry(juego).State = EntityState.Modified;
             _context.SaveChanges();
 
         }
