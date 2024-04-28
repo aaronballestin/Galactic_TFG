@@ -12,6 +12,8 @@ builder.Services.AddScoped<ICursoService, CursoService>();
 builder.Services.AddScoped<IAsignaturaService, AsignaturaService>(); 
 builder.Services.AddScoped<IAsignaturaJuegoService, AsignaturaJuegoService>(); 
 builder.Services.AddScoped<IJuegoService, JuegoService>(); 
+builder.Services.AddScoped<IPasapalabraService, PasapalabraService>(); 
+builder.Services.AddScoped<IPreguntaPasapalabraService, PreguntaPasapalabraService>(); 
 
 
 
@@ -25,17 +27,9 @@ builder.Services.AddScoped<ICursoRepository, CursoRepository>();
 builder.Services.AddScoped<IAsignaturaRepository, AsignaturaRepository>(); 
 builder.Services.AddScoped<IAsignaturaJuegoRepository, AsignaturaJuegoRepository>(); 
 builder.Services.AddScoped<IJuegoRepository, JuegoRepository>(); 
+builder.Services.AddScoped<IPasapalabraRepository, PasapalabraRepository>(); 
+builder.Services.AddScoped<IPreguntaPasapalabraRepository, PreguntaPasapalabraRepository>(); 
 
-
-
-
-
-
-// builder.Services.AddScoped<IPizzaRepository, PizzaEFRepository>(serviceProvider => 
-//     new PizzaEFRepository(connectionString));
-//     new OrderEFRepository(connectionString);
-//     new IngredientEFRepository(connectionString);
-//     new UserEFRepository(connectionString);
 
 
 
