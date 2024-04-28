@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240427160035_BBDD2")]
-    partial class BBDD2
+    [Migration("20240428174941_BBDD")]
+    partial class BBDD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -581,6 +581,13 @@ namespace GalacticApi.Data.Migrations
                             Codigo = "XXXXXX",
                             IdAsignaturaJuego = 1,
                             TemaJuego = "Autores"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Codigo = "XXXXXX",
+                            IdAsignaturaJuego = 1,
+                            TemaJuego = "Otra Cosa"
                         });
                 });
 
@@ -612,6 +619,12 @@ namespace GalacticApi.Data.Migrations
                             Id = 1,
                             IdJuego = 1,
                             Name = "Nombres de autores pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IdJuego = 2,
+                            Name = "Nombres de otras cosas pasapalabra"
                         });
                 });
 
@@ -623,12 +636,12 @@ namespace GalacticApi.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("IdPasapalabra")
-                        .HasColumnType("int");
-
                     b.Property<string>("Letra")
                         .IsRequired()
                         .HasColumnType("nvarchar(1)");
+
+                    b.Property<int>("PasapalabraId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Pregunta")
                         .IsRequired()
@@ -640,7 +653,7 @@ namespace GalacticApi.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdPasapalabra");
+                    b.HasIndex("PasapalabraId");
 
                     b.ToTable("PreguntaPasapalabras");
 
@@ -648,10 +661,418 @@ namespace GalacticApi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            IdPasapalabra = 1,
                             Letra = "A",
+                            PasapalabraId = 1,
                             Pregunta = "Nombre de autor que empieza por A",
                             Respuesta = "Aaron"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Letra = "B",
+                            PasapalabraId = 2,
+                            Pregunta = "Fruta que empieza por B",
+                            Respuesta = "Banana"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Letra = "C",
+                            PasapalabraId = 1,
+                            Pregunta = "Animal que empieza por C",
+                            Respuesta = "Canguro"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Letra = "D",
+                            PasapalabraId = 1,
+                            Pregunta = "Capital europea que empieza por D",
+                            Respuesta = "Dublín"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Letra = "E",
+                            PasapalabraId = 1,
+                            Pregunta = "Elemento químico que empieza por E",
+                            Respuesta = "Estroncio"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Letra = "F",
+                            PasapalabraId = 1,
+                            Pregunta = "País asiático que empieza por F",
+                            Respuesta = "Filipinas"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Letra = "G",
+                            PasapalabraId = 1,
+                            Pregunta = "Deporte que empieza por G",
+                            Respuesta = "Golf"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Letra = "H",
+                            PasapalabraId = 1,
+                            Pregunta = "Instrumento musical que empieza por H",
+                            Respuesta = "Harmónica"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Letra = "I",
+                            PasapalabraId = 1,
+                            Pregunta = "Planeta que empieza por I",
+                            Respuesta = "Júpiter"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Letra = "J",
+                            PasapalabraId = 1,
+                            Pregunta = "Actor famoso que empieza por J",
+                            Respuesta = "Johnny Depp"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Letra = "K",
+                            PasapalabraId = 1,
+                            Pregunta = "Planta que empieza por K",
+                            Respuesta = "Kiwi"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Letra = "L",
+                            PasapalabraId = 1,
+                            Pregunta = "Color que empieza por L",
+                            Respuesta = "Lavanda"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Letra = "M",
+                            PasapalabraId = 1,
+                            Pregunta = "Cantante famoso que empieza por M",
+                            Respuesta = "Michael Jackson"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Letra = "N",
+                            PasapalabraId = 1,
+                            Pregunta = "Río que empieza por N",
+                            Respuesta = "Nilo"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Letra = "O",
+                            PasapalabraId = 1,
+                            Pregunta = "Película famosa que empieza por O",
+                            Respuesta = "El Origen"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Letra = "P",
+                            PasapalabraId = 1,
+                            Pregunta = "Instrumento de percusión que empieza por P",
+                            Respuesta = "Pandereta"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Letra = "Q",
+                            PasapalabraId = 1,
+                            Pregunta = "Animal exótico que empieza por Q",
+                            Respuesta = "Quokka"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Letra = "R",
+                            PasapalabraId = 1,
+                            Pregunta = "País africano que empieza por R",
+                            Respuesta = "Ruanda"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Letra = "S",
+                            PasapalabraId = 1,
+                            Pregunta = "Planta aromática que empieza por S",
+                            Respuesta = "Salvia"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Letra = "T",
+                            PasapalabraId = 1,
+                            Pregunta = "Elemento químico que empieza por T",
+                            Respuesta = "Tungsteno"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Letra = "U",
+                            PasapalabraId = 1,
+                            Pregunta = "País europeo que empieza por U",
+                            Respuesta = "Ucrania"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Letra = "V",
+                            PasapalabraId = 1,
+                            Pregunta = "Fruta que empieza por V",
+                            Respuesta = "Vainilla"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Letra = "W",
+                            PasapalabraId = 1,
+                            Pregunta = "Animal marino que empieza por W",
+                            Respuesta = "Ballena"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Letra = "X",
+                            PasapalabraId = 1,
+                            Pregunta = "Instrumento musical que empieza por X",
+                            Respuesta = "Xilófono"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Letra = "Y",
+                            PasapalabraId = 1,
+                            Pregunta = "Ciudad asiática que empieza por Y",
+                            Respuesta = "Yakarta"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Letra = "Z",
+                            PasapalabraId = 1,
+                            Pregunta = "Fruta tropical que empieza por Z",
+                            Respuesta = "Zarzamora"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Letra = "A",
+                            PasapalabraId = 2,
+                            Pregunta = "País sudamericano que empieza por A",
+                            Respuesta = "Argentina"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Letra = "B",
+                            PasapalabraId = 2,
+                            Pregunta = "Elemento químico que empieza por B",
+                            Respuesta = "Boro"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Letra = "C",
+                            PasapalabraId = 2,
+                            Pregunta = "Capital europea que empieza por C",
+                            Respuesta = "Copenhague"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Letra = "D",
+                            PasapalabraId = 2,
+                            Pregunta = "Actor de cine que empieza por D",
+                            Respuesta = "Denzel Washington"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Letra = "E",
+                            PasapalabraId = 2,
+                            Pregunta = "Animal salvaje que empieza por E",
+                            Respuesta = "Elefante"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Letra = "F",
+                            PasapalabraId = 2,
+                            Pregunta = "Deporte de invierno que empieza por F",
+                            Respuesta = "Fútbol"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Letra = "G",
+                            PasapalabraId = 2,
+                            Pregunta = "Ciudad europea que empieza por G",
+                            Respuesta = "Ginebra"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Letra = "H",
+                            PasapalabraId = 2,
+                            Pregunta = "Instrumento de viento que empieza por H",
+                            Respuesta = "Hornillo"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Letra = "I",
+                            PasapalabraId = 2,
+                            Pregunta = "Planeta que empieza por I",
+                            Respuesta = "Iapetus"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Letra = "J",
+                            PasapalabraId = 2,
+                            Pregunta = "Cantante famoso que empieza por J",
+                            Respuesta = "Justin Bieber"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Letra = "K",
+                            PasapalabraId = 2,
+                            Pregunta = "Fruta tropical que empieza por K",
+                            Respuesta = "Kumquat"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Letra = "L",
+                            PasapalabraId = 2,
+                            Pregunta = "Animal marino que empieza por L",
+                            Respuesta = "Langosta"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Letra = "M",
+                            PasapalabraId = 2,
+                            Pregunta = "País africano que empieza por M",
+                            Respuesta = "Mozambique"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Letra = "N",
+                            PasapalabraId = 2,
+                            Pregunta = "Comida típica mexicana que empieza por N",
+                            Respuesta = "Nopal"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Letra = "O",
+                            PasapalabraId = 2,
+                            Pregunta = "Actor famoso que empieza por O",
+                            Respuesta = "Orlando Bloom"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Letra = "P",
+                            PasapalabraId = 2,
+                            Pregunta = "Ciudad europea que empieza por P",
+                            Respuesta = "París"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Letra = "Q",
+                            PasapalabraId = 2,
+                            Pregunta = "Animal doméstico que empieza por Q",
+                            Respuesta = "Quagga"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Letra = "R",
+                            PasapalabraId = 2,
+                            Pregunta = "Elemento químico que empieza por R",
+                            Respuesta = "Radio"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Letra = "S",
+                            PasapalabraId = 2,
+                            Pregunta = "Cantante famosa que empieza por S",
+                            Respuesta = "Selena Gomez"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Letra = "T",
+                            PasapalabraId = 2,
+                            Pregunta = "Planta medicinal que empieza por T",
+                            Respuesta = "Tilo"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Letra = "U",
+                            PasapalabraId = 2,
+                            Pregunta = "País asiático que empieza por U",
+                            Respuesta = "Uzbekistán"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Letra = "V",
+                            PasapalabraId = 2,
+                            Pregunta = "Animal salvaje que empieza por V",
+                            Respuesta = "Víbora"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Letra = "W",
+                            PasapalabraId = 2,
+                            Pregunta = "Actor famoso que empieza por W",
+                            Respuesta = "Will Smith"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Letra = "X",
+                            PasapalabraId = 2,
+                            Pregunta = "Animal exótico que empieza por X",
+                            Respuesta = "Xoloitzcuintli"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Letra = "Y",
+                            PasapalabraId = 2,
+                            Pregunta = "Río que empieza por Y",
+                            Respuesta = "Yukón"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Letra = "Z",
+                            PasapalabraId = 2,
+                            Pregunta = "Fruta tropical que empieza por Z",
+                            Respuesta = "Zapote"
                         });
                 });
 
@@ -818,7 +1239,7 @@ namespace GalacticApi.Data.Migrations
                 {
                     b.HasOne("GalacticApi.Models.Pasapalabra", "Pasapalabra")
                         .WithMany("PreguntaPasapalabras")
-                        .HasForeignKey("IdPasapalabra")
+                        .HasForeignKey("PasapalabraId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

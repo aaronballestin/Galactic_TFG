@@ -8,6 +8,8 @@ namespace GalacticApi.Models
         public string Pregunta { get; set;} 
         public string Respuesta { get; set; }
         public char Letra { get; set; }
+        public Boolean contestado {get; set;} = false;
+        public Boolean acertado {get; set;} = false;    
 
         public GetPreguntasPasapalabraDTO(){
 

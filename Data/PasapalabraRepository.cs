@@ -19,7 +19,7 @@ namespace GalacticApi.Models
         public Pasapalabra GetPasapalabraById(int id)
         {
             var pasapalabra = _context.Pasapalabras.FirstOrDefault(c => c.Id == id);
-            pasapalabra.PreguntaPasapalabras= _context.PreguntaPasapalabras.Where(a => a.IdPasapalabra== pasapalabra.Id).ToList();
+            pasapalabra.PreguntaPasapalabras= _context.PreguntaPasapalabras.Where(a => a.PasapalabraId== pasapalabra.Id).ToList();
             return pasapalabra;
         }
         public List<Pasapalabra> GetPasapalabras()

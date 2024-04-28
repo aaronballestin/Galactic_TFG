@@ -12,8 +12,9 @@ namespace GalacticApi.Models
         public string Respuesta { get; set; }
         [Required]
         public char Letra { get; set; }
-        [ForeignKey("IdPasapalabra")]
-        public int IdPasapalabra { get; set; }    
+
+        [ForeignKey("PasapalabraId")]
+        public int PasapalabraId { get; set; }    
 
         public Pasapalabra Pasapalabra{ get; set; }
 
