@@ -52,7 +52,7 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddJuego(Juego juego)
+        public ActionResult AddJuego(AddJuegoDTO juego)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 

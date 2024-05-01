@@ -11,8 +11,9 @@ namespace GalacticApi.Services
         _cursoRepository = cursoRepository;
     }
 
-        public void AddCurso(Curso curso)
+        public void AddCurso(AddCursoDTO cursoDTO)
         {
+            var curso = new Curso {NombreCurso = cursoDTO.NombreCurso};
             _cursoRepository.AddCurso(curso);
         }
 

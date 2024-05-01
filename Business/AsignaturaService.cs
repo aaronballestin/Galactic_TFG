@@ -11,8 +11,9 @@ namespace GalacticApi.Services
         _asignaturaRepository = asignaturaRepository;
     }
 
-        public void AddAsignatura(Asignatura asignatura)
+        public void AddAsignatura(AddAsignaturaDTO asignaturaDTO)
         {
+            var asignatura = new Asignatura {NombreAsignatura = asignaturaDTO.NombreAsignatura, CursoId = asignaturaDTO.CursoId};
             _asignaturaRepository.AddAsignatura(asignatura);
         }
 

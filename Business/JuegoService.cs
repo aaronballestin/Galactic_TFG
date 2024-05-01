@@ -11,8 +11,9 @@ namespace GalacticApi.Services
         _juegoRepository = juegoRepository;
     }
 
-        public void AddJuego(Juego juego)
+        public void AddJuego(AddJuegoDTO juegoDTO)
         {
+            var juego = new Juego{TemaJuego = juegoDTO.TemaJuego, IdTipoJuego = juegoDTO.TipoJuego, IdAsignaturaJuego = juegoDTO.IdAsignaturaJuego};
             _juegoRepository.AddJuego(juego);
         }
 
