@@ -68,45 +68,45 @@ namespace GalacticApi.Data
             );
 
             modelBuilder.Entity<AsignaturaJuego>().HasData(
-                new AsignaturaJuego { Id = 1, JuegoAsignatura = "Pasapalabra Lengua 1º", IdAsignatura = 1, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 2, JuegoAsignatura = "Pasapalabra Lengua 2º", IdAsignatura = 6, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 3, JuegoAsignatura = "Pasapalabra Lengua 3º", IdAsignatura = 11, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 4, JuegoAsignatura = "Pasapalabra Lengua 4º", IdAsignatura = 16, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 5, JuegoAsignatura = "Pasapalabra Lengua 5º", IdAsignatura = 21, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 6, JuegoAsignatura = "Pasapalabra Lengua 6º", IdAsignatura = 26, IdTipoJuego = 1 },
+                new AsignaturaJuego { Id = 1, JuegoAsignatura = "Pasapalabra Lengua 1º", IdAsignatura = 1 },
+                new AsignaturaJuego { Id = 2, JuegoAsignatura = "Pasapalabra Lengua 2º", IdAsignatura = 6  },
+                new AsignaturaJuego { Id = 3, JuegoAsignatura = "Pasapalabra Lengua 3º", IdAsignatura = 11},
+                new AsignaturaJuego { Id = 4, JuegoAsignatura = "Pasapalabra Lengua 4º", IdAsignatura = 16},
+                new AsignaturaJuego { Id = 5, JuegoAsignatura = "Pasapalabra Lengua 5º", IdAsignatura = 21},
+                new AsignaturaJuego { Id = 6, JuegoAsignatura = "Pasapalabra Lengua 6º", IdAsignatura = 26},
 
-                new AsignaturaJuego { Id = 7, JuegoAsignatura = "Pasapalabra Matematicas 1º", IdAsignatura = 2, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 8, JuegoAsignatura = "Pasapalabra Matematicas 2º", IdAsignatura = 7, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 9, JuegoAsignatura = "Pasapalabra Matematicas 3º", IdAsignatura = 12, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 10, JuegoAsignatura = "Pasapalabra Matematicas 4º", IdAsignatura = 17, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 11, JuegoAsignatura = "Pasapalabra Matematicas 5º", IdAsignatura = 22, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 12, JuegoAsignatura = "Pasapalabra Matematicas 6º", IdAsignatura = 27, IdTipoJuego = 1 },
+                new AsignaturaJuego { Id = 7, JuegoAsignatura = "Pasapalabra Matematicas 1º", IdAsignatura = 2},
+                new AsignaturaJuego { Id = 8, JuegoAsignatura = "Pasapalabra Matematicas 2º", IdAsignatura = 7},
+                new AsignaturaJuego { Id = 9, JuegoAsignatura = "Pasapalabra Matematicas 3º", IdAsignatura = 12},
+                new AsignaturaJuego { Id = 10, JuegoAsignatura = "Pasapalabra Matematicas 4º", IdAsignatura = 17},
+                new AsignaturaJuego { Id = 11, JuegoAsignatura = "Pasapalabra Matematicas 5º", IdAsignatura = 22},
+                new AsignaturaJuego { Id = 12, JuegoAsignatura = "Pasapalabra Matematicas 6º", IdAsignatura = 27},
 
-                new AsignaturaJuego { Id = 13, JuegoAsignatura = "Pasapalabra Conocimiento del medio 1º", IdAsignatura = 3, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 14, JuegoAsignatura = "Pasapalabra Conocimiento del medio 2º", IdAsignatura = 8, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 15, JuegoAsignatura = "Pasapalabra Conocimiento del medio 3º", IdAsignatura = 13, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 16, JuegoAsignatura = "Pasapalabra Conocimiento del medio 4º", IdAsignatura = 18, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 17, JuegoAsignatura = "Pasapalabra Conocimiento del medio 5º", IdAsignatura = 23, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 18, JuegoAsignatura = "Pasapalabra Conocimiento del medio 6º", IdAsignatura = 28, IdTipoJuego = 1 },
+                new AsignaturaJuego { Id = 13, JuegoAsignatura = "Pasapalabra Conocimiento del medio 1º", IdAsignatura = 3},
+                new AsignaturaJuego { Id = 14, JuegoAsignatura = "Pasapalabra Conocimiento del medio 2º", IdAsignatura = 8},
+                new AsignaturaJuego { Id = 15, JuegoAsignatura = "Pasapalabra Conocimiento del medio 3º", IdAsignatura = 13},
+                new AsignaturaJuego { Id = 16, JuegoAsignatura = "Pasapalabra Conocimiento del medio 4º", IdAsignatura = 18},
+                new AsignaturaJuego { Id = 17, JuegoAsignatura = "Pasapalabra Conocimiento del medio 5º", IdAsignatura = 23},
+                new AsignaturaJuego { Id = 18, JuegoAsignatura = "Pasapalabra Conocimiento del medio 6º", IdAsignatura = 28},
 
-                new AsignaturaJuego { Id = 19, JuegoAsignatura = "Pasapalabra Educación Artística 1º", IdAsignatura = 4, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 20, JuegoAsignatura = "Pasapalabra Educación Artística 2º", IdAsignatura = 9, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 21, JuegoAsignatura = "Pasapalabra Educación Artística 3º", IdAsignatura = 14, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 22, JuegoAsignatura = "Pasapalabra Educación Artística 4º", IdAsignatura = 19, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 23, JuegoAsignatura = "Pasapalabra Educación Artística 5º", IdAsignatura = 24, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 24, JuegoAsignatura = "Pasapalabra Educación Artística 6º", IdAsignatura = 29, IdTipoJuego = 1 },
+                new AsignaturaJuego { Id = 19, JuegoAsignatura = "Pasapalabra Educación Artística 1º", IdAsignatura = 4},
+                new AsignaturaJuego { Id = 20, JuegoAsignatura = "Pasapalabra Educación Artística 2º", IdAsignatura = 9},
+                new AsignaturaJuego { Id = 21, JuegoAsignatura = "Pasapalabra Educación Artística 3º", IdAsignatura = 14},
+                new AsignaturaJuego { Id = 22, JuegoAsignatura = "Pasapalabra Educación Artística 4º", IdAsignatura = 19},
+                new AsignaturaJuego { Id = 23, JuegoAsignatura = "Pasapalabra Educación Artística 5º", IdAsignatura = 24},
+                new AsignaturaJuego { Id = 24, JuegoAsignatura = "Pasapalabra Educación Artística 6º", IdAsignatura = 29},
 
-                new AsignaturaJuego { Id = 25, JuegoAsignatura = "Pasapalabra Ingles 1º", IdAsignatura = 5, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 26, JuegoAsignatura = "Pasapalabra Ingles 2º", IdAsignatura = 10, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 27, JuegoAsignatura = "Pasapalabra Ingles 3º", IdAsignatura = 15, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 28, JuegoAsignatura = "Pasapalabra Ingles 4º", IdAsignatura = 20, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 29, JuegoAsignatura = "Pasapalabra Ingles 5º", IdAsignatura = 25, IdTipoJuego = 1 },
-                new AsignaturaJuego { Id = 30, JuegoAsignatura = "Pasapalabra Ingles 6º", IdAsignatura = 30, IdTipoJuego = 1 }
+                new AsignaturaJuego { Id = 25, JuegoAsignatura = "Pasapalabra Ingles 1º", IdAsignatura = 5},
+                new AsignaturaJuego { Id = 26, JuegoAsignatura = "Pasapalabra Ingles 2º", IdAsignatura = 10},
+                new AsignaturaJuego { Id = 27, JuegoAsignatura = "Pasapalabra Ingles 3º", IdAsignatura = 15},
+                new AsignaturaJuego { Id = 28, JuegoAsignatura = "Pasapalabra Ingles 4º", IdAsignatura = 20},
+                new AsignaturaJuego { Id = 29, JuegoAsignatura = "Pasapalabra Ingles 5º", IdAsignatura = 25},
+                new AsignaturaJuego { Id = 30, JuegoAsignatura = "Pasapalabra Ingles 6º", IdAsignatura = 30}
             );
 
             modelBuilder.Entity<Juego>().HasData(
-                new Juego { Id = 1, IdAsignaturaJuego = 1, TemaJuego = "Autores", Codigo = "XXXXXX" },
-                new Juego { Id = 2, IdAsignaturaJuego = 1, TemaJuego = "Otra Cosa", Codigo = "XXXXXX" }
+                new Juego { Id = 1, IdAsignaturaJuego = 1, TemaJuego = "Autores", Codigo = "XXXXXX", IdTipoJuego = 1 },
+                new Juego { Id = 2, IdAsignaturaJuego = 1, TemaJuego = "Otra Cosa", Codigo = "XXXXXX", IdTipoJuego = 1 }
             );
 
             modelBuilder.Entity<Resultados>().HasData(
@@ -201,15 +201,15 @@ namespace GalacticApi.Data
 
             // Relación entre TipoJuego y AsignaturaJuego
             modelBuilder.Entity<TipoJuego>()
-                .HasMany(tj => tj.AsignaturaJuegos)
+                .HasMany(tj => tj.Juegos)
                 .WithOne(aj => aj.TipoJuego)
                 .HasForeignKey(aj => aj.IdTipoJuego)
                 .IsRequired();
 
             // Relación entre TipoJuego y AsignaturaJuego
-            modelBuilder.Entity<AsignaturaJuego>()
+            modelBuilder.Entity<Juego>()
                 .HasOne(aj => aj.TipoJuego)
-                .WithMany(tj => tj.AsignaturaJuegos)
+                .WithMany(tj => tj.Juegos)
                 .HasForeignKey(aj => aj.IdTipoJuego)
                 .IsRequired();
 

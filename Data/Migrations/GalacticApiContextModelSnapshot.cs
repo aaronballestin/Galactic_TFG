@@ -236,9 +236,6 @@ namespace GalacticApi.Data.Migrations
                     b.Property<int>("IdAsignatura")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdTipoJuego")
-                        .HasColumnType("int");
-
                     b.Property<string>("JuegoAsignatura")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -247,8 +244,6 @@ namespace GalacticApi.Data.Migrations
 
                     b.HasIndex("IdAsignatura");
 
-                    b.HasIndex("IdTipoJuego");
-
                     b.ToTable("AsignaturaJuegos");
 
                     b.HasData(
@@ -256,210 +251,180 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 1,
                             IdAsignatura = 1,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Lengua 1º"
                         },
                         new
                         {
                             Id = 2,
                             IdAsignatura = 6,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Lengua 2º"
                         },
                         new
                         {
                             Id = 3,
                             IdAsignatura = 11,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Lengua 3º"
                         },
                         new
                         {
                             Id = 4,
                             IdAsignatura = 16,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Lengua 4º"
                         },
                         new
                         {
                             Id = 5,
                             IdAsignatura = 21,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Lengua 5º"
                         },
                         new
                         {
                             Id = 6,
                             IdAsignatura = 26,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Lengua 6º"
                         },
                         new
                         {
                             Id = 7,
                             IdAsignatura = 2,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Matematicas 1º"
                         },
                         new
                         {
                             Id = 8,
                             IdAsignatura = 7,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Matematicas 2º"
                         },
                         new
                         {
                             Id = 9,
                             IdAsignatura = 12,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Matematicas 3º"
                         },
                         new
                         {
                             Id = 10,
                             IdAsignatura = 17,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Matematicas 4º"
                         },
                         new
                         {
                             Id = 11,
                             IdAsignatura = 22,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Matematicas 5º"
                         },
                         new
                         {
                             Id = 12,
                             IdAsignatura = 27,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Matematicas 6º"
                         },
                         new
                         {
                             Id = 13,
                             IdAsignatura = 3,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Conocimiento del medio 1º"
                         },
                         new
                         {
                             Id = 14,
                             IdAsignatura = 8,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Conocimiento del medio 2º"
                         },
                         new
                         {
                             Id = 15,
                             IdAsignatura = 13,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Conocimiento del medio 3º"
                         },
                         new
                         {
                             Id = 16,
                             IdAsignatura = 18,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Conocimiento del medio 4º"
                         },
                         new
                         {
                             Id = 17,
                             IdAsignatura = 23,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Conocimiento del medio 5º"
                         },
                         new
                         {
                             Id = 18,
                             IdAsignatura = 28,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Conocimiento del medio 6º"
                         },
                         new
                         {
                             Id = 19,
                             IdAsignatura = 4,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Educación Artística 1º"
                         },
                         new
                         {
                             Id = 20,
                             IdAsignatura = 9,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Educación Artística 2º"
                         },
                         new
                         {
                             Id = 21,
                             IdAsignatura = 14,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Educación Artística 3º"
                         },
                         new
                         {
                             Id = 22,
                             IdAsignatura = 19,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Educación Artística 4º"
                         },
                         new
                         {
                             Id = 23,
                             IdAsignatura = 24,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Educación Artística 5º"
                         },
                         new
                         {
                             Id = 24,
                             IdAsignatura = 29,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Educación Artística 6º"
                         },
                         new
                         {
                             Id = 25,
                             IdAsignatura = 5,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Ingles 1º"
                         },
                         new
                         {
                             Id = 26,
                             IdAsignatura = 10,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Ingles 2º"
                         },
                         new
                         {
                             Id = 27,
                             IdAsignatura = 15,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Ingles 3º"
                         },
                         new
                         {
                             Id = 28,
                             IdAsignatura = 20,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Ingles 4º"
                         },
                         new
                         {
                             Id = 29,
                             IdAsignatura = 25,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Ingles 5º"
                         },
                         new
                         {
                             Id = 30,
                             IdAsignatura = 30,
-                            IdTipoJuego = 1,
                             JuegoAsignatura = "Pasapalabra Ingles 6º"
                         });
                 });
@@ -562,6 +527,9 @@ namespace GalacticApi.Data.Migrations
                     b.Property<int>("IdAsignaturaJuego")
                         .HasColumnType("int");
 
+                    b.Property<int>("IdTipoJuego")
+                        .HasColumnType("int");
+
                     b.Property<string>("TemaJuego")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -569,6 +537,8 @@ namespace GalacticApi.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("IdAsignaturaJuego");
+
+                    b.HasIndex("IdTipoJuego");
 
                     b.ToTable("Juegos");
 
@@ -578,6 +548,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 1,
                             Codigo = "XXXXXX",
                             IdAsignaturaJuego = 1,
+                            IdTipoJuego = 1,
                             TemaJuego = "Autores"
                         },
                         new
@@ -585,6 +556,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 2,
                             Codigo = "XXXXXX",
                             IdAsignaturaJuego = 1,
+                            IdTipoJuego = 1,
                             TemaJuego = "Otra Cosa"
                         });
                 });
@@ -1200,15 +1172,7 @@ namespace GalacticApi.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GalacticApi.Models.TipoJuego", "TipoJuego")
-                        .WithMany("AsignaturaJuegos")
-                        .HasForeignKey("IdTipoJuego")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Asignatura");
-
-                    b.Navigation("TipoJuego");
                 });
 
             modelBuilder.Entity("GalacticApi.Models.Juego", b =>
@@ -1219,7 +1183,15 @@ namespace GalacticApi.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("GalacticApi.Models.TipoJuego", "TipoJuego")
+                        .WithMany("Juegos")
+                        .HasForeignKey("IdTipoJuego")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("AsignaturaJuego");
+
+                    b.Navigation("TipoJuego");
                 });
 
             modelBuilder.Entity("GalacticApi.Models.Pasapalabra", b =>
@@ -1309,7 +1281,7 @@ namespace GalacticApi.Data.Migrations
 
             modelBuilder.Entity("GalacticApi.Models.TipoJuego", b =>
                 {
-                    b.Navigation("AsignaturaJuegos");
+                    b.Navigation("Juegos");
                 });
 
             modelBuilder.Entity("GalacticApi.Models.Usuario", b =>

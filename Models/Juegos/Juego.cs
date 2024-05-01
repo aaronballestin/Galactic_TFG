@@ -3,21 +3,27 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GalacticApi.Models
 {
-    public class Juego{
+    public class Juego
+    {
         [Key]
-        public int Id { get; set;}
+        public int Id { get; set; }
         [Required]
-        public string TemaJuego { get; set;}
+        public string TemaJuego { get; set; }
         [Required]
-        public string Codigo { get; set;}
+        public string Codigo { get; set; }
 
         [ForeignKey("IdAsignaturaJuego")]
-        public int IdAsignaturaJuego { get; set;}
+        public int IdAsignaturaJuego { get; set; }
 
-        public AsignaturaJuego AsignaturaJuego{ get; set;}
-        public List<Resultados> Resultados{ get; set;}
-        public Pasapalabra Pasapalabra{ get; set;}
-        public Juego(){
+        [ForeignKey("IdTipoJuego")]
+        public int IdTipoJuego { get; set; }
+
+        public AsignaturaJuego AsignaturaJuego { get; set; }
+        public List<Resultados> Resultados { get; set; }
+        public TipoJuego TipoJuego { get; set; }
+        public Pasapalabra Pasapalabra { get; set; }
+        public Juego()
+        {
 
         }
     }
