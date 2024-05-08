@@ -7,7 +7,7 @@ namespace GalacticApi.Models
         public int Id { get; set; }
         
         public string JuegoAsignatura { get; set;}
-
+        public int TipoJuego{get; set;} 
 
         public List<GetJuegosDTO> Juegos{ get; set;}
         public GetAsignaturaJuegoDTO(){

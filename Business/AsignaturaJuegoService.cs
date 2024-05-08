@@ -31,7 +31,7 @@ namespace GalacticApi.Services
                 var juegosDTO = new GetJuegosDTO  {Id = a.Id, Codigo = a.Codigo, TemaJuego = a.TemaJuego};
                 juegos.Add(juegosDTO);
             }
-            return new GetAsignaturaJuegoDTO {Id = asignatura.Id, JuegoAsignatura = asignatura.JuegoAsignatura, Juegos = juegos};
+            return new GetAsignaturaJuegoDTO {Id = asignatura.Id, JuegoAsignatura = asignatura.JuegoAsignatura, TipoJuego=asignatura.IdTipoJuego, Juegos = juegos};
 
         }
 
