@@ -121,7 +121,7 @@ namespace GalacticApi.Data
 
             modelBuilder.Entity<PreguntaPasapalabra>().HasData(
                 new PreguntaPasapalabra { Id = 1, PasapalabraId = 1, Letra = 'A', Pregunta = "Nombre de autor que empieza por A", Respuesta = "Aaron" },
-                new PreguntaPasapalabra { Id = 2, PasapalabraId = 2, Letra = 'B', Pregunta = "Fruta que empieza por B", Respuesta = "Banana" },
+                new PreguntaPasapalabra { Id = 2, PasapalabraId = 1, Letra = 'B', Pregunta = "Fruta que empieza por B", Respuesta = "Banana" },
                 new PreguntaPasapalabra { Id = 3, PasapalabraId = 1, Letra = 'C', Pregunta = "Animal que empieza por C", Respuesta = "Canguro" },
                 new PreguntaPasapalabra { Id = 4, PasapalabraId = 1, Letra = 'D', Pregunta = "Capital europea que empieza por D", Respuesta = "Dublín" },
                 new PreguntaPasapalabra { Id = 5, PasapalabraId = 1, Letra = 'E', Pregunta = "Elemento químico que empieza por E", Respuesta = "Estroncio" },

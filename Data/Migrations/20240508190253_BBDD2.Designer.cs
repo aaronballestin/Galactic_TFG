@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240428174941_BBDD")]
-    partial class BBDD
+    [Migration("20240508190253_BBDD2")]
+    partial class BBDD2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -670,7 +670,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 2,
                             Letra = "B",
-                            PasapalabraId = 2,
+                            PasapalabraId = 1,
                             Pregunta = "Fruta que empieza por B",
                             Respuesta = "Banana"
                         },
