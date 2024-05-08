@@ -1,5 +1,6 @@
 using GalacticApi.Data;
 using GalacticApi.Models;
+using TeatroApi.Models;
 
 namespace GalacticApi.Services
 {
@@ -12,9 +13,22 @@ namespace GalacticApi.Services
             _usuarioRepository = usuarioRepository;
         }
 
+        public void AddUsuario(UsuarioPostDTO usuarioDTO)
+        {
+            var usuario = new Usuario {Name =  usuarioDTO.nombre, Email = usuarioDTO.email, Password=usuarioDTO.password};
+            _usuarioRepository.AddUsuario(usuario);
+        }
+
         public Usuario GetUserById(int id)
         {
             return _usuarioRepository.GetUserById(id);
+        }
+
+        public UsuarioDTO GetUsuario(string emailUsuario, string passwordUsuario)
+        {
+            var usuario = _usuarioRepository.GetUsuario(emailUsuario,passwordUsuario);
+            var usuarioDTO = new UsuarioDTO {id = usuario.Id, email = usuario.Email, nombre = usuario.Name, avatar = "textoejemplo"};
+            return usuarioDTO;
         }
     }
 }

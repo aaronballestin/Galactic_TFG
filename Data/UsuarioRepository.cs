@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using GalacticApi.Models;
 using Microsoft.Extensions.Logging;
+using TeatroApi.Models;
 
 namespace GalacticApi.Data
 {
@@ -16,9 +17,27 @@ namespace GalacticApi.Data
             _logger = logger;
         }
 
+        public void AddUsuario(Usuario usuario)
+        {
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges();
+
+        }
+
         public Usuario GetUserById(int id)
         {
             return _context.Usuarios.FirstOrDefault(u => u.Id == id);
+        }
+
+        public Usuario GetUsuario(string emailUsuario, string passwordUsuario)
+        {
+            return _context.Usuarios.FirstOrDefault(u => u.Email == emailUsuario && u.Password == passwordUsuario);
+
+        }
+
+        public void SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
 }
