@@ -15,7 +15,7 @@ namespace GalacticApi.Services
 
         public void AddUsuario(UsuarioPostDTO usuarioDTO)
         {
-            var usuario = new Usuario {Name =  usuarioDTO.nombre, Email = usuarioDTO.email, Password=usuarioDTO.password};
+            var usuario = new Usuario {Name =  usuarioDTO.nombre, Email = usuarioDTO.email, Password=usuarioDTO.password, AvatarId= 1};
             _usuarioRepository.AddUsuario(usuario);
         }
 
