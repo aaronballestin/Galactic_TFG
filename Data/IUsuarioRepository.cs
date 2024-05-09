@@ -1,5 +1,5 @@
 using GalacticApi.Models;
-using TeatroApi.Models;
+using GalacticApi.Models;
 
 namespace GalacticApi.Data
 {

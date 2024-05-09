@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using GalacticApi.Models;
 using Microsoft.Extensions.Logging;
-using TeatroApi.Models;
+using GalacticApi.Models;
 
 namespace GalacticApi.Data
 {
