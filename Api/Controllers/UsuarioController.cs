@@ -53,14 +53,14 @@ namespace GalacticApi.Api
 
 
         [HttpPost("/register")]
-        public ActionResult AddUsuario(UsuarioPostDTO usuarioPostDTO)
+        public ActionResult<UsuarioDTO> AddUsuario(UsuarioPostDTO usuarioPostDTO)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
             try
             {
-                _usuarioService.AddUsuario(usuarioPostDTO);
-                return NoContent();
+                
+                return _usuarioService.AddUsuario(usuarioPostDTO);
             }
             catch (Exception ex)
             {
