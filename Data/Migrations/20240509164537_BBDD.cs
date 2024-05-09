@@ -58,6 +58,7 @@ namespace GalacticApi.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Rol = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AvatarId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -270,11 +271,12 @@ namespace GalacticApi.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Usuarios",
-                columns: new[] { "Id", "AvatarId", "Email", "Name", "Password" },
+                columns: new[] { "Id", "AvatarId", "Email", "Name", "Password", "Rol" },
                 values: new object[,]
                 {
-                    { 1, 1, "aaron@svalero.com", "Aaron", "1234" },
-                    { 2, 1, "antonio@svalero.com", "Antonio", "1234" }
+                    { 1, 1, "aaron@svalero.com", "Aaron", "1234", "Admin" },
+                    { 2, 1, "antonio@svalero.com", "Antonio", "1234", "Profesor" },
+                    { 3, 1, "alex@svalero.com", "Alex", "1234", "Alumno" }
                 });
 
             migrationBuilder.InsertData(
@@ -345,7 +347,7 @@ namespace GalacticApi.Data.Migrations
                 values: new object[,]
                 {
                     { 1, "A", 1, "Nombre de autor que empieza por A", "Aaron" },
-                    { 2, "B", 2, "Fruta que empieza por B", "Banana" },
+                    { 2, "B", 1, "Fruta que empieza por B", "Banana" },
                     { 3, "C", 1, "Animal que empieza por C", "Canguro" },
                     { 4, "D", 1, "Capital europea que empieza por D", "Dublín" },
                     { 5, "E", 1, "Elemento químico que empieza por E", "Estroncio" },

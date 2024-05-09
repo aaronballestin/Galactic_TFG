@@ -15,7 +15,7 @@ namespace GalacticApi.Services
 
         public UsuarioDTO AddUsuario(UsuarioPostDTO usuarioDTO)
         {
-            var usuario = new Usuario {Name =  usuarioDTO.nombre, Email = usuarioDTO.email, Password=usuarioDTO.password, AvatarId= 1};
+            var usuario = new Usuario {Name =  usuarioDTO.nombre, Email = usuarioDTO.email, Password=usuarioDTO.password, AvatarId= 1, Rol= "Alumno"};
             _usuarioRepository.AddUsuario(usuario);
             return GetUsuario(usuarioDTO.email, usuarioDTO.password);
         }
@@ -28,7 +28,7 @@ namespace GalacticApi.Services
         public UsuarioDTO GetUsuario(string emailUsuario, string passwordUsuario)
         {
             var usuario = _usuarioRepository.GetUsuario(emailUsuario,passwordUsuario);
-            var usuarioDTO = new UsuarioDTO {id = usuario.Id, email = usuario.Email, nombre = usuario.Name, avatar = "textoejemplo"};
+            var usuarioDTO = new UsuarioDTO {id = usuario.Id, email = usuario.Email, nombre = usuario.Name, avatar = "textoejemplo", rol = usuario.Rol};
             return usuarioDTO;
         }
     }

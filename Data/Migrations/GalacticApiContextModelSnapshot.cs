@@ -1156,6 +1156,10 @@ namespace GalacticApi.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Rol")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AvatarId");
@@ -1169,7 +1173,8 @@ namespace GalacticApi.Data.Migrations
                             AvatarId = 1,
                             Email = "aaron@svalero.com",
                             Name = "Aaron",
-                            Password = "1234"
+                            Password = "1234",
+                            Rol = "Admin"
                         },
                         new
                         {
@@ -1177,7 +1182,17 @@ namespace GalacticApi.Data.Migrations
                             AvatarId = 1,
                             Email = "antonio@svalero.com",
                             Name = "Antonio",
-                            Password = "1234"
+                            Password = "1234",
+                            Rol = "Profesor"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AvatarId = 1,
+                            Email = "alex@svalero.com",
+                            Name = "Alex",
+                            Password = "1234",
+                            Rol = "Alumno"
                         });
                 });
 

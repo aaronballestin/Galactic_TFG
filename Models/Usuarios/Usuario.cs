@@ -13,6 +13,9 @@ namespace GalacticApi.Models
         [Required]
         public string Password { get; set;}
 
+        [Required]
+        public string Rol { get; set;}
+
         [ForeignKey("AvatarId")]
         public int AvatarId { get; set;}
 

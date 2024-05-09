@@ -13,8 +13,10 @@ namespace GalacticApi.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Usuario>().HasData(
-                new Usuario { Id = 1, Name = "Aaron", Email = "aaron@svalero.com", Password = "1234", AvatarId = 1 },
-                new Usuario { Id = 2, Name = "Antonio", Email = "antonio@svalero.com", Password = "1234", AvatarId = 1 }
+                new Usuario { Id = 1, Name = "Aaron", Email = "aaron@svalero.com", Password = "1234", AvatarId = 1, Rol = "Admin" },
+                new Usuario { Id = 2, Name = "Antonio", Email = "antonio@svalero.com", Password = "1234", AvatarId = 1, Rol="Profesor" },
+                new Usuario { Id = 3, Name = "Alex", Email = "alex@svalero.com", Password = "1234", AvatarId = 1, Rol="Alumno" }
+
             );
 
             modelBuilder.Entity<Avatar>().HasData(
