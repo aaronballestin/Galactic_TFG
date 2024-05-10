@@ -25,13 +25,13 @@ namespace GalacticApi.Services
         public GetAsignaturaDTO GetAsignaturaById(int id)
         {
             var asignatura = _asignaturaRepository.GetAsignaturaById(id);
-            var asignaturaJuego = new List<GetAsignaturasJuegosDTO>();
-            foreach (var a in asignatura.AsignaturaJuegos)
+            var juegos = new List<GetJuegosDTO>();
+            foreach (var a in asignatura.Juegos)
             {
-                var asignaturaJuegoDTO = new GetAsignaturasJuegosDTO  {Id = a.Id, JuegoAsignatura = a.JuegoAsignatura};
-                asignaturaJuego.Add(asignaturaJuegoDTO);
+                var asignaturaJuegoDTO = new GetJuegosDTO  {Id = a.Id, TemaJuego = a.TemaJuego};
+                juegos.Add(asignaturaJuegoDTO);
             }
-            return new GetAsignaturaDTO {Id = asignatura.Id, NombreAsignatura = asignatura.NombreAsignatura, AsignaturasJuegos = asignaturaJuego};
+            return new GetAsignaturaDTO {Id = asignatura.Id, NombreAsignatura = asignatura.NombreAsignatura, Juegos = juegos};
 
         }
 

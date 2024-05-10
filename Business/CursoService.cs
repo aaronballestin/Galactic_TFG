@@ -25,13 +25,13 @@ namespace GalacticApi.Services
         public GetCursoDTO GetCursoById(int id)
         {
             var curso = _cursoRepository.GetCursoById(id);
-            var asignaturas = new List<GetAsignaturasDTO>();
-            foreach (var asignatura in curso.Asignaturas)
+            var juegos = new List<GetJuegosDTO>();
+            foreach (var juego in curso.Juegos)
             {
-                var asignaturaDTO = new GetAsignaturasDTO{Id = asignatura.Id, NombreAsignatura = asignatura.NombreAsignatura};
-                asignaturas.Add(asignaturaDTO);
+                var asignaturaDTO = new GetJuegosDTO{Id = juego.Id, TemaJuego = juego.TemaJuego};
+                juegos.Add(asignaturaDTO);
             }
-            return new GetCursoDTO{Id =curso.CursoId, Asignaturas=asignaturas, NombreCurso = curso.NombreCurso};
+            return new GetCursoDTO{Id =curso.CursoId, NombreCurso = curso.NombreCurso, Juegos=juegos};
 
 
         }

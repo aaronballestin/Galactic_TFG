@@ -11,10 +11,19 @@ namespace GalacticApi.Models
         [Required]
         public string Codigo { get; set;}
 
-        [ForeignKey("IdAsignaturaJuego")]
-        public int IdAsignaturaJuego { get; set;}
+        [ForeignKey("IdAsignatura")]
+        public int IdAsignatura { get; set;}
 
-        public AsignaturaJuego AsignaturaJuego{ get; set;}
+        [ForeignKey("IdCurso")]
+        public int IdCurso { get; set;}
+
+        [ForeignKey("IdTipoJuego")]
+        public int IdTipoJuego { get; set;}
+
+        public Asignatura Asignatura{ get; set;}
+        public TipoJuego TipoJuego{ get; set;}
+        public Curso Curso{ get; set;}
+
         public List<Resultados> Resultados{ get; set;}
         public Pasapalabra Pasapalabra{ get; set;}
         public Juego(){
