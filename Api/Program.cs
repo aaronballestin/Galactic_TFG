@@ -13,6 +13,7 @@ builder.Services.AddScoped<IAsignaturaService, AsignaturaService>();
 builder.Services.AddScoped<IJuegoService, JuegoService>(); 
 builder.Services.AddScoped<IPasapalabraService, PasapalabraService>(); 
 builder.Services.AddScoped<IPreguntaPasapalabraService, PreguntaPasapalabraService>(); 
+builder.Services.AddScoped<ITipoJuegoService, TipoJuegoService>(); 
 
 
 
@@ -27,6 +28,7 @@ builder.Services.AddScoped<IAsignaturaRepository, AsignaturaRepository>();
 builder.Services.AddScoped<IJuegoRepository, JuegoRepository>(); 
 builder.Services.AddScoped<IPasapalabraRepository, PasapalabraRepository>(); 
 builder.Services.AddScoped<IPreguntaPasapalabraRepository, PreguntaPasapalabraRepository>(); 
+builder.Services.AddScoped<ITipoJuegoRepository, TipoJuegoRepository>(); 
 
 
 
