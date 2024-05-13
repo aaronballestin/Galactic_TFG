@@ -63,131 +63,6 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 5,
                             NombreAsignatura = "Ingles"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            NombreAsignatura = "Lengua"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            NombreAsignatura = "Matematicas"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            NombreAsignatura = "Conocimiento del medio"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            NombreAsignatura = "Educación Artística"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            NombreAsignatura = "Ingles"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            NombreAsignatura = "Lengua"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            NombreAsignatura = "Matematicas"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            NombreAsignatura = "Conocimiento del medio"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            NombreAsignatura = "Educación Artística"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            NombreAsignatura = "Ingles"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            NombreAsignatura = "Lengua"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            NombreAsignatura = "Matematicas"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            NombreAsignatura = "Conocimiento del medio"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            NombreAsignatura = "Educación Artística"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            NombreAsignatura = "Ingles"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            NombreAsignatura = "Lengua"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            NombreAsignatura = "Matematicas"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            NombreAsignatura = "Conocimiento del medio"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            NombreAsignatura = "Educación Artística"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            NombreAsignatura = "Ingles"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            NombreAsignatura = "Lengua"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            NombreAsignatura = "Matematicas"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            NombreAsignatura = "Conocimiento del medio"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            NombreAsignatura = "Educación Artística"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            NombreAsignatura = "Ingles"
                         });
                 });
 
@@ -365,6 +240,78 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 1,
                             IdTipoJuego = 1,
                             TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 1,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Otra Cosa"
                         });
                 });
 
@@ -401,6 +348,54 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 2,
                             IdJuego = 2,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            IdJuego = 3,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            IdJuego = 4,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            IdJuego = 5,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            IdJuego = 6,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            IdJuego = 7,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            IdJuego = 8,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            IdJuego = 9,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            IdJuego = 10,
                             Name = "Nombres de otras cosas pasapalabra"
                         });
                 });

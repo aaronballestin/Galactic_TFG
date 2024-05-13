@@ -9,6 +9,19 @@ namespace GalacticApi.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Asignaturas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NombreAsignatura = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Asignaturas", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Avatars",
                 columns: table => new
                 {
@@ -73,26 +86,6 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Asignaturas",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NombreAsignatura = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CursoId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Asignaturas", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Asignaturas_Cursos_CursoId",
-                        column: x => x.CursoId,
-                        principalTable: "Cursos",
-                        principalColumn: "CursoId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AsignaturaJuegos",
                 columns: table => new
                 {
@@ -100,20 +93,22 @@ namespace GalacticApi.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     JuegoAsignatura = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IdAsignatura = table.Column<int>(type: "int", nullable: false),
-                    IdTipoJuego = table.Column<int>(type: "int", nullable: false)
+                    IdTipoJuego = table.Column<int>(type: "int", nullable: false),
+                    AsignaturaId = table.Column<int>(type: "int", nullable: false),
+                    TipoJuegoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AsignaturaJuegos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AsignaturaJuegos_Asignaturas_IdAsignatura",
-                        column: x => x.IdAsignatura,
+                        name: "FK_AsignaturaJuegos_Asignaturas_AsignaturaId",
+                        column: x => x.AsignaturaId,
                         principalTable: "Asignaturas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_AsignaturaJuegos_TipoJuegos_IdTipoJuego",
-                        column: x => x.IdTipoJuego,
+                        name: "FK_AsignaturaJuegos_TipoJuegos_TipoJuegoId",
+                        column: x => x.TipoJuegoId,
                         principalTable: "TipoJuegos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -127,15 +122,35 @@ namespace GalacticApi.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TemaJuego = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Codigo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdAsignaturaJuego = table.Column<int>(type: "int", nullable: false)
+                    IdAsignatura = table.Column<int>(type: "int", nullable: false),
+                    IdCurso = table.Column<int>(type: "int", nullable: false),
+                    IdTipoJuego = table.Column<int>(type: "int", nullable: false),
+                    AsignaturaJuegoId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Juegos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Juegos_AsignaturaJuegos_IdAsignaturaJuego",
-                        column: x => x.IdAsignaturaJuego,
+                        name: "FK_Juegos_AsignaturaJuegos_AsignaturaJuegoId",
+                        column: x => x.AsignaturaJuegoId,
                         principalTable: "AsignaturaJuegos",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Juegos_Asignaturas_IdAsignatura",
+                        column: x => x.IdAsignatura,
+                        principalTable: "Asignaturas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Juegos_Cursos_IdCurso",
+                        column: x => x.IdCurso,
+                        principalTable: "Cursos",
+                        principalColumn: "CursoId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Juegos_TipoJuegos_IdTipoJuego",
+                        column: x => x.IdTipoJuego,
+                        principalTable: "TipoJuegos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -210,6 +225,18 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Asignaturas",
+                columns: new[] { "Id", "NombreAsignatura" },
+                values: new object[,]
+                {
+                    { 1, "Lengua" },
+                    { 2, "Matematicas" },
+                    { 3, "Conocimiento del medio" },
+                    { 4, "Educación Artística" },
+                    { 5, "Ingles" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Avatars",
                 columns: new[] { "Id", "CodigoJuego", "Premium", "RutaFoto" },
                 values: new object[] { 1, "XXXXXX", "N", "" });
@@ -233,40 +260,20 @@ namespace GalacticApi.Data.Migrations
                 values: new object[] { 1, "Pasapalabra" });
 
             migrationBuilder.InsertData(
-                table: "Asignaturas",
-                columns: new[] { "Id", "CursoId", "NombreAsignatura" },
+                table: "Juegos",
+                columns: new[] { "Id", "AsignaturaJuegoId", "Codigo", "IdAsignatura", "IdCurso", "IdTipoJuego", "TemaJuego" },
                 values: new object[,]
                 {
-                    { 1, 1, "Lengua" },
-                    { 2, 1, "Matematicas" },
-                    { 3, 1, "Conocimiento del medio" },
-                    { 4, 1, "Educación Artística" },
-                    { 5, 1, "Ingles" },
-                    { 6, 2, "Lengua" },
-                    { 7, 2, "Matematicas" },
-                    { 8, 2, "Conocimiento del medio" },
-                    { 9, 2, "Educación Artística" },
-                    { 10, 2, "Ingles" },
-                    { 11, 3, "Lengua" },
-                    { 12, 3, "Matematicas" },
-                    { 13, 3, "Conocimiento del medio" },
-                    { 14, 3, "Educación Artística" },
-                    { 15, 3, "Ingles" },
-                    { 16, 4, "Lengua" },
-                    { 17, 4, "Matematicas" },
-                    { 18, 4, "Conocimiento del medio" },
-                    { 19, 4, "Educación Artística" },
-                    { 20, 4, "Ingles" },
-                    { 21, 5, "Lengua" },
-                    { 22, 5, "Matematicas" },
-                    { 23, 5, "Conocimiento del medio" },
-                    { 24, 5, "Educación Artística" },
-                    { 25, 5, "Ingles" },
-                    { 26, 6, "Lengua" },
-                    { 27, 6, "Matematicas" },
-                    { 28, 6, "Conocimiento del medio" },
-                    { 29, 6, "Educación Artística" },
-                    { 30, 6, "Ingles" }
+                    { 1, null, "XXXXXX", 1, 1, 1, "Autores" },
+                    { 2, null, "XXXXXX", 1, 1, 1, "Otra Cosa" },
+                    { 3, null, "XXXXXX", 1, 1, 1, "Otra Cosa" },
+                    { 4, null, "XXXXXX", 2, 1, 1, "Otra Cosa" },
+                    { 5, null, "XXXXXX", 2, 1, 1, "Otra Cosa" },
+                    { 6, null, "XXXXXX", 2, 1, 1, "Otra Cosa" },
+                    { 7, null, "XXXXXX", 3, 1, 1, "Otra Cosa" },
+                    { 8, null, "XXXXXX", 3, 1, 1, "Otra Cosa" },
+                    { 9, null, "XXXXXX", 3, 1, 1, "Otra Cosa" },
+                    { 10, null, "XXXXXX", 3, 1, 1, "Otra Cosa" }
                 });
 
             migrationBuilder.InsertData(
@@ -280,61 +287,21 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "AsignaturaJuegos",
-                columns: new[] { "Id", "IdAsignatura", "IdTipoJuego", "JuegoAsignatura" },
+                table: "Pasapalabras",
+                columns: new[] { "Id", "IdJuego", "Name" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, "Pasapalabra Lengua 1º" },
-                    { 2, 6, 1, "Pasapalabra Lengua 2º" },
-                    { 3, 11, 1, "Pasapalabra Lengua 3º" },
-                    { 4, 16, 1, "Pasapalabra Lengua 4º" },
-                    { 5, 21, 1, "Pasapalabra Lengua 5º" },
-                    { 6, 26, 1, "Pasapalabra Lengua 6º" },
-                    { 7, 2, 1, "Pasapalabra Matematicas 1º" },
-                    { 8, 7, 1, "Pasapalabra Matematicas 2º" },
-                    { 9, 12, 1, "Pasapalabra Matematicas 3º" },
-                    { 10, 17, 1, "Pasapalabra Matematicas 4º" },
-                    { 11, 22, 1, "Pasapalabra Matematicas 5º" },
-                    { 12, 27, 1, "Pasapalabra Matematicas 6º" },
-                    { 13, 3, 1, "Pasapalabra Conocimiento del medio 1º" },
-                    { 14, 8, 1, "Pasapalabra Conocimiento del medio 2º" },
-                    { 15, 13, 1, "Pasapalabra Conocimiento del medio 3º" },
-                    { 16, 18, 1, "Pasapalabra Conocimiento del medio 4º" },
-                    { 17, 23, 1, "Pasapalabra Conocimiento del medio 5º" },
-                    { 18, 28, 1, "Pasapalabra Conocimiento del medio 6º" },
-                    { 19, 4, 1, "Pasapalabra Educación Artística 1º" },
-                    { 20, 9, 1, "Pasapalabra Educación Artística 2º" },
-                    { 21, 14, 1, "Pasapalabra Educación Artística 3º" },
-                    { 22, 19, 1, "Pasapalabra Educación Artística 4º" },
-                    { 23, 24, 1, "Pasapalabra Educación Artística 5º" },
-                    { 24, 29, 1, "Pasapalabra Educación Artística 6º" },
-                    { 25, 5, 1, "Pasapalabra Ingles 1º" },
-                    { 26, 10, 1, "Pasapalabra Ingles 2º" },
-                    { 27, 15, 1, "Pasapalabra Ingles 3º" },
-                    { 28, 20, 1, "Pasapalabra Ingles 4º" },
-                    { 29, 25, 1, "Pasapalabra Ingles 5º" },
-                    { 30, 30, 1, "Pasapalabra Ingles 6º" }
+                    { 1, 1, "Nombres de autores pasapalabra" },
+                    { 2, 2, "Nombres de otras cosas pasapalabra" },
+                    { 3, 3, "Nombres de otras cosas pasapalabra" },
+                    { 4, 4, "Nombres de otras cosas pasapalabra" },
+                    { 5, 5, "Nombres de otras cosas pasapalabra" },
+                    { 6, 6, "Nombres de otras cosas pasapalabra" },
+                    { 7, 7, "Nombres de otras cosas pasapalabra" },
+                    { 8, 8, "Nombres de otras cosas pasapalabra" },
+                    { 9, 9, "Nombres de otras cosas pasapalabra" },
+                    { 10, 10, "Nombres de otras cosas pasapalabra" }
                 });
-
-            migrationBuilder.InsertData(
-                table: "Juegos",
-                columns: new[] { "Id", "Codigo", "IdAsignaturaJuego", "TemaJuego" },
-                values: new object[] { 1, "XXXXXX", 1, "Autores" });
-
-            migrationBuilder.InsertData(
-                table: "Juegos",
-                columns: new[] { "Id", "Codigo", "IdAsignaturaJuego", "TemaJuego" },
-                values: new object[] { 2, "XXXXXX", 1, "Otra Cosa" });
-
-            migrationBuilder.InsertData(
-                table: "Pasapalabras",
-                columns: new[] { "Id", "IdJuego", "Name" },
-                values: new object[] { 1, 1, "Nombres de autores pasapalabra" });
-
-            migrationBuilder.InsertData(
-                table: "Pasapalabras",
-                columns: new[] { "Id", "IdJuego", "Name" },
-                values: new object[] { 2, 2, "Nombres de otras cosas pasapalabra" });
 
             migrationBuilder.InsertData(
                 table: "resultados",
@@ -408,24 +375,34 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AsignaturaJuegos_IdAsignatura",
+                name: "IX_AsignaturaJuegos_AsignaturaId",
                 table: "AsignaturaJuegos",
+                column: "AsignaturaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AsignaturaJuegos_TipoJuegoId",
+                table: "AsignaturaJuegos",
+                column: "TipoJuegoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Juegos_AsignaturaJuegoId",
+                table: "Juegos",
+                column: "AsignaturaJuegoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Juegos_IdAsignatura",
+                table: "Juegos",
                 column: "IdAsignatura");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AsignaturaJuegos_IdTipoJuego",
-                table: "AsignaturaJuegos",
-                column: "IdTipoJuego");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Asignaturas_CursoId",
-                table: "Asignaturas",
-                column: "CursoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Juegos_IdAsignaturaJuego",
+                name: "IX_Juegos_IdCurso",
                 table: "Juegos",
-                column: "IdAsignaturaJuego");
+                column: "IdCurso");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Juegos_IdTipoJuego",
+                table: "Juegos",
+                column: "IdTipoJuego");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Pasapalabras_IdJuego",
@@ -478,13 +455,13 @@ namespace GalacticApi.Data.Migrations
                 name: "AsignaturaJuegos");
 
             migrationBuilder.DropTable(
+                name: "Cursos");
+
+            migrationBuilder.DropTable(
                 name: "Asignaturas");
 
             migrationBuilder.DropTable(
                 name: "TipoJuegos");
-
-            migrationBuilder.DropTable(
-                name: "Cursos");
         }
     }
 }
