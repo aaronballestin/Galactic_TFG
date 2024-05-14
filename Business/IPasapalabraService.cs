@@ -6,7 +6,7 @@ namespace GalacticApi.Services
         GetPasapalabraDTO GetPasapalabraById(int id);
         List<GetPasapalabrasDTO> GetPasapalabras();
         void DeletePasapalabra(int id);
-        void AddPasapalabra(Pasapalabra pasapalabra);
+        void AddPasapalabra(PostPasapalabraDTO pasapalabra);
         void UpdatePasapalabra(Pasapalabra pasapalabra);
     }
 }

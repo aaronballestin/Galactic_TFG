@@ -52,7 +52,7 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddPasapalabra(Pasapalabra pasapalabra)
+        public ActionResult AddPasapalabra(PostPasapalabraDTO pasapalabra)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 

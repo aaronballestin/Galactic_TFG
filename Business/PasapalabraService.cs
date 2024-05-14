@@ -11,7 +11,7 @@ namespace GalacticApi.Services
         _pasapalabraRepository = pasapalabraRepository;
     }
 
-        public void AddPasapalabra(Pasapalabra pasapalabra)
+        public void AddPasapalabra(PostPasapalabraDTO pasapalabra)
         {
             _pasapalabraRepository.AddPasapalabra(pasapalabra);
         }
