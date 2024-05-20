@@ -267,13 +267,13 @@ namespace GalacticApi.Data.Migrations
                     { 1, null, "XXXXXX", 3, 1, 1, "Geografía Basica" },
                     { 2, null, "XXXXXX", 3, 1, 1, "Cultura General - 1" },
                     { 3, null, "XXXXXX", 3, 1, 1, "Cultura General - 2" },
-                    { 4, null, "XXXXXX", 2, 1, 1, "Ingles Basic - 1" },
-                    { 5, null, "XXXXXX", 2, 1, 1, "Ingles Animals - 1" },
+                    { 4, null, "XXXXXX", 5, 1, 1, "Ingles Basic - 1" },
+                    { 5, null, "XXXXXX", 5, 1, 1, "Ingles Animals - 1" },
                     { 6, null, "XXXXXX", 2, 1, 1, "Matematicas - General" },
-                    { 7, null, "XXXXXX", 3, 1, 1, "Otra Cosa" },
-                    { 8, null, "XXXXXX", 3, 1, 1, "Otra Cosa" },
-                    { 9, null, "XXXXXX", 3, 1, 1, "Otra Cosa" },
-                    { 10, null, "XXXXXX", 3, 1, 1, "Otra Cosa" }
+                    { 7, null, "XXXXXX", 1, 1, 1, "Lengua - 1" },
+                    { 8, null, "XXXXXX", 1, 1, 1, "Lengua - 1" },
+                    { 9, null, "XXXXXX", 4, 1, 1, "Plastica" },
+                    { 10, null, "XXXXXX", 4, 1, 1, "Musica" }
                 });
 
             migrationBuilder.InsertData(

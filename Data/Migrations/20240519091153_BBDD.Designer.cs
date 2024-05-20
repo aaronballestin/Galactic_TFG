@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240519090248_BBDD")]
+    [Migration("20240519091153_BBDD")]
     partial class BBDD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -256,7 +256,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 4,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 2,
+                            IdAsignatura = 5,
                             IdCurso = 1,
                             IdTipoJuego = 1,
                             TemaJuego = "Ingles Basic - 1"
@@ -265,7 +265,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 5,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 2,
+                            IdAsignatura = 5,
                             IdCurso = 1,
                             IdTipoJuego = 1,
                             TemaJuego = "Ingles Animals - 1"
@@ -283,37 +283,37 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 7,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 3,
+                            IdAsignatura = 1,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Otra Cosa"
+                            TemaJuego = "Lengua - 1"
                         },
                         new
                         {
                             Id = 8,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 3,
+                            IdAsignatura = 1,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Otra Cosa"
+                            TemaJuego = "Lengua - 1"
                         },
                         new
                         {
                             Id = 9,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 3,
+                            IdAsignatura = 4,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Otra Cosa"
+                            TemaJuego = "Plastica"
                         },
                         new
                         {
                             Id = 10,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 3,
+                            IdAsignatura = 4,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Otra Cosa"
+                            TemaJuego = "Musica"
                         });
                 });
 
