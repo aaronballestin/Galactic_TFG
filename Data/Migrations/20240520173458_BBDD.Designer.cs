@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240519091153_BBDD")]
+    [Migration("20240520173458_BBDD")]
     partial class BBDD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -295,7 +295,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 1,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Lengua - 1"
+                            TemaJuego = "Lengua - 2"
                         },
                         new
                         {
@@ -437,7 +437,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 1,
                             Letra = "A",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por A: Continente al este de Europa ",
+                            Pregunta = "Empieza por A: Continente ubicado al este de Europa y al norte de Australia",
                             Respuesta = "Asia"
                         },
                         new
@@ -445,7 +445,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 2,
                             Letra = "B",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por B: Capital de Alemania ",
+                            Pregunta = "Empieza por B: Capital de Alemania, famosa por su Muro",
                             Respuesta = "Berlín"
                         },
                         new
@@ -453,7 +453,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 3,
                             Letra = "C",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por C: País de América del Sur ",
+                            Pregunta = "Empieza por C: País de América del Sur conocido por su forma alargada y su costa en el Pacífico",
                             Respuesta = "Chile"
                         },
                         new
@@ -461,7 +461,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 4,
                             Letra = "D",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por D: País de Europa ",
+                            Pregunta = "Empieza por D: País escandinavo de Europa famoso por sus bicicletas y canales en Copenhague",
                             Respuesta = "Dinamarca"
                         },
                         new
@@ -469,7 +469,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 5,
                             Letra = "E",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por E: País de África que es famoso por sus pirámides",
+                            Pregunta = "Empieza por E: País de África famoso por sus antiguas pirámides y la Esfinge",
                             Respuesta = "Egipto"
                         },
                         new
@@ -477,7 +477,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 6,
                             Letra = "F",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por F: País de Europa ",
+                            Pregunta = "Empieza por F: País de Europa conocido por su torre Eiffel y su capital París",
                             Respuesta = "Francia"
                         },
                         new
@@ -485,7 +485,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 7,
                             Letra = "G",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por G: País de América del Norte que",
+                            Pregunta = "Empieza por G: País de América Central cuyo nombre rima con 'mala'",
                             Respuesta = "Guatemala"
                         },
                         new
@@ -493,7 +493,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 8,
                             Letra = "H",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por H: País de América Central ",
+                            Pregunta = "Empieza por H: País de América Central famoso por sus ruinas mayas en Copán",
                             Respuesta = "Honduras"
                         },
                         new
@@ -501,7 +501,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 9,
                             Letra = "I",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por I: País de Europa ",
+                            Pregunta = "Empieza por I: País europeo conocido por su forma de bota",
                             Respuesta = "Italia"
                         },
                         new
@@ -509,7 +509,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 10,
                             Letra = "J",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por J:  País de Asia ",
+                            Pregunta = "Empieza por J: País insular de Asia conocido por su tecnología avanzada y su cultura del anime",
                             Respuesta = "Japón"
                         },
                         new
@@ -517,7 +517,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 11,
                             Letra = "K",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por K:  País de Asia ",
+                            Pregunta = "Empieza por K: País de Asia central cuyo nombre termina en '-stán'",
                             Respuesta = "Kazajistán"
                         },
                         new
@@ -525,7 +525,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 12,
                             Letra = "L",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por L: País de Europa ",
+                            Pregunta = "Empieza por L: País báltico de Europa cuya capital es Vilna",
                             Respuesta = "Lituania"
                         },
                         new
@@ -533,7 +533,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 13,
                             Letra = "M",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por M:  País de África ",
+                            Pregunta = "Empieza por M: País del norte de África famoso por sus mercados en Marrakech",
                             Respuesta = "Marruecos"
                         },
                         new
@@ -541,7 +541,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 14,
                             Letra = "N",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por N: País de Europa ",
+                            Pregunta = "Empieza por N: País escandinavo de Europa conocido por sus fiordos",
                             Respuesta = "Noruega"
                         },
                         new
@@ -549,7 +549,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 15,
                             Letra = "O",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por O:  País de Asia ",
+                            Pregunta = "Empieza por O: País de Asia famoso por su desierto y su incienso",
                             Respuesta = "Omán"
                         },
                         new
@@ -557,7 +557,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 16,
                             Letra = "P",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por P: País de Europa ",
+                            Pregunta = "Empieza por P: País europeo conocido por sus vinos de Oporto y su capital Lisboa",
                             Respuesta = "Portugal"
                         },
                         new
@@ -565,7 +565,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 17,
                             Letra = "Q",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por Q: País de Asia ",
+                            Pregunta = "Empieza por Q: País del Golfo Pérsico conocido por su rica reserva de gas natural",
                             Respuesta = "Qatar"
                         },
                         new
@@ -573,7 +573,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 18,
                             Letra = "R",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por R: País de Europa",
+                            Pregunta = "Empieza por R: País más grande del mundo, situado en Europa y Asia",
                             Respuesta = "Rusia"
                         },
                         new
@@ -581,7 +581,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 19,
                             Letra = "S",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por S: País de Europa",
+                            Pregunta = "Empieza por S: País nórdico de Europa famoso por sus coches Volvo y su capital Estocolmo",
                             Respuesta = "Suecia"
                         },
                         new
@@ -589,7 +589,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 20,
                             Letra = "T",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por T: País de Asia ",
+                            Pregunta = "Empieza por T: País del sudeste asiático conocido por sus templos y su capital Bangkok",
                             Respuesta = "Tailandia"
                         },
                         new
@@ -597,7 +597,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 21,
                             Letra = "U",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por U: País de Europa ",
+                            Pregunta = "Empieza por U: País de Europa del Este cuya capital es Kiev",
                             Respuesta = "Ucrania"
                         },
                         new
@@ -605,7 +605,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 22,
                             Letra = "V",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por V: País de Asia que",
+                            Pregunta = "Empieza por V: País del sudeste asiático conocido por su guerra con Estados Unidos en los años 60 y 70",
                             Respuesta = "Vietnam"
                         },
                         new
@@ -613,7 +613,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 23,
                             Letra = "W",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por W: País de Oceanía",
+                            Pregunta = "Empieza por W: Territorio de Oceanía compuesto por tres islas principales",
                             Respuesta = "Wallis y Futuna"
                         },
                         new
@@ -621,7 +621,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 24,
                             Letra = "X",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por X: Ciudad de China",
+                            Pregunta = "Empieza por X: Ciudad china famosa por sus guerreros de terracota",
                             Respuesta = "Xi'an"
                         },
                         new
@@ -629,7 +629,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 25,
                             Letra = "Y",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por Y: País de Asia ",
+                            Pregunta = "Empieza por Y: País de la península arábiga cuyo capital es Saná",
                             Respuesta = "Yemen"
                         },
                         new
@@ -637,7 +637,7 @@ namespace GalacticApi.Data.Migrations
                             Id = 26,
                             Letra = "Z",
                             PasapalabraId = 1,
-                            Pregunta = "Empieza por Z: País de África",
+                            Pregunta = "Empieza por Z: País del sur de África cuya capital es Lusaka",
                             Respuesta = "Zambia"
                         },
                         new
@@ -853,151 +853,151 @@ namespace GalacticApi.Data.Migrations
                             Id = 53,
                             Letra = "A",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por A: Nombre de un famoso científico que desarrolló la teoría de la relatividad",
-                            Respuesta = "Einstein"
+                            Pregunta = "Empieza por A: ¿Qué necesitamos beber para mantenernos hidratados?",
+                            Respuesta = "Agua"
                         },
                         new
                         {
                             Id = 54,
                             Letra = "B",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por B: Nombre de una danza tradicional argentina y uruguaya",
-                            Respuesta = "Bailongo"
+                            Pregunta = "Empieza por B: ¿Cómo se llama la capa de la Tierra donde se concentra la vida?",
+                            Respuesta = "Biosfera"
                         },
                         new
                         {
                             Id = 55,
                             Letra = "C",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por C: Nombre del inventor del teléfono",
-                            Respuesta = "Bell"
+                            Pregunta = "Empieza por C: ¿Cuál es la unidad básica de los seres vivos?",
+                            Respuesta = "Célula"
                         },
                         new
                         {
                             Id = 56,
                             Letra = "D",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por D: Nombre del pintor surrealista español conocido por sus excéntricas obras",
-                            Respuesta = "Dalí"
+                            Pregunta = "Empieza por D: ¿Qué tipo de animales gigantes poblaron la Tierra hace millones de años?",
+                            Respuesta = "Dinosaurio"
                         },
                         new
                         {
                             Id = 57,
                             Letra = "E",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por E: Nombre del mayor océano del mundo",
-                            Respuesta = "Pacífico"
+                            Pregunta = "Empieza por E: ¿Cómo se llama el conjunto de seres vivos y su entorno físico?",
+                            Respuesta = "Ecosistema"
                         },
                         new
                         {
                             Id = 58,
                             Letra = "F",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por F: Nombre del autor del libro 'El principito'",
-                            Respuesta = "Saint-Exupéry"
+                            Pregunta = "Empieza por F: ¿Qué proceso realizan las plantas para obtener energía del sol?",
+                            Respuesta = "Fotosíntesis"
                         },
                         new
                         {
                             Id = 59,
                             Letra = "G",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por G: Nombre del metal más ligero",
-                            Respuesta = "Litio"
+                            Pregunta = "Empieza por G: ¿Qué fuerza mantiene nuestros pies en el suelo?",
+                            Respuesta = "Gravedad"
                         },
                         new
                         {
                             Id = 60,
                             Letra = "H",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por H: Nombre de la isla donde se encuentra la estatua del Cristo Redentor",
-                            Respuesta = "Corcovado"
+                            Pregunta = "Empieza por H: ¿Qué parte del cuerpo humano nos permite movernos y mantenernos erguidos?",
+                            Respuesta = "Hueso"
                         },
                         new
                         {
                             Id = 61,
                             Letra = "I",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por I: Nombre de un famoso arquitecto español conocido por su obra 'La Sagrada Familia'",
-                            Respuesta = "Gaudí"
+                            Pregunta = "Empieza por I: ¿Qué objeto atrae a otros objetos de metal?",
+                            Respuesta = "Imán"
                         },
                         new
                         {
                             Id = 62,
                             Letra = "J",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por J: Nombre de un famoso tenista suizo",
-                            Respuesta = "Federer"
+                            Pregunta = "Empieza por J: ¿Qué animal tiene un cuello largo y manchas en su piel?",
+                            Respuesta = "Jirafa"
                         },
                         new
                         {
                             Id = 63,
                             Letra = "K",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por K: Nombre del presidente de Estados Unidos asesinado en 1963",
-                            Respuesta = "Kennedy"
+                            Pregunta = "Empieza por K: ¿Qué unidad de medida utilizamos para pesar objetos?",
+                            Respuesta = "Kilogramo"
                         },
                         new
                         {
                             Id = 64,
                             Letra = "L",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por L: Nombre del mayor lago de agua dulce en África",
-                            Respuesta = "Victoria"
+                            Pregunta = "Empieza por L: ¿Qué necesitamos para ver las cosas?",
+                            Respuesta = "Luz"
                         },
                         new
                         {
                             Id = 65,
                             Letra = "M",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por M: Nombre de una famosa cadena de montañas en Sudamérica",
-                            Respuesta = "Andes"
+                            Pregunta = "Empieza por M: ¿Cómo se llaman las partículas más pequeñas de una sustancia?",
+                            Respuesta = "Molécula"
                         },
                         new
                         {
                             Id = 66,
                             Letra = "N",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por N: Nombre del autor de la novela 'Moby-Dick'",
-                            Respuesta = "Melville"
+                            Pregunta = "Empieza por N: ¿Qué necesitan los seres vivos para crecer y mantenerse saludables?",
+                            Respuesta = "Nutriente"
                         },
                         new
                         {
                             Id = 67,
                             Letra = "O",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por O: Nombre del único mamífero que puede volar",
-                            Respuesta = "Murciélago"
+                            Pregunta = "Empieza por O: ¿Qué gas necesitamos respirar para vivir?",
+                            Respuesta = "Oxígeno"
                         },
                         new
                         {
                             Id = 68,
                             Letra = "P",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por P: Nombre de la ciudad italiana famosa por su torre inclinada",
-                            Respuesta = "Pisa"
+                            Pregunta = "Empieza por P: ¿Qué placa de la Tierra se mueve y puede causar terremotos y volcanes?",
+                            Respuesta = "Placa"
                         },
                         new
                         {
                             Id = 69,
                             Letra = "Q",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por Q: Nombre del ave nacional de Guatemala",
-                            Respuesta = "Quetzal"
+                            Pregunta = "Empieza por Q: ¿Qué ciencia estudia la composición de las sustancias y sus transformaciones?",
+                            Respuesta = "Química"
                         },
                         new
                         {
                             Id = 70,
                             Letra = "R",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por R: Nombre del mayor desierto cálido del mundo",
-                            Respuesta = "Sahara"
+                            Pregunta = "Empieza por R: ¿Qué parte de la planta se encuentra bajo tierra y absorbe agua y nutrientes?",
+                            Respuesta = "Raíz"
                         },
                         new
                         {
                             Id = 71,
                             Letra = "S",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por S: Nombre del satélite natural de la Tierra",
+                            Pregunta = "Empieza por S: ¿Cómo se llama el satélite natural de la Tierra?",
                             Respuesta = "Luna"
                         },
                         new
@@ -1005,56 +1005,56 @@ namespace GalacticApi.Data.Migrations
                             Id = 72,
                             Letra = "T",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por T: Nombre del lugar donde se realiza el festival de la flor de cerezos",
-                            Respuesta = "Japón"
+                            Pregunta = "Empieza por T: ¿Qué medida nos indica si hace calor o frío en un lugar?",
+                            Respuesta = "Temperatura"
                         },
                         new
                         {
                             Id = 73,
                             Letra = "U",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por U: Nombre del país conocido por el Machu Picchu",
-                            Respuesta = "Perú"
+                            Pregunta = "Empieza por U: ¿Cuál es el séptimo planeta del sistema solar?",
+                            Respuesta = "Urano"
                         },
                         new
                         {
                             Id = 74,
                             Letra = "V",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por V: Nombre del pintor que cortó su propia oreja",
-                            Respuesta = "Van Gogh"
+                            Pregunta = "Empieza por V: ¿Qué montaña expulsa lava, cenizas y gases?",
+                            Respuesta = "Volcán"
                         },
                         new
                         {
                             Id = 75,
                             Letra = "W",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por W: Nombre del lugar donde se encuentra la Casa Blanca",
-                            Respuesta = "Washington, D.C."
+                            Pregunta = "Empieza por W: ¿Qué unidad de medida utilizamos para medir la potencia de la electricidad?",
+                            Respuesta = "Vatios"
                         },
                         new
                         {
                             Id = 76,
                             Letra = "X",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por X: Nombre de la técnica de imagen médica que usa radiación",
-                            Respuesta = "Rayos X"
+                            Pregunta = "Empieza por X: ¿Qué tejido en las plantas transporta agua y nutrientes desde las raíces hasta las hojas?",
+                            Respuesta = "Xilema"
                         },
                         new
                         {
                             Id = 77,
                             Letra = "Y",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por Y: Nombre de la flor nacional de Japón",
-                            Respuesta = "Crisantemo"
+                            Pregunta = "Empieza por Y: ¿Cómo se llama la parte nutritiva contenida dentro de un huevo?",
+                            Respuesta = "Yema"
                         },
                         new
                         {
                             Id = 78,
                             Letra = "Z",
                             PasapalabraId = 3,
-                            Pregunta = "Empieza por Z: Nombre de un mineral precioso de color azul",
-                            Respuesta = "Zafiro"
+                            Pregunta = "Empieza por Z: ¿Dónde podemos observar y aprender sobre diferentes especies animales?",
+                            Respuesta = "Zoológico"
                         },
                         new
                         {
@@ -1062,7 +1062,7 @@ namespace GalacticApi.Data.Migrations
                             Letra = "A",
                             PasapalabraId = 4,
                             Pregunta = "Empieza por A: An animal that can fly and is known for its colorful feathers",
-                            Respuesta = "Parrot"
+                            Respuesta = "Ara"
                         },
                         new
                         {
@@ -1070,7 +1070,7 @@ namespace GalacticApi.Data.Migrations
                             Letra = "B",
                             PasapalabraId = 4,
                             Pregunta = "Empieza por B: A type of large animal that lives in rivers and lakes and can be very dangerous",
-                            Respuesta = "Hippo"
+                            Respuesta = "Bear"
                         },
                         new
                         {
@@ -1663,6 +1663,838 @@ namespace GalacticApi.Data.Migrations
                             PasapalabraId = 6,
                             Pregunta = "Empieza por Z: En ingles, ¿Cómo se llama el número que representa la ausencia de cantidad o valor?",
                             Respuesta = "Zero (cero)"
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Letra = "A",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por A: ¿Qué elemento gramatical se utiliza para introducir o modificar un sustantivo en una oración?",
+                            Respuesta = "Artículo"
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Letra = "B",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por B: ¿Qué tipo de texto relata la vida de una persona escrita por otra?",
+                            Respuesta = "Biografía"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Letra = "C",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por C: ¿Qué palabra se usa para unir frases, palabras o cláusulas en una oración?",
+                            Respuesta = "Conjunción"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Letra = "D",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por D: ¿Cómo se llama la combinación de dos vocales en una misma sílaba?",
+                            Respuesta = "Diptongo"
+                        },
+                        new
+                        {
+                            Id = 162,
+                            Letra = "E",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por E: ¿Qué habilidad se desarrolla al escribir cartas, cuentos o poesías?",
+                            Respuesta = "Escritura"
+                        },
+                        new
+                        {
+                            Id = 163,
+                            Letra = "F",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por F: ¿Qué representa los sonidos básicos del habla?",
+                            Respuesta = "Fonema"
+                        },
+                        new
+                        {
+                            Id = 164,
+                            Letra = "G",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por G: ¿Qué se estudia para comprender la estructura de un idioma?",
+                            Respuesta = "Gramática"
+                        },
+                        new
+                        {
+                            Id = 165,
+                            Letra = "H",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por H: ¿Qué palabra significa dos o más palabras que suenan igual pero tienen diferente significado o escritura?",
+                            Respuesta = "Homófono"
+                        },
+                        new
+                        {
+                            Id = 166,
+                            Letra = "I",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por I: ¿Cómo se llama a las palabras que expresan emociones o sentimientos y no tienen una función sintáctica definida?",
+                            Respuesta = "Interjección"
+                        },
+                        new
+                        {
+                            Id = 167,
+                            Letra = "J",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por J: ¿Qué actividad es recreativa y educativa a la vez, en la que se aplican reglas para divertirse?",
+                            Respuesta = "Juego"
+                        },
+                        new
+                        {
+                            Id = 168,
+                            Letra = "K",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por K: ¿Qué lugar suele tener una variedad de productos y periódicos y revistas para su venta?",
+                            Respuesta = "Kiosco"
+                        },
+                        new
+                        {
+                            Id = 169,
+                            Letra = "L",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por L: ¿Qué símbolo gráfico representa los sonidos básicos del habla?",
+                            Respuesta = "Letra"
+                        },
+                        new
+                        {
+                            Id = 170,
+                            Letra = "M",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por M: ¿Qué unidad mínima de significado tiene un idioma?",
+                            Respuesta = "Morfema"
+                        },
+                        new
+                        {
+                            Id = 171,
+                            Letra = "N",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por N: ¿Qué persona cuenta una historia o relato?",
+                            Respuesta = "Narrador"
+                        },
+                        new
+                        {
+                            Id = 172,
+                            Letra = "O",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por O: ¿Qué estructura gramatical contiene un sujeto y un predicado y expresa una idea completa?",
+                            Respuesta = "Oración"
+                        },
+                        new
+                        {
+                            Id = 173,
+                            Letra = "P",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por P: ¿Cómo se denomina a la unidad básica del lenguaje, que comunica un concepto?",
+                            Respuesta = "Palabra"
+                        },
+                        new
+                        {
+                            Id = 174,
+                            Letra = "Q",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por Q: ¿Qué palabra se emplea para describir un juego verbal en el que se repiten los mismos sonidos?",
+                            Respuesta = "Querido"
+                        },
+                        new
+                        {
+                            Id = 175,
+                            Letra = "R",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por R: ¿Qué componente del lenguaje se estudia para entender cómo se forman y se pronuncian los sonidos en las palabras?",
+                            Respuesta = "Rima"
+                        },
+                        new
+                        {
+                            Id = 176,
+                            Letra = "S",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por S: ¿Qué elemento gramatical se utiliza para conectar ideas o acciones dentro de una oración o un texto?",
+                            Respuesta = "Sujeto"
+                        },
+                        new
+                        {
+                            Id = 177,
+                            Letra = "T",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por T: ¿Qué actividad literaria implica la creación y combinación de sonidos para desafiar la pronunciación?",
+                            Respuesta = "Trabalenguas"
+                        },
+                        new
+                        {
+                            Id = 178,
+                            Letra = "U",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por U: ¿Qué se utiliza para hacer referencia a un suceso imaginario o inventado que se relata de forma breve y con una enseñanza o moraleja?",
+                            Respuesta = "Uso"
+                        },
+                        new
+                        {
+                            Id = 179,
+                            Letra = "V",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por V: ¿Qué se refiere a la variedad y selección de palabras que una persona conoce y utiliza en su comunicación?",
+                            Respuesta = "Vocabulario"
+                        },
+                        new
+                        {
+                            Id = 180,
+                            Letra = "W",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por W: ¿Qué tipo de texto se compone de una serie de letras y signos que representan sonidos y que, al combinarse, forman palabras?",
+                            Respuesta = "Watusi"
+                        },
+                        new
+                        {
+                            Id = 181,
+                            Letra = "X",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por X: ¿Qué palabra se utiliza para describir un sonido compuesto por la combinación de dos vocales en una misma sílaba?",
+                            Respuesta = "Xilófono"
+                        },
+                        new
+                        {
+                            Id = 183,
+                            Letra = "Y",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por Y: ¿Qué figura literaria se produce cuando una palabra o grupo de palabras se repiten al inicio de dos o más versos o frases?",
+                            Respuesta = "Yod"
+                        },
+                        new
+                        {
+                            Id = 184,
+                            Letra = "Z",
+                            PasapalabraId = 7,
+                            Pregunta = "Empieza por Z: ¿Qué componente del lenguaje se estudia para comprender cómo se utilizan las palabras y frases en diferentes situaciones?",
+                            Respuesta = "Zona"
+                        },
+                        new
+                        {
+                            Id = 185,
+                            Letra = "A",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué parte de la oración describe o califica al sustantivo?",
+                            Respuesta = "Adjetivo"
+                        },
+                        new
+                        {
+                            Id = 186,
+                            Letra = "B",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué tipo de texto relata la vida de una persona escrita por otra?",
+                            Respuesta = "Biografía"
+                        },
+                        new
+                        {
+                            Id = 187,
+                            Letra = "C",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué tipo de palabra une dos oraciones o partes de una oración?",
+                            Respuesta = "Conjunción"
+                        },
+                        new
+                        {
+                            Id = 188,
+                            Letra = "D",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la secuencia de dos vocales que se pronuncian en una sola emisión de voz?",
+                            Respuesta = "Diptongo"
+                        },
+                        new
+                        {
+                            Id = 189,
+                            Letra = "E",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama el conjunto de palabras que expresan una idea completa?",
+                            Respuesta = "Enunciado"
+                        },
+                        new
+                        {
+                            Id = 190,
+                            Letra = "F",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se le llama a la unidad mínima de sonido en un idioma?",
+                            Respuesta = "Fonema"
+                        },
+                        new
+                        {
+                            Id = 191,
+                            Letra = "G",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué rama de la lingüística estudia la estructura de las palabras?",
+                            Respuesta = "Gramática"
+                        },
+                        new
+                        {
+                            Id = 192,
+                            Letra = "H",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama una palabra que suena igual que otra pero se escribe diferente y tiene distinto significado?",
+                            Respuesta = "Homófono"
+                        },
+                        new
+                        {
+                            Id = 193,
+                            Letra = "I",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama una palabra que expresa emoción o sentimiento y no tiene relación gramatical con otras palabras de la oración?",
+                            Respuesta = "Interjección"
+                        },
+                        new
+                        {
+                            Id = 194,
+                            Letra = "J",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se le llama al lenguaje especializado de un grupo profesional o social?",
+                            Respuesta = "Jerga"
+                        },
+                        new
+                        {
+                            Id = 195,
+                            Letra = "K",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué arte marcial tiene su origen en Okinawa, Japón?",
+                            Respuesta = "Kárate"
+                        },
+                        new
+                        {
+                            Id = 196,
+                            Letra = "L",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se le llama a cada una de las grafías del alfabeto?",
+                            Respuesta = "Letra"
+                        },
+                        new
+                        {
+                            Id = 197,
+                            Letra = "M",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la unidad mínima de significado en la palabra?",
+                            Respuesta = "Morfema"
+                        },
+                        new
+                        {
+                            Id = 198,
+                            Letra = "N",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la palabra que designa a personas, animales, cosas o ideas?",
+                            Respuesta = "Nombre"
+                        },
+                        new
+                        {
+                            Id = 199,
+                            Letra = "O",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama una frase que expresa una idea completa con sentido propio?",
+                            Respuesta = "Oración"
+                        },
+                        new
+                        {
+                            Id = 200,
+                            Letra = "P",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la palabra que sustituye al nombre?",
+                            Respuesta = "Pronombre"
+                        },
+                        new
+                        {
+                            Id = 201,
+                            Letra = "Q",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué error gramatical se produce al usar de forma incorrecta la palabra 'que'?",
+                            Respuesta = "Queísmo"
+                        },
+                        new
+                        {
+                            Id = 202,
+                            Letra = "R",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se le llama a la repetición de sonidos al final de dos o más versos?",
+                            Respuesta = "Rima"
+                        },
+                        new
+                        {
+                            Id = 203,
+                            Letra = "S",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Quién o qué realiza la acción en una oración?",
+                            Respuesta = "Sujeto"
+                        },
+                        new
+                        {
+                            Id = 204,
+                            Letra = "T",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la forma en que se conjugan los verbos para indicar el momento en que se realiza la acción?",
+                            Respuesta = "Tiempo verbal"
+                        },
+                        new
+                        {
+                            Id = 205,
+                            Letra = "U",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la manera correcta de emplear el lenguaje según las normas gramaticales?",
+                            Respuesta = "Uso"
+                        },
+                        new
+                        {
+                            Id = 206,
+                            Letra = "V",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se llama la forma verbal en la que el sujeto recibe la acción del verbo?",
+                            Respuesta = "Voz pasiva"
+                        },
+                        new
+                        {
+                            Id = 207,
+                            Letra = "W",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué baile originario de África Central se popularizó en los años 60?",
+                            Respuesta = "Watusi"
+                        },
+                        new
+                        {
+                            Id = 208,
+                            Letra = "X",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Qué técnica de impresión se realiza sobre madera?",
+                            Respuesta = "Xilografía"
+                        },
+                        new
+                        {
+                            Id = 209,
+                            Letra = "Y",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se le llama a la unión de dos o más ideas o palabras sin relación gramatical?",
+                            Respuesta = "Yuxtaposición"
+                        },
+                        new
+                        {
+                            Id = 210,
+                            Letra = "Z",
+                            PasapalabraId = 8,
+                            Pregunta = "¿Cómo se le llama al uso de un mismo término para dos sentidos diferentes en un enunciado?",
+                            Respuesta = "Zeugma"
+                        },
+                        new
+                        {
+                            Id = 211,
+                            Letra = "A",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué tipo de pintura se diluye en agua y se aplica con pincel?",
+                            Respuesta = "Acuarela"
+                        },
+                        new
+                        {
+                            Id = 212,
+                            Letra = "B",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué material se utiliza para modelar figuras y vasijas?",
+                            Respuesta = "Barro"
+                        },
+                        new
+                        {
+                            Id = 213,
+                            Letra = "C",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Con qué herramienta se pueden colorear dibujos?",
+                            Respuesta = "Crayón"
+                        },
+                        new
+                        {
+                            Id = 214,
+                            Letra = "D",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué actividad implica plasmar ideas en papel?",
+                            Respuesta = "Dibujo"
+                        },
+                        new
+                        {
+                            Id = 215,
+                            Letra = "E",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué arte consiste en esculpir figuras en materiales como arcilla o piedra?",
+                            Respuesta = "Escultura"
+                        },
+                        new
+                        {
+                            Id = 216,
+                            Letra = "F",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Cómo se le llama a una representación visual de una forma?",
+                            Respuesta = "Figura"
+                        },
+                        new
+                        {
+                            Id = 217,
+                            Letra = "G",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué material se usa para borrar trazos en papel?",
+                            Respuesta = "Goma"
+                        },
+                        new
+                        {
+                            Id = 218,
+                            Letra = "H",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Sobre qué superficie se dibuja o pinta?",
+                            Respuesta = "Hoja"
+                        },
+                        new
+                        {
+                            Id = 219,
+                            Letra = "I",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Cómo se llama una representación visual de algo?",
+                            Respuesta = "Imagen"
+                        },
+                        new
+                        {
+                            Id = 220,
+                            Letra = "J",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué se hace con materiales para divertirse y aprender?",
+                            Respuesta = "Juego"
+                        },
+                        new
+                        {
+                            Id = 221,
+                            Letra = "K",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué conjunto de herramientas se utiliza para crear arte?",
+                            Respuesta = "Kit"
+                        },
+                        new
+                        {
+                            Id = 222,
+                            Letra = "L",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué objeto se usa para colorear o dibujar?",
+                            Respuesta = "Lápiz"
+                        },
+                        new
+                        {
+                            Id = 223,
+                            Letra = "M",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué masa se utiliza para modelar figuras?",
+                            Respuesta = "Masa"
+                        },
+                        new
+                        {
+                            Id = 224,
+                            Letra = "N",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué se estudia en plástica relacionado con la vida natural?",
+                            Respuesta = "Naturaleza"
+                        },
+                        new
+                        {
+                            Id = 225,
+                            Letra = "O",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué tipo de pintura se hace con óleo?",
+                            Respuesta = "Óleo"
+                        },
+                        new
+                        {
+                            Id = 226,
+                            Letra = "P",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Sobre qué se pueden realizar dibujos o manualidades?",
+                            Respuesta = "Papel"
+                        },
+                        new
+                        {
+                            Id = 227,
+                            Letra = "Q",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué utensilio se utiliza para calentar y endurecer cerámica?",
+                            Respuesta = "Quemador"
+                        },
+                        new
+                        {
+                            Id = 228,
+                            Letra = "R",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué objeto se utiliza para extender pintura de forma uniforme?",
+                            Respuesta = "Rodillo"
+                        },
+                        new
+                        {
+                            Id = 229,
+                            Letra = "S",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué se utiliza para estampar diseños en papel?",
+                            Respuesta = "Sello"
+                        },
+                        new
+                        {
+                            Id = 230,
+                            Letra = "T",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué tipo de pintura se utiliza en manualidades y en la escuela?",
+                            Respuesta = "Tempera"
+                        },
+                        new
+                        {
+                            Id = 231,
+                            Letra = "U",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué se hace con los materiales de arte y manualidades?",
+                            Respuesta = "Uso"
+                        },
+                        new
+                        {
+                            Id = 232,
+                            Letra = "V",
+                            PasapalabraId = 9,
+                            Pregunta = "¿En qué se bebe agua o se mezcla pintura?",
+                            Respuesta = "Vaso"
+                        },
+                        new
+                        {
+                            Id = 233,
+                            Letra = "W",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué tipo de cinta adhesiva se utiliza para decorar?",
+                            Respuesta = "Washi"
+                        },
+                        new
+                        {
+                            Id = 234,
+                            Letra = "X",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué técnica de impresión se realiza sobre madera?",
+                            Respuesta = "Xilografía"
+                        },
+                        new
+                        {
+                            Id = 235,
+                            Letra = "Y",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué material se usa para modelar figuras y realizar moldes?",
+                            Respuesta = "Yeso"
+                        },
+                        new
+                        {
+                            Id = 236,
+                            Letra = "Z",
+                            PasapalabraId = 9,
+                            Pregunta = "¿Qué patrón se forma con líneas que se juntan y separan de forma diagonal?",
+                            Respuesta = "Zigzag"
+                        },
+                        new
+                        {
+                            Id = 237,
+                            Letra = "A",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué conjunto de sonidos simultáneos forman la base de la armonía?",
+                            Respuesta = "Acorde"
+                        },
+                        new
+                        {
+                            Id = 238,
+                            Letra = "B",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de percusión se compone de tambores y platillos?",
+                            Respuesta = "Batería"
+                        },
+                        new
+                        {
+                            Id = 239,
+                            Letra = "C",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Cómo se llama una composición musical con letra?",
+                            Respuesta = "Canción"
+                        },
+                        new
+                        {
+                            Id = 240,
+                            Letra = "D",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Cuál es la primera nota de la escala musical?",
+                            Respuesta = "Do"
+                        },
+                        new
+                        {
+                            Id = 241,
+                            Letra = "E",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué serie de notas ordenadas de forma ascendente y descendente forman una escala?",
+                            Respuesta = "Escala"
+                        },
+                        new
+                        {
+                            Id = 242,
+                            Letra = "F",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de viento se toca soplando por un tubo?",
+                            Respuesta = "Flauta"
+                        },
+                        new
+                        {
+                            Id = 243,
+                            Letra = "G",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de cuerda se toca frotando las cuerdas con un arco?",
+                            Respuesta = "Guitarra"
+                        },
+                        new
+                        {
+                            Id = 244,
+                            Letra = "H",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué tipo de sonido se produce al hacer vibrar una cuerda o columna de aire?",
+                            Respuesta = "Harmónico"
+                        },
+                        new
+                        {
+                            Id = 245,
+                            Letra = "I",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Cómo se llama el objeto utilizado para producir música?",
+                            Respuesta = "Instrumento"
+                        },
+                        new
+                        {
+                            Id = 246,
+                            Letra = "J",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué estilo musical se caracteriza por su improvisación y ritmo syncopado?",
+                            Respuesta = "Jazz"
+                        },
+                        new
+                        {
+                            Id = 247,
+                            Letra = "K",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Cómo se llama un tambor grande utilizado en orquestas y bandas militares?",
+                            Respuesta = "Kettledrum"
+                        },
+                        new
+                        {
+                            Id = 248,
+                            Letra = "L",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué parte de una canción contiene las palabras que se cantan?",
+                            Respuesta = "Letra"
+                        },
+                        new
+                        {
+                            Id = 249,
+                            Letra = "M",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué se llama a una secuencia de sonidos sucesivos que forman una unidad melódica?",
+                            Respuesta = "Melodía"
+                        },
+                        new
+                        {
+                            Id = 250,
+                            Letra = "N",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué se utiliza para representar gráficamente el sonido en una partitura?",
+                            Respuesta = "Nota"
+                        },
+                        new
+                        {
+                            Id = 251,
+                            Letra = "O",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento produce sonido mediante el paso de aire a través de tubos?",
+                            Respuesta = "Órgano"
+                        },
+                        new
+                        {
+                            Id = 252,
+                            Letra = "P",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de teclado se toca con los dedos?",
+                            Respuesta = "Piano"
+                        },
+                        new
+                        {
+                            Id = 253,
+                            Letra = "Q",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Cómo se llama un grupo de cuatro músicos?",
+                            Respuesta = "Quarteto"
+                        },
+                        new
+                        {
+                            Id = 254,
+                            Letra = "R",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué elemento marca la sucesión de sonidos en una pieza musical?",
+                            Respuesta = "Ritmo"
+                        },
+                        new
+                        {
+                            Id = 255,
+                            Letra = "S",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué sistema de enseñanza musical utiliza símbolos para representar los sonidos?",
+                            Respuesta = "Solfeo"
+                        },
+                        new
+                        {
+                            Id = 256,
+                            Letra = "T",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de percusión se golpea para producir sonidos?",
+                            Respuesta = "Tambor"
+                        },
+                        new
+                        {
+                            Id = 257,
+                            Letra = "U",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento tiene cuatro cuerdas y se toca con los dedos o con un plectro?",
+                            Respuesta = "Ukelele"
+                        },
+                        new
+                        {
+                            Id = 258,
+                            Letra = "V",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de cuerda se toca frotando las cuerdas con un arco?",
+                            Respuesta = "Violín"
+                        },
+                        new
+                        {
+                            Id = 259,
+                            Letra = "W",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento se utiliza para hacer sonidos agudos soplando?",
+                            Respuesta = "Whistle"
+                        },
+                        new
+                        {
+                            Id = 260,
+                            Letra = "X",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué instrumento de percusión tiene láminas que se golpean para producir sonido?",
+                            Respuesta = "Xilófono"
+                        },
+                        new
+                        {
+                            Id = 261,
+                            Letra = "Y",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué parte de la baqueta se utiliza para golpear un tambor?",
+                            Respuesta = "Yema"
+                        },
+                        new
+                        {
+                            Id = 262,
+                            Letra = "Z",
+                            PasapalabraId = 10,
+                            Pregunta = "¿Qué tipo de patrón se forma con líneas que se juntan y separan de forma zigzagueante?",
+                            Respuesta = "Zigzag"
                         });
                 });
 
