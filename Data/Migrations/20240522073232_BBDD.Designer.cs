@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240520173458_BBDD")]
+    [Migration("20240522073232_BBDD")]
     partial class BBDD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
