@@ -312,6 +312,456 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 1,
                             IdTipoJuego = 1,
                             TemaJuego = "Musica"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Geografía Basica"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 1"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 2"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Basic - 1"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Animals - 1"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Matematicas - General"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Geografía Basica"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 1"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 2"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Basic - 1"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Animals - 1"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Matematicas - General"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Geografía Basica"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 1"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 2"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Basic - 1"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Animals - 1"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Matematicas - General"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Geografía Basica"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 1"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 2"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Basic - 1"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Animals - 1"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Matematicas - General"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Geografía Basica"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 1"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Cultura General - 2"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Basic - 1"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Ingles Animals - 1"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Matematicas - General"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
                         });
                 });
 
@@ -348,54 +798,354 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 2,
                             IdJuego = 2,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Conocimientos del medio"
                         },
                         new
                         {
                             Id = 3,
                             IdJuego = 3,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Conocimientos del medio"
                         },
                         new
                         {
                             Id = 4,
                             IdJuego = 4,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic"
                         },
                         new
                         {
                             Id = 5,
                             IdJuego = 5,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Ingles Animals"
                         },
                         new
                         {
                             Id = 6,
                             IdJuego = 6,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - 1"
                         },
                         new
                         {
                             Id = 7,
                             IdJuego = 7,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 8,
                             IdJuego = 8,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 2"
                         },
                         new
                         {
                             Id = 9,
                             IdJuego = 9,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Plástica"
                         },
                         new
                         {
                             Id = 10,
                             IdJuego = 10,
+                            Name = "Musica"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            IdJuego = 11,
+                            Name = "Geografía"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            IdJuego = 12,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            IdJuego = 13,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            IdJuego = 14,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            IdJuego = 15,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            IdJuego = 16,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            IdJuego = 17,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            IdJuego = 18,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            IdJuego = 19,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            IdJuego = 20,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            IdJuego = 21,
+                            Name = "Geografía"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            IdJuego = 22,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            IdJuego = 23,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            IdJuego = 24,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            IdJuego = 25,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            IdJuego = 26,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            IdJuego = 27,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            IdJuego = 28,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            IdJuego = 29,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            IdJuego = 30,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            IdJuego = 31,
+                            Name = "Geografía"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            IdJuego = 32,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            IdJuego = 33,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            IdJuego = 34,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            IdJuego = 35,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            IdJuego = 36,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            IdJuego = 37,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            IdJuego = 38,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            IdJuego = 39,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            IdJuego = 40,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            IdJuego = 41,
+                            Name = "Geografía"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            IdJuego = 42,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            IdJuego = 43,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            IdJuego = 44,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            IdJuego = 45,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            IdJuego = 46,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            IdJuego = 47,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            IdJuego = 48,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            IdJuego = 49,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            IdJuego = 50,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            IdJuego = 51,
+                            Name = "Geografía"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            IdJuego = 52,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            IdJuego = 53,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            IdJuego = 54,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            IdJuego = 55,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            IdJuego = 56,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            IdJuego = 57,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            IdJuego = 58,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            IdJuego = 59,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            IdJuego = 60,
                             Name = "Nombres de otras cosas pasapalabra"
                         });
                 });
@@ -2504,6 +3254,10 @@ namespace GalacticApi.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Completado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
                     b.Property<int>("IdJuego")
                         .HasColumnType("int");
 
@@ -2525,6 +3279,7 @@ namespace GalacticApi.Data.Migrations
                         new
                         {
                             Id = 1,
+                            Completado = "Y",
                             IdJuego = 1,
                             IdUsuario = 1,
                             Resultado = 0.0

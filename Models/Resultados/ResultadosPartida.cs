@@ -15,6 +15,8 @@ namespace GalacticApi.Models
 
         public double Resultado  {get; set;}
 
+        public char Completado {get; set;}
+
         public Usuario Usuario{ get; set;}
         public Juego Juego{ get; set;}
 

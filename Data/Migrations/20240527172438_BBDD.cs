@@ -183,7 +183,8 @@ namespace GalacticApi.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdUsuario = table.Column<int>(type: "int", nullable: false),
                     IdJuego = table.Column<int>(type: "int", nullable: false),
-                    Resultado = table.Column<double>(type: "float", nullable: false)
+                    Resultado = table.Column<double>(type: "float", nullable: false),
+                    Completado = table.Column<string>(type: "nvarchar(1)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -273,7 +274,64 @@ namespace GalacticApi.Data.Migrations
                     { 7, null, "XXXXXX", 1, 1, 1, "Lengua - 1" },
                     { 8, null, "XXXXXX", 1, 1, 1, "Lengua - 2" },
                     { 9, null, "XXXXXX", 4, 1, 1, "Plastica" },
-                    { 10, null, "XXXXXX", 4, 1, 1, "Musica" }
+                    { 10, null, "XXXXXX", 4, 1, 1, "Musica" },
+                    { 11, null, "XXXXXX", 3, 2, 1, "Geografía Basica" },
+                    { 12, null, "XXXXXX", 3, 2, 1, "Cultura General - 1" },
+                    { 13, null, "XXXXXX", 3, 2, 1, "Cultura General - 2" },
+                    { 14, null, "XXXXXX", 5, 2, 1, "Ingles Basic - 1" },
+                    { 15, null, "XXXXXX", 5, 2, 1, "Ingles Animals - 1" },
+                    { 16, null, "XXXXXX", 2, 2, 1, "Matematicas - General" },
+                    { 17, null, "XXXXXX", 1, 2, 1, "Lengua - 1" },
+                    { 18, null, "XXXXXX", 1, 2, 1, "Lengua - 2" },
+                    { 19, null, "XXXXXX", 4, 2, 1, "Plastica" },
+                    { 20, null, "XXXXXX", 4, 2, 1, "Musica" },
+                    { 21, null, "XXXXXX", 3, 3, 1, "Geografía Basica" },
+                    { 22, null, "XXXXXX", 3, 3, 1, "Cultura General - 1" },
+                    { 23, null, "XXXXXX", 3, 3, 1, "Cultura General - 2" },
+                    { 24, null, "XXXXXX", 5, 3, 1, "Ingles Basic - 1" },
+                    { 25, null, "XXXXXX", 5, 3, 1, "Ingles Animals - 1" },
+                    { 26, null, "XXXXXX", 2, 3, 1, "Matematicas - General" },
+                    { 27, null, "XXXXXX", 1, 3, 1, "Lengua - 1" },
+                    { 28, null, "XXXXXX", 1, 3, 1, "Lengua - 2" },
+                    { 29, null, "XXXXXX", 4, 3, 1, "Plastica" },
+                    { 30, null, "XXXXXX", 4, 3, 1, "Musica" },
+                    { 31, null, "XXXXXX", 3, 4, 1, "Geografía Basica" },
+                    { 32, null, "XXXXXX", 3, 4, 1, "Cultura General - 1" },
+                    { 33, null, "XXXXXX", 3, 4, 1, "Cultura General - 2" },
+                    { 34, null, "XXXXXX", 5, 4, 1, "Ingles Basic - 1" },
+                    { 35, null, "XXXXXX", 5, 4, 1, "Ingles Animals - 1" },
+                    { 36, null, "XXXXXX", 2, 4, 1, "Matematicas - General" },
+                    { 37, null, "XXXXXX", 1, 4, 1, "Lengua - 1" },
+                    { 38, null, "XXXXXX", 1, 4, 1, "Lengua - 2" },
+                    { 39, null, "XXXXXX", 4, 4, 1, "Plastica" },
+                    { 40, null, "XXXXXX", 4, 4, 1, "Musica" },
+                    { 41, null, "XXXXXX", 3, 5, 1, "Geografía Basica" },
+                    { 42, null, "XXXXXX", 3, 5, 1, "Cultura General - 1" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Juegos",
+                columns: new[] { "Id", "AsignaturaJuegoId", "Codigo", "IdAsignatura", "IdCurso", "IdTipoJuego", "TemaJuego" },
+                values: new object[,]
+                {
+                    { 43, null, "XXXXXX", 3, 5, 1, "Cultura General - 2" },
+                    { 44, null, "XXXXXX", 5, 5, 1, "Ingles Basic - 1" },
+                    { 45, null, "XXXXXX", 5, 5, 1, "Ingles Animals - 1" },
+                    { 46, null, "XXXXXX", 2, 5, 1, "Matematicas - General" },
+                    { 47, null, "XXXXXX", 1, 5, 1, "Lengua - 1" },
+                    { 48, null, "XXXXXX", 1, 5, 1, "Lengua - 2" },
+                    { 49, null, "XXXXXX", 4, 5, 1, "Plastica" },
+                    { 50, null, "XXXXXX", 4, 5, 1, "Musica" },
+                    { 51, null, "XXXXXX", 3, 6, 1, "Geografía Basica" },
+                    { 52, null, "XXXXXX", 3, 6, 1, "Cultura General - 1" },
+                    { 53, null, "XXXXXX", 3, 6, 1, "Cultura General - 2" },
+                    { 54, null, "XXXXXX", 5, 6, 1, "Ingles Basic - 1" },
+                    { 55, null, "XXXXXX", 5, 6, 1, "Ingles Animals - 1" },
+                    { 56, null, "XXXXXX", 2, 6, 1, "Matematicas - General" },
+                    { 57, null, "XXXXXX", 1, 6, 1, "Lengua - 1" },
+                    { 58, null, "XXXXXX", 1, 6, 1, "Lengua - 2" },
+                    { 59, null, "XXXXXX", 4, 6, 1, "Plastica" },
+                    { 60, null, "XXXXXX", 4, 6, 1, "Musica" }
                 });
 
             migrationBuilder.InsertData(
@@ -292,21 +350,78 @@ namespace GalacticApi.Data.Migrations
                 values: new object[,]
                 {
                     { 1, 1, "Geografía" },
-                    { 2, 2, "Nombres de otras cosas pasapalabra" },
-                    { 3, 3, "Nombres de otras cosas pasapalabra" },
-                    { 4, 4, "Nombres de otras cosas pasapalabra" },
-                    { 5, 5, "Nombres de otras cosas pasapalabra" },
-                    { 6, 6, "Nombres de otras cosas pasapalabra" },
-                    { 7, 7, "Nombres de otras cosas pasapalabra" },
-                    { 8, 8, "Nombres de otras cosas pasapalabra" },
-                    { 9, 9, "Nombres de otras cosas pasapalabra" },
-                    { 10, 10, "Nombres de otras cosas pasapalabra" }
+                    { 2, 2, "Conocimientos del medio" },
+                    { 3, 3, "Conocimientos del medio" },
+                    { 4, 4, "Inglés Basic" },
+                    { 5, 5, "Ingles Animals" },
+                    { 6, 6, "Matemáticas - 1" },
+                    { 7, 7, "Lengua - 1" },
+                    { 8, 8, "Lengua - 2" },
+                    { 9, 9, "Plástica" },
+                    { 10, 10, "Musica" },
+                    { 11, 11, "Geografía" },
+                    { 12, 12, "Nombres de otras cosas pasapalabra" },
+                    { 13, 13, "Nombres de otras cosas pasapalabra" },
+                    { 14, 14, "Nombres de otras cosas pasapalabra" },
+                    { 15, 15, "Nombres de otras cosas pasapalabra" },
+                    { 16, 16, "Nombres de otras cosas pasapalabra" },
+                    { 17, 17, "Nombres de otras cosas pasapalabra" },
+                    { 18, 18, "Nombres de otras cosas pasapalabra" },
+                    { 19, 19, "Nombres de otras cosas pasapalabra" },
+                    { 20, 20, "Nombres de otras cosas pasapalabra" },
+                    { 21, 21, "Geografía" },
+                    { 22, 22, "Nombres de otras cosas pasapalabra" },
+                    { 23, 23, "Nombres de otras cosas pasapalabra" },
+                    { 24, 24, "Nombres de otras cosas pasapalabra" },
+                    { 25, 25, "Nombres de otras cosas pasapalabra" },
+                    { 26, 26, "Nombres de otras cosas pasapalabra" },
+                    { 27, 27, "Nombres de otras cosas pasapalabra" },
+                    { 28, 28, "Nombres de otras cosas pasapalabra" },
+                    { 29, 29, "Nombres de otras cosas pasapalabra" },
+                    { 30, 30, "Nombres de otras cosas pasapalabra" },
+                    { 31, 31, "Geografía" },
+                    { 32, 32, "Nombres de otras cosas pasapalabra" },
+                    { 33, 33, "Nombres de otras cosas pasapalabra" },
+                    { 34, 34, "Nombres de otras cosas pasapalabra" },
+                    { 35, 35, "Nombres de otras cosas pasapalabra" },
+                    { 36, 36, "Nombres de otras cosas pasapalabra" },
+                    { 37, 37, "Nombres de otras cosas pasapalabra" },
+                    { 38, 38, "Nombres de otras cosas pasapalabra" },
+                    { 39, 39, "Nombres de otras cosas pasapalabra" },
+                    { 40, 40, "Nombres de otras cosas pasapalabra" },
+                    { 41, 41, "Geografía" },
+                    { 42, 42, "Nombres de otras cosas pasapalabra" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Pasapalabras",
+                columns: new[] { "Id", "IdJuego", "Name" },
+                values: new object[,]
+                {
+                    { 43, 43, "Nombres de otras cosas pasapalabra" },
+                    { 44, 44, "Nombres de otras cosas pasapalabra" },
+                    { 45, 45, "Nombres de otras cosas pasapalabra" },
+                    { 46, 46, "Nombres de otras cosas pasapalabra" },
+                    { 47, 47, "Nombres de otras cosas pasapalabra" },
+                    { 48, 48, "Nombres de otras cosas pasapalabra" },
+                    { 49, 49, "Nombres de otras cosas pasapalabra" },
+                    { 50, 50, "Nombres de otras cosas pasapalabra" },
+                    { 51, 51, "Geografía" },
+                    { 52, 52, "Nombres de otras cosas pasapalabra" },
+                    { 53, 53, "Nombres de otras cosas pasapalabra" },
+                    { 54, 54, "Nombres de otras cosas pasapalabra" },
+                    { 55, 55, "Nombres de otras cosas pasapalabra" },
+                    { 56, 56, "Nombres de otras cosas pasapalabra" },
+                    { 57, 57, "Nombres de otras cosas pasapalabra" },
+                    { 58, 58, "Nombres de otras cosas pasapalabra" },
+                    { 59, 59, "Nombres de otras cosas pasapalabra" },
+                    { 60, 60, "Nombres de otras cosas pasapalabra" }
                 });
 
             migrationBuilder.InsertData(
                 table: "resultados",
-                columns: new[] { "Id", "IdJuego", "IdUsuario", "Resultado" },
-                values: new object[] { 1, 1, 1, 0.0 });
+                columns: new[] { "Id", "Completado", "IdJuego", "IdUsuario", "Resultado" },
+                values: new object[] { 1, "Y", 1, 1, 0.0 });
 
             migrationBuilder.InsertData(
                 table: "PreguntaPasapalabras",

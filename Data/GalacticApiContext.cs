@@ -56,27 +56,138 @@ namespace GalacticApi.Data
                 new Juego { Id = 7, IdCurso = 1, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 8, IdCurso = 1, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 new Juego { Id = 9, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
-                new Juego { Id = 10, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" }
+                new Juego { Id = 10, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" },
+
+                new Juego { Id = 11, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
+                new Juego { Id = 12, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 13, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 14, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 15, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 16, IdCurso = 2, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 17, IdCurso = 2, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 18, IdCurso = 2, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 19, IdCurso = 2, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
+                new Juego { Id = 20, IdCurso = 2, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" },
+                
+                new Juego { Id = 21, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
+                new Juego { Id = 22, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 23, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 24, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 25, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 26, IdCurso = 3, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 27, IdCurso = 3, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 28, IdCurso = 3, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 29, IdCurso = 3, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
+                new Juego { Id = 30, IdCurso = 3, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" },
+
+                new Juego { Id = 31, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
+                new Juego { Id = 32, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 33, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 34, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 35, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 36, IdCurso = 4, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 37, IdCurso = 4, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 38, IdCurso = 4, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 39, IdCurso = 4, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
+                new Juego { Id = 40, IdCurso = 4, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" },
+
+                new Juego { Id = 41, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
+                new Juego { Id = 42, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 43, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 44, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 45, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 46, IdCurso = 5, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 47, IdCurso = 5, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 48, IdCurso = 5, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 49, IdCurso = 5, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
+                new Juego { Id = 50, IdCurso = 5, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" },
+
+                new Juego { Id = 51, IdCurso = 6, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
+                new Juego { Id = 52, IdCurso = 6, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 53, IdCurso = 6, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 54, IdCurso = 6, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 55, IdCurso = 6, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 56, IdCurso = 6, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 57, IdCurso = 6, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 58, IdCurso = 6, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
+                new Juego { Id = 59, IdCurso = 6, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
+                new Juego { Id = 60, IdCurso = 6, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" }
+
 
             );
 
             modelBuilder.Entity<Resultados>().HasData(
-                new Resultados { Id = 1, IdJuego = 1, IdUsuario = 1, Resultado = 0.00 }
+                new Resultados { Id = 1, IdJuego = 1, IdUsuario = 1, Completado = 'Y' }
             );
 
             modelBuilder.Entity<Pasapalabra>().HasData(
                 new Pasapalabra { Id = 1, Name = "Geografía", IdJuego = 1 },
-                new Pasapalabra { Id = 2, Name = "Nombres de otras cosas pasapalabra", IdJuego = 2 },
-                new Pasapalabra { Id = 3, Name = "Nombres de otras cosas pasapalabra", IdJuego = 3 },
-                new Pasapalabra { Id = 4, Name = "Nombres de otras cosas pasapalabra", IdJuego = 4 },
-                new Pasapalabra { Id = 5, Name = "Nombres de otras cosas pasapalabra", IdJuego = 5 },
-                new Pasapalabra { Id = 6, Name = "Nombres de otras cosas pasapalabra", IdJuego = 6 },
-                new Pasapalabra { Id = 7, Name = "Nombres de otras cosas pasapalabra", IdJuego = 7 },
-                new Pasapalabra { Id = 8, Name = "Nombres de otras cosas pasapalabra", IdJuego = 8 },
-                new Pasapalabra { Id = 9, Name = "Nombres de otras cosas pasapalabra", IdJuego = 9 },
-                new Pasapalabra { Id = 10, Name = "Nombres de otras cosas pasapalabra", IdJuego = 10 }
+                new Pasapalabra { Id = 2, Name = "Conocimientos del medio", IdJuego = 2 },
+                new Pasapalabra { Id = 3, Name = "Conocimientos del medio", IdJuego = 3 },
+                new Pasapalabra { Id = 4, Name = "Inglés Basic", IdJuego = 4 },
+                new Pasapalabra { Id = 5, Name = "Ingles Animals", IdJuego = 5 },
+                new Pasapalabra { Id = 6, Name = "Matemáticas - 1", IdJuego = 6 },
+                new Pasapalabra { Id = 7, Name = "Lengua - 1", IdJuego = 7 },
+                new Pasapalabra { Id = 8, Name = "Lengua - 2", IdJuego = 8 },
+                new Pasapalabra { Id = 9, Name = "Plástica", IdJuego = 9 },
+                new Pasapalabra { Id = 10, Name = "Musica", IdJuego = 10 },
+                
+                new Pasapalabra { Id = 11, Name = "Geografía", IdJuego = 11 },
+                new Pasapalabra { Id = 12, Name = "Nombres de otras cosas pasapalabra", IdJuego = 12 },
+                new Pasapalabra { Id = 13, Name = "Nombres de otras cosas pasapalabra", IdJuego = 13 },
+                new Pasapalabra { Id = 14, Name = "Nombres de otras cosas pasapalabra", IdJuego = 14 },
+                new Pasapalabra { Id = 15, Name = "Nombres de otras cosas pasapalabra", IdJuego = 15 },
+                new Pasapalabra { Id = 16, Name = "Nombres de otras cosas pasapalabra", IdJuego = 16 },
+                new Pasapalabra { Id = 17, Name = "Nombres de otras cosas pasapalabra", IdJuego = 17 },
+                new Pasapalabra { Id = 18, Name = "Nombres de otras cosas pasapalabra", IdJuego = 18 },
+                new Pasapalabra { Id = 19, Name = "Nombres de otras cosas pasapalabra", IdJuego = 19 },
+                new Pasapalabra { Id = 20, Name = "Nombres de otras cosas pasapalabra", IdJuego = 20 },
+                
+            
+                new Pasapalabra { Id = 21, Name = "Geografía", IdJuego = 21 },
+                new Pasapalabra { Id = 22, Name = "Nombres de otras cosas pasapalabra", IdJuego = 22 },
+                new Pasapalabra { Id = 23, Name = "Nombres de otras cosas pasapalabra", IdJuego = 23 },
+                new Pasapalabra { Id = 24, Name = "Nombres de otras cosas pasapalabra", IdJuego = 24 },
+                new Pasapalabra { Id = 25, Name = "Nombres de otras cosas pasapalabra", IdJuego = 25 },
+                new Pasapalabra { Id = 26, Name = "Nombres de otras cosas pasapalabra", IdJuego = 26 },
+                new Pasapalabra { Id = 27, Name = "Nombres de otras cosas pasapalabra", IdJuego = 27 },
+                new Pasapalabra { Id = 28, Name = "Nombres de otras cosas pasapalabra", IdJuego = 28 },
+                new Pasapalabra { Id = 29, Name = "Nombres de otras cosas pasapalabra", IdJuego = 29 },
+                new Pasapalabra { Id = 30, Name = "Nombres de otras cosas pasapalabra", IdJuego = 30 },
+                
+                new Pasapalabra { Id = 31, Name = "Geografía", IdJuego = 31 },
+                new Pasapalabra { Id = 32, Name = "Nombres de otras cosas pasapalabra", IdJuego = 32 },
+                new Pasapalabra { Id = 33, Name = "Nombres de otras cosas pasapalabra", IdJuego = 33 },
+                new Pasapalabra { Id = 34, Name = "Nombres de otras cosas pasapalabra", IdJuego = 34 },
+                new Pasapalabra { Id = 35, Name = "Nombres de otras cosas pasapalabra", IdJuego = 35 },
+                new Pasapalabra { Id = 36, Name = "Nombres de otras cosas pasapalabra", IdJuego = 36 },
+                new Pasapalabra { Id = 37, Name = "Nombres de otras cosas pasapalabra", IdJuego = 37 },
+                new Pasapalabra { Id = 38, Name = "Nombres de otras cosas pasapalabra", IdJuego = 38 },
+                new Pasapalabra { Id = 39, Name = "Nombres de otras cosas pasapalabra", IdJuego = 39 },
+                new Pasapalabra { Id = 40, Name = "Nombres de otras cosas pasapalabra", IdJuego = 40 },
+                
+                new Pasapalabra { Id = 41, Name = "Geografía", IdJuego = 41 },
+                new Pasapalabra { Id = 42, Name = "Nombres de otras cosas pasapalabra", IdJuego = 42 },
+                new Pasapalabra { Id = 43, Name = "Nombres de otras cosas pasapalabra", IdJuego = 43 },
+                new Pasapalabra { Id = 44, Name = "Nombres de otras cosas pasapalabra", IdJuego = 44 },
+                new Pasapalabra { Id = 45, Name = "Nombres de otras cosas pasapalabra", IdJuego = 45 },
+                new Pasapalabra { Id = 46, Name = "Nombres de otras cosas pasapalabra", IdJuego = 46 },
+                new Pasapalabra { Id = 47, Name = "Nombres de otras cosas pasapalabra", IdJuego = 47 },
+                new Pasapalabra { Id = 48, Name = "Nombres de otras cosas pasapalabra", IdJuego = 48 },
+                new Pasapalabra { Id = 49, Name = "Nombres de otras cosas pasapalabra", IdJuego = 49 },
+                new Pasapalabra { Id = 50, Name = "Nombres de otras cosas pasapalabra", IdJuego = 50 },
 
 
+                new Pasapalabra { Id = 51, Name = "Geografía", IdJuego = 51 },
+                new Pasapalabra { Id = 52, Name = "Nombres de otras cosas pasapalabra", IdJuego = 52 },
+                new Pasapalabra { Id = 53, Name = "Nombres de otras cosas pasapalabra", IdJuego = 53 },
+                new Pasapalabra { Id = 54, Name = "Nombres de otras cosas pasapalabra", IdJuego = 54 },
+                new Pasapalabra { Id = 55, Name = "Nombres de otras cosas pasapalabra", IdJuego = 55 },
+                new Pasapalabra { Id = 56, Name = "Nombres de otras cosas pasapalabra", IdJuego = 56 },
+                new Pasapalabra { Id = 57, Name = "Nombres de otras cosas pasapalabra", IdJuego = 57 },
+                new Pasapalabra { Id = 58, Name = "Nombres de otras cosas pasapalabra", IdJuego = 58 },
+                new Pasapalabra { Id = 59, Name = "Nombres de otras cosas pasapalabra", IdJuego = 59 },
+                new Pasapalabra { Id = 60, Name = "Nombres de otras cosas pasapalabra", IdJuego = 60 }
             );
 
             modelBuilder.Entity<PreguntaPasapalabra>().HasData(
