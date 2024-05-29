@@ -43,8 +43,10 @@ namespace GalacticApi.Services
             return _tipoJuegoRepository.GetTipoJuegos().Select(c => new GetTipoJuegosDTO { Id = c.Id, Tipo = c.Tipo }).ToList();
         }
 
-        public void UpdateTipoJuego(TipoJuego tipoJuego)
+        public void UpdateTipoJuego(PostTipoJuegosDTO tipoJuegoDTO, int id)
         {
+            var tipoJuego = _tipoJuegoRepository.GetTipoJuegoById(id);
+            tipoJuego.Tipo = tipoJuegoDTO.Tipo;
             _tipoJuegoRepository.UpdateTipoJuego(tipoJuego);
         }
     }

@@ -42,9 +42,14 @@ namespace GalacticApi.Services
             return _cursoRepository.GetCursos().Select(c => new GetCursosDTO {Id = c.CursoId, NombreCurso =c.NombreCurso}).ToList();
         }
 
-        public void UpdateCurso(Curso curso)
+        public void UpdateCurso(PostCursosDTO cursoDTO, int id)
         {
-            _cursoRepository.UpdateCurso(curso);
+            var curso = _cursoRepository.GetCursoById(id);
+            if (curso != null){
+                curso.NombreCurso = cursoDTO.NombreCurso;
+                _cursoRepository.UpdateCurso(curso);
+            }
+
         }
     }
 }

@@ -70,19 +70,13 @@ namespace GalacticApi.Api
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateAsignatura(int id, Asignatura asignatura)
+        public ActionResult UpdateAsignatura(int id, PostAsignaturasDTO asignatura)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
             try
             {
-                //Curso curso1 = _cursoService.GetCursoById(id);
-                //if (id != curso1.Id)
-                {
-                    return BadRequest();
-                }
-
                 
-                _asignaturaService.UpdateAsignatura(asignatura);
+                _asignaturaService.UpdateAsignatura(asignatura,id);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)

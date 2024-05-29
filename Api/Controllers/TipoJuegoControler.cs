@@ -70,19 +70,14 @@ namespace GalacticApi.Api
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateTipoJuego(int id, TipoJuego curso)
+        public ActionResult UpdateTipoJuego(int id, PostTipoJuegosDTO tipoJuego)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
             try
             {
-                //Curso curso1 = _cursoService.GetCursoById(id);
-                //if (id != curso1.Id)
-                {
-                    return BadRequest();
-                }
 
                 
-                _tipoJuegoService.UpdateTipoJuego(curso);
+                _tipoJuegoService.UpdateTipoJuego(tipoJuego,id);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)

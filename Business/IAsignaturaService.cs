@@ -8,6 +8,6 @@ namespace GalacticApi.Services
         List<GetAsignaturasDTO> GetAsignaturas();
         void DeleteAsignatura(int id);
         void AddAsignatura(PostAsignaturasDTO asignatura);
-        void UpdateAsignatura(Asignatura asignatura);
+        void UpdateAsignatura(PostAsignaturasDTO asignatura, int id);
     }
 }

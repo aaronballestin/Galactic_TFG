@@ -41,8 +41,10 @@ namespace GalacticApi.Services
             return _asignaturaRepository.GetAsignaturas().Select(s => new GetAsignaturasDTO {Id = s.Id, NombreAsignatura = s.NombreAsignatura}).ToList();
         }
 
-        public void UpdateAsignatura(Asignatura asignatura)
+        public void UpdateAsignatura(PostAsignaturasDTO asignaturaDTO, int id)
         {
+            var asignatura = _asignaturaRepository.GetAsignaturaById(id);
+            asignatura.NombreAsignatura = asignaturaDTO.NombreAsignatura;
             _asignaturaRepository.UpdateAsignatura(asignatura);
         }
     }
