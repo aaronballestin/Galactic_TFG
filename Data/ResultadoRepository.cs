@@ -35,6 +35,16 @@ namespace GalacticApi.Models
            return resultados;
         }
 
+        public List<GetResultadosCursoDTO> GetResultadosCurso(){
+           var resultados =  _context.Resultados.Select(x => new GetResultadosCursoDTO{IdJuego = x.IdJuego, Completado = x.Completado, Resultado = x.Resultado}).ToList();
+            foreach (var i in resultados)
+            {
+                i.IdCurso = _context.Juegos.FirstOrDefault(a => a.Id == i.IdJuego).IdCurso;
+            }
+
+           return resultados;
+        }
+
         public void SaveChanges()
         {
             _context.SaveChanges();

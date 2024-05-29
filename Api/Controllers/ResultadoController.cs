@@ -43,6 +43,19 @@ namespace GalacticApi.Api
             }
         }
 
+        [HttpGet("cursos")]
+        public ActionResult<List<int>> GetResultadosCursos(){
+            try
+            {
+                return _resultadoService.GetResultadosCurso();
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
         [HttpPost]
         public ActionResult AddResultado(GetPasapalabraDTO pasapalabraDTO, int id){
             try

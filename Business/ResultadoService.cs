@@ -77,6 +77,49 @@ namespace GalacticApi.Services
             return resultados;
         }
 
+        public List<int> GetResultadosCurso(){
+            List<int> resultados = new List<int>();
+            var resultadosDTO =_resultadoRepository.GetResultadosCurso();
+            int primero = 0, segundo = 0, tercero = 0, cuarto = 0, quinto = 0, sexto = 0;
+
+            foreach (var item in resultadosDTO)
+            {
+                switch (item.IdCurso)
+                {
+                    case 1:
+                        primero++;
+                    break;
+                    case 2:
+                        segundo++;
+                    break;
+                    case 3:
+                        tercero++;
+                    break;
+                    case 4:
+                        cuarto++;
+                    break;
+                    case 5:
+                        quinto++;
+                    break;
+                    case 6:
+                        sexto++;
+                    break;
+                }
+            }
+            resultados.Add(primero);
+            resultados.Add(segundo);
+            resultados.Add(tercero);
+            resultados.Add(cuarto);
+            resultados.Add(quinto);
+            resultados.Add(sexto);
+
+
+
+            return resultados;
+        }
+
+        
+
 
     }
 }
