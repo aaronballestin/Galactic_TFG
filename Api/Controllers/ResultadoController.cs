@@ -9,15 +9,55 @@ namespace GalacticApi.Api
     [Route("[controller]")]
     public class ResultadoController : ControllerBase
     {
-        private readonly IResultadoService _juegoService;
+        private readonly IResultadoService _resultadoService;
 
 
-        public ResultadoController(IResultadoService juegoService)
+        public ResultadoController(IResultadoService resultadoService)
         {
-            _juegoService = juegoService;
+            _resultadoService = resultadoService;
         }
 
+        [HttpGet]
+        public ActionResult<List<GetResultadosDTO>> GetResultados(){
+            try
+            {
+                return _resultadoService.GetResultados();
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
 
+        [HttpGet("asignaturas")]
+        public ActionResult<List<int>> GetResultadosAsignaturas(){
+            try
+            {
+                return _resultadoService.GetResultadosAsignatura();
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        [HttpPost]
+        public ActionResult AddResultado(GetPasapalabraDTO pasapalabraDTO, int id){
+            try
+            {
+                _resultadoService.AddResultado(pasapalabraDTO, id);
+                return NoContent();
+                
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+                throw;
+            }
+ 
+        }
 
     }
 }

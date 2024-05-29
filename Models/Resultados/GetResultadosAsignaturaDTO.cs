@@ -3,14 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GalacticApi.Models
 {
-    public class PostResultadosDTO{
+    public class GetResultadosAsignaturaDTO{
 
 
-        public int IdUsuario { get; set;}
         public int IdJuego { get; set;}
+        public int IdAsignatura { get; set;}
         public char Completado {get; set;}
+        public double Resultado  {get; set;}
 
-        public PostResultadosDTO(){
+
+        public GetResultadosAsignaturaDTO(){
             
         }
     }

@@ -176,7 +176,7 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "resultados",
+                name: "Resultados",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -188,15 +188,15 @@ namespace GalacticApi.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_resultados", x => x.Id);
+                    table.PrimaryKey("PK_Resultados", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_resultados_Juegos_IdJuego",
+                        name: "FK_Resultados_Juegos_IdJuego",
                         column: x => x.IdJuego,
                         principalTable: "Juegos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_resultados_Usuarios_IdUsuario",
+                        name: "FK_Resultados_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "Id",
@@ -419,7 +419,7 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "resultados",
+                table: "Resultados",
                 columns: new[] { "Id", "Completado", "IdJuego", "IdUsuario", "Resultado" },
                 values: new object[] { 1, "Y", 1, 1, 0.0 });
 
@@ -772,13 +772,13 @@ namespace GalacticApi.Data.Migrations
                 column: "PasapalabraId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_resultados_IdJuego",
-                table: "resultados",
+                name: "IX_Resultados_IdJuego",
+                table: "Resultados",
                 column: "IdJuego");
 
             migrationBuilder.CreateIndex(
-                name: "IX_resultados_IdUsuario",
-                table: "resultados",
+                name: "IX_Resultados_IdUsuario",
+                table: "Resultados",
                 column: "IdUsuario");
 
             migrationBuilder.CreateIndex(
@@ -793,7 +793,7 @@ namespace GalacticApi.Data.Migrations
                 name: "PreguntaPasapalabras");
 
             migrationBuilder.DropTable(
-                name: "resultados");
+                name: "Resultados");
 
             migrationBuilder.DropTable(
                 name: "Pasapalabras");

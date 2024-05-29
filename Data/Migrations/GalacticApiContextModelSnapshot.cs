@@ -3273,7 +3273,7 @@ namespace GalacticApi.Data.Migrations
 
                     b.HasIndex("IdUsuario");
 
-                    b.ToTable("resultados");
+                    b.ToTable("Resultados");
 
                     b.HasData(
                         new
