@@ -12,9 +12,10 @@ namespace GalacticApi.Services
             _tipoJuegoRepository = tipoJuegoRepository;
         }
 
-        public void AddTipoJuego(TipoJuego curso)
+        public void AddTipoJuego(PostTipoJuegosDTO postTipoJuegosDTO)
         {
-            _tipoJuegoRepository.AddTipoJuego(curso);
+            var tipoJuego = new TipoJuego{Tipo = postTipoJuegosDTO.Tipo};
+            _tipoJuegoRepository.AddTipoJuego(tipoJuego);
         }
 
         public void DeleteTipoJuego(int id)

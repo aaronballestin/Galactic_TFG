@@ -52,7 +52,7 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddCurso(Curso curso)
+        public ActionResult AddCurso(PostCursosDTO curso)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 

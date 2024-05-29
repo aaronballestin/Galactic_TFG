@@ -6,7 +6,7 @@ namespace GalacticApi.Services
         GetCursoDTO GetCursoById(int id);
         List<GetCursosDTO> GetCursos();
         void DeleteCurso(int id);
-        void AddCurso(Curso curso);
+        void AddCurso(PostCursosDTO curso);
         void UpdateCurso(Curso curso);
     }
 }

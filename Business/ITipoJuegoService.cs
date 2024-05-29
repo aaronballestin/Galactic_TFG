@@ -6,7 +6,7 @@ namespace GalacticApi.Services
         GetTipoJuegoDTO GetTipoJuegoById(int id);
         List<GetTipoJuegosDTO> GetTipoJuegos();
         void DeleteTipoJuego(int id);
-        void AddTipoJuego(TipoJuego tipoJuego);
+        void AddTipoJuego(PostTipoJuegosDTO tipoJuego);
         void UpdateTipoJuego(TipoJuego tipoJuego);
     }
 }

@@ -542,7 +542,6 @@ namespace GalacticApi.Data
         public DbSet<Avatar> Avatars { get; set; }
         public DbSet<Curso> Cursos { get; set; }
         public DbSet<Asignatura> Asignaturas { get; set; }
-        public DbSet<AsignaturaJuego> AsignaturaJuegos { get; set; }
         public DbSet<TipoJuego> TipoJuegos { get; set; }
         public DbSet<Juego> Juegos { get; set; }
         public DbSet<Pasapalabra> Pasapalabras { get; set; }

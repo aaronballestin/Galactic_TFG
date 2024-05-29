@@ -52,13 +52,13 @@ namespace GalacticApi.Api
 
 
         [HttpPost]
-        public ActionResult AddTipoJuego(TipoJuego curso)
+        public ActionResult AddTipoJuego(PostTipoJuegosDTO tipoJuegosDTO)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
             try
             {
-                _tipoJuegoService.AddTipoJuego(curso);
+                _tipoJuegoService.AddTipoJuego(tipoJuegosDTO);
                 return NoContent();
             }
             catch (Exception ex)
