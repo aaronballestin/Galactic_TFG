@@ -13,14 +13,14 @@ namespace GalacticApi.Services
         }
 
         public List<GetResultadosDTO> GetResultados(){
-            return _resultadoRepository.GetResultados().Select(r => new GetResultadosDTO {IdJuego = r.IdJuego, IdUsuario = r.IdUsuario, Completado = r.Completado, Resultado = r.Resultado}).ToList();
+            return _resultadoRepository.GetResultados().Select(r => new GetResultadosDTO {IdJuego = r.IdJuego, IdUsuario = r.IdUsuario, Completado = r.Completado, Resultado = r.Resultado, Acertadas = r.Acertadas, Falladas = r.Falladas}).ToList();
         }
 
         public void AddResultado(GetPasapalabraDTO pasapalabraDTO, int id)
         {
             Resultados resultados = new Resultados();
             resultados.Completado = 'Y';
-            double acertadas = 0;
+            int acertadas = 0;
             double totales = 0;
 
             foreach (var pregunta in pasapalabraDTO.Preguntas)
@@ -36,6 +36,8 @@ namespace GalacticApi.Services
 
             }
             resultados.Resultado = Math.Round((acertadas/totales*100), 2) ;
+            resultados.Acertadas = acertadas;
+            resultados.Falladas = (int)(totales-acertadas);
             resultados.IdJuego = pasapalabraDTO.Id;
             resultados.IdUsuario = id;  
             _resultadoRepository.AddResultado(resultados);

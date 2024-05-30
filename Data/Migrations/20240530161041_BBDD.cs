@@ -86,35 +86,6 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AsignaturaJuegos",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    JuegoAsignatura = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdAsignatura = table.Column<int>(type: "int", nullable: false),
-                    IdTipoJuego = table.Column<int>(type: "int", nullable: false),
-                    AsignaturaId = table.Column<int>(type: "int", nullable: false),
-                    TipoJuegoId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AsignaturaJuegos", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_AsignaturaJuegos_Asignaturas_AsignaturaId",
-                        column: x => x.AsignaturaId,
-                        principalTable: "Asignaturas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_AsignaturaJuegos_TipoJuegos_TipoJuegoId",
-                        column: x => x.TipoJuegoId,
-                        principalTable: "TipoJuegos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Juegos",
                 columns: table => new
                 {
@@ -124,17 +95,11 @@ namespace GalacticApi.Data.Migrations
                     Codigo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IdAsignatura = table.Column<int>(type: "int", nullable: false),
                     IdCurso = table.Column<int>(type: "int", nullable: false),
-                    IdTipoJuego = table.Column<int>(type: "int", nullable: false),
-                    AsignaturaJuegoId = table.Column<int>(type: "int", nullable: true)
+                    IdTipoJuego = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Juegos", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Juegos_AsignaturaJuegos_AsignaturaJuegoId",
-                        column: x => x.AsignaturaJuegoId,
-                        principalTable: "AsignaturaJuegos",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Juegos_Asignaturas_IdAsignatura",
                         column: x => x.IdAsignatura,
@@ -184,7 +149,9 @@ namespace GalacticApi.Data.Migrations
                     IdUsuario = table.Column<int>(type: "int", nullable: false),
                     IdJuego = table.Column<int>(type: "int", nullable: false),
                     Resultado = table.Column<double>(type: "float", nullable: false),
-                    Completado = table.Column<string>(type: "nvarchar(1)", nullable: false)
+                    Completado = table.Column<string>(type: "nvarchar(1)", nullable: false),
+                    Acertadas = table.Column<int>(type: "int", nullable: false),
+                    Falladas = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -262,76 +229,76 @@ namespace GalacticApi.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Juegos",
-                columns: new[] { "Id", "AsignaturaJuegoId", "Codigo", "IdAsignatura", "IdCurso", "IdTipoJuego", "TemaJuego" },
+                columns: new[] { "Id", "Codigo", "IdAsignatura", "IdCurso", "IdTipoJuego", "TemaJuego" },
                 values: new object[,]
                 {
-                    { 1, null, "XXXXXX", 3, 1, 1, "Geografía Basica" },
-                    { 2, null, "XXXXXX", 3, 1, 1, "Cultura General - 1" },
-                    { 3, null, "XXXXXX", 3, 1, 1, "Cultura General - 2" },
-                    { 4, null, "XXXXXX", 5, 1, 1, "Ingles Basic - 1" },
-                    { 5, null, "XXXXXX", 5, 1, 1, "Ingles Animals - 1" },
-                    { 6, null, "XXXXXX", 2, 1, 1, "Matematicas - General" },
-                    { 7, null, "XXXXXX", 1, 1, 1, "Lengua - 1" },
-                    { 8, null, "XXXXXX", 1, 1, 1, "Lengua - 2" },
-                    { 9, null, "XXXXXX", 4, 1, 1, "Plastica" },
-                    { 10, null, "XXXXXX", 4, 1, 1, "Musica" },
-                    { 11, null, "XXXXXX", 3, 2, 1, "Geografía Basica" },
-                    { 12, null, "XXXXXX", 3, 2, 1, "Cultura General - 1" },
-                    { 13, null, "XXXXXX", 3, 2, 1, "Cultura General - 2" },
-                    { 14, null, "XXXXXX", 5, 2, 1, "Ingles Basic - 1" },
-                    { 15, null, "XXXXXX", 5, 2, 1, "Ingles Animals - 1" },
-                    { 16, null, "XXXXXX", 2, 2, 1, "Matematicas - General" },
-                    { 17, null, "XXXXXX", 1, 2, 1, "Lengua - 1" },
-                    { 18, null, "XXXXXX", 1, 2, 1, "Lengua - 2" },
-                    { 19, null, "XXXXXX", 4, 2, 1, "Plastica" },
-                    { 20, null, "XXXXXX", 4, 2, 1, "Musica" },
-                    { 21, null, "XXXXXX", 3, 3, 1, "Geografía Basica" },
-                    { 22, null, "XXXXXX", 3, 3, 1, "Cultura General - 1" },
-                    { 23, null, "XXXXXX", 3, 3, 1, "Cultura General - 2" },
-                    { 24, null, "XXXXXX", 5, 3, 1, "Ingles Basic - 1" },
-                    { 25, null, "XXXXXX", 5, 3, 1, "Ingles Animals - 1" },
-                    { 26, null, "XXXXXX", 2, 3, 1, "Matematicas - General" },
-                    { 27, null, "XXXXXX", 1, 3, 1, "Lengua - 1" },
-                    { 28, null, "XXXXXX", 1, 3, 1, "Lengua - 2" },
-                    { 29, null, "XXXXXX", 4, 3, 1, "Plastica" },
-                    { 30, null, "XXXXXX", 4, 3, 1, "Musica" },
-                    { 31, null, "XXXXXX", 3, 4, 1, "Geografía Basica" },
-                    { 32, null, "XXXXXX", 3, 4, 1, "Cultura General - 1" },
-                    { 33, null, "XXXXXX", 3, 4, 1, "Cultura General - 2" },
-                    { 34, null, "XXXXXX", 5, 4, 1, "Ingles Basic - 1" },
-                    { 35, null, "XXXXXX", 5, 4, 1, "Ingles Animals - 1" },
-                    { 36, null, "XXXXXX", 2, 4, 1, "Matematicas - General" },
-                    { 37, null, "XXXXXX", 1, 4, 1, "Lengua - 1" },
-                    { 38, null, "XXXXXX", 1, 4, 1, "Lengua - 2" },
-                    { 39, null, "XXXXXX", 4, 4, 1, "Plastica" },
-                    { 40, null, "XXXXXX", 4, 4, 1, "Musica" },
-                    { 41, null, "XXXXXX", 3, 5, 1, "Geografía Basica" },
-                    { 42, null, "XXXXXX", 3, 5, 1, "Cultura General - 1" }
+                    { 1, "XXXXXX", 3, 1, 1, "Geografía Basica" },
+                    { 2, "XXXXXX", 3, 1, 1, "Cultura General - 1" },
+                    { 3, "XXXXXX", 3, 1, 1, "Cultura General - 2" },
+                    { 4, "XXXXXX", 5, 1, 1, "Ingles Basic - 1" },
+                    { 5, "XXXXXX", 5, 1, 1, "Ingles Animals - 1" },
+                    { 6, "XXXXXX", 2, 1, 1, "Matematicas - General" },
+                    { 7, "XXXXXX", 1, 1, 1, "Lengua - 1" },
+                    { 8, "XXXXXX", 1, 1, 1, "Lengua - 2" },
+                    { 9, "XXXXXX", 4, 1, 1, "Plastica" },
+                    { 10, "XXXXXX", 4, 1, 1, "Musica" },
+                    { 11, "XXXXXX", 3, 2, 1, "Geografía Basica" },
+                    { 12, "XXXXXX", 3, 2, 1, "Cultura General - 1" },
+                    { 13, "XXXXXX", 3, 2, 1, "Cultura General - 2" },
+                    { 14, "XXXXXX", 5, 2, 1, "Ingles Basic - 1" },
+                    { 15, "XXXXXX", 5, 2, 1, "Ingles Animals - 1" },
+                    { 16, "XXXXXX", 2, 2, 1, "Matematicas - General" },
+                    { 17, "XXXXXX", 1, 2, 1, "Lengua - 1" },
+                    { 18, "XXXXXX", 1, 2, 1, "Lengua - 2" },
+                    { 19, "XXXXXX", 4, 2, 1, "Plastica" },
+                    { 20, "XXXXXX", 4, 2, 1, "Musica" },
+                    { 21, "XXXXXX", 3, 3, 1, "Geografía Basica" },
+                    { 22, "XXXXXX", 3, 3, 1, "Cultura General - 1" },
+                    { 23, "XXXXXX", 3, 3, 1, "Cultura General - 2" },
+                    { 24, "XXXXXX", 5, 3, 1, "Ingles Basic - 1" },
+                    { 25, "XXXXXX", 5, 3, 1, "Ingles Animals - 1" },
+                    { 26, "XXXXXX", 2, 3, 1, "Matematicas - General" },
+                    { 27, "XXXXXX", 1, 3, 1, "Lengua - 1" },
+                    { 28, "XXXXXX", 1, 3, 1, "Lengua - 2" },
+                    { 29, "XXXXXX", 4, 3, 1, "Plastica" },
+                    { 30, "XXXXXX", 4, 3, 1, "Musica" },
+                    { 31, "XXXXXX", 3, 4, 1, "Geografía Basica" },
+                    { 32, "XXXXXX", 3, 4, 1, "Cultura General - 1" },
+                    { 33, "XXXXXX", 3, 4, 1, "Cultura General - 2" },
+                    { 34, "XXXXXX", 5, 4, 1, "Ingles Basic - 1" },
+                    { 35, "XXXXXX", 5, 4, 1, "Ingles Animals - 1" },
+                    { 36, "XXXXXX", 2, 4, 1, "Matematicas - General" },
+                    { 37, "XXXXXX", 1, 4, 1, "Lengua - 1" },
+                    { 38, "XXXXXX", 1, 4, 1, "Lengua - 2" },
+                    { 39, "XXXXXX", 4, 4, 1, "Plastica" },
+                    { 40, "XXXXXX", 4, 4, 1, "Musica" },
+                    { 41, "XXXXXX", 3, 5, 1, "Geografía Basica" },
+                    { 42, "XXXXXX", 3, 5, 1, "Cultura General - 1" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Juegos",
-                columns: new[] { "Id", "AsignaturaJuegoId", "Codigo", "IdAsignatura", "IdCurso", "IdTipoJuego", "TemaJuego" },
+                columns: new[] { "Id", "Codigo", "IdAsignatura", "IdCurso", "IdTipoJuego", "TemaJuego" },
                 values: new object[,]
                 {
-                    { 43, null, "XXXXXX", 3, 5, 1, "Cultura General - 2" },
-                    { 44, null, "XXXXXX", 5, 5, 1, "Ingles Basic - 1" },
-                    { 45, null, "XXXXXX", 5, 5, 1, "Ingles Animals - 1" },
-                    { 46, null, "XXXXXX", 2, 5, 1, "Matematicas - General" },
-                    { 47, null, "XXXXXX", 1, 5, 1, "Lengua - 1" },
-                    { 48, null, "XXXXXX", 1, 5, 1, "Lengua - 2" },
-                    { 49, null, "XXXXXX", 4, 5, 1, "Plastica" },
-                    { 50, null, "XXXXXX", 4, 5, 1, "Musica" },
-                    { 51, null, "XXXXXX", 3, 6, 1, "Geografía Basica" },
-                    { 52, null, "XXXXXX", 3, 6, 1, "Cultura General - 1" },
-                    { 53, null, "XXXXXX", 3, 6, 1, "Cultura General - 2" },
-                    { 54, null, "XXXXXX", 5, 6, 1, "Ingles Basic - 1" },
-                    { 55, null, "XXXXXX", 5, 6, 1, "Ingles Animals - 1" },
-                    { 56, null, "XXXXXX", 2, 6, 1, "Matematicas - General" },
-                    { 57, null, "XXXXXX", 1, 6, 1, "Lengua - 1" },
-                    { 58, null, "XXXXXX", 1, 6, 1, "Lengua - 2" },
-                    { 59, null, "XXXXXX", 4, 6, 1, "Plastica" },
-                    { 60, null, "XXXXXX", 4, 6, 1, "Musica" }
+                    { 43, "XXXXXX", 3, 5, 1, "Cultura General - 2" },
+                    { 44, "XXXXXX", 5, 5, 1, "Ingles Basic - 1" },
+                    { 45, "XXXXXX", 5, 5, 1, "Ingles Animals - 1" },
+                    { 46, "XXXXXX", 2, 5, 1, "Matematicas - General" },
+                    { 47, "XXXXXX", 1, 5, 1, "Lengua - 1" },
+                    { 48, "XXXXXX", 1, 5, 1, "Lengua - 2" },
+                    { 49, "XXXXXX", 4, 5, 1, "Plastica" },
+                    { 50, "XXXXXX", 4, 5, 1, "Musica" },
+                    { 51, "XXXXXX", 3, 6, 1, "Geografía Basica" },
+                    { 52, "XXXXXX", 3, 6, 1, "Cultura General - 1" },
+                    { 53, "XXXXXX", 3, 6, 1, "Cultura General - 2" },
+                    { 54, "XXXXXX", 5, 6, 1, "Ingles Basic - 1" },
+                    { 55, "XXXXXX", 5, 6, 1, "Ingles Animals - 1" },
+                    { 56, "XXXXXX", 2, 6, 1, "Matematicas - General" },
+                    { 57, "XXXXXX", 1, 6, 1, "Lengua - 1" },
+                    { 58, "XXXXXX", 1, 6, 1, "Lengua - 2" },
+                    { 59, "XXXXXX", 4, 6, 1, "Plastica" },
+                    { 60, "XXXXXX", 4, 6, 1, "Musica" }
                 });
 
             migrationBuilder.InsertData(
@@ -420,8 +387,8 @@ namespace GalacticApi.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Resultados",
-                columns: new[] { "Id", "Completado", "IdJuego", "IdUsuario", "Resultado" },
-                values: new object[] { 1, "Y", 1, 1, 0.0 });
+                columns: new[] { "Id", "Acertadas", "Completado", "Falladas", "IdJuego", "IdUsuario", "Resultado" },
+                values: new object[] { 1, 0, "Y", 0, 1, 1, 0.0 });
 
             migrationBuilder.InsertData(
                 table: "PreguntaPasapalabras",
@@ -731,21 +698,6 @@ namespace GalacticApi.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AsignaturaJuegos_AsignaturaId",
-                table: "AsignaturaJuegos",
-                column: "AsignaturaId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_AsignaturaJuegos_TipoJuegoId",
-                table: "AsignaturaJuegos",
-                column: "TipoJuegoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Juegos_AsignaturaJuegoId",
-                table: "Juegos",
-                column: "AsignaturaJuegoId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Juegos_IdAsignatura",
                 table: "Juegos",
                 column: "IdAsignatura");
@@ -808,13 +760,10 @@ namespace GalacticApi.Data.Migrations
                 name: "Avatars");
 
             migrationBuilder.DropTable(
-                name: "AsignaturaJuegos");
+                name: "Asignaturas");
 
             migrationBuilder.DropTable(
                 name: "Cursos");
-
-            migrationBuilder.DropTable(
-                name: "Asignaturas");
 
             migrationBuilder.DropTable(
                 name: "TipoJuegos");
