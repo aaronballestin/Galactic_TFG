@@ -19,21 +19,21 @@ namespace GalacticApi.Api
         }
 
 
-        // [HttpGet]
-        // public ActionResult<List<GetJuegosDTO>> GetJuegos()
-        // {
-        //     try
-        //     {
-        //         var juegos = _juegoService.GetJuegos();
-        //         return Ok(juegos);
+        [HttpGet]
+        public ActionResult<List<GetUsuariosDTO>> GetUsuarios()
+        {
+            try
+            {
+                var usuarios = _usuarioService.GetUsuariosDTOs();
+                return Ok(usuarios);
 
-        //     }
-        //     catch (KeyNotFoundException ex)
-        //     {
-        //         return NotFound("No hay obras disponibles");
-        //     }
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound("No hay obras disponibles");
+            }
 
-        // }
+        }
 
         // [HttpGet("{id}")]
         // public ActionResult<GetJuegoDTO> GetJuego(int id)
@@ -50,6 +50,25 @@ namespace GalacticApi.Api
         //     }
 
         // }
+
+        [HttpPost]
+        public ActionResult<UsuarioDTO> AddUsuario(UsuarioIntranetPostDTO usuarioPostDTO)
+        {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+
+            try
+            {
+                
+                _usuarioService.AddUsuario(usuarioPostDTO);
+                return Ok(usuarioPostDTO);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+
+        }
 
 
         [HttpPost("/register")]
@@ -89,44 +108,39 @@ namespace GalacticApi.Api
         }
 
 
-        // [HttpPut("{id}")]
-        // public ActionResult UpdateJuego(int id, Juego juego)
-        // {
-        //     if (!ModelState.IsValid) { return BadRequest(ModelState); }
-        //     try
-        //     {
-        //         //Curso curso1 = _cursoService.GetCursoById(id);
-        //         //if (id != curso1.Id)
-        //         {
-        //             return BadRequest();
-        //         }
+        [HttpPut("{id}")]
+        public ActionResult UpdateUsuario(int id, UsuarioIntranetPostDTO usuario)
+        {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+            try
+            {
 
 
-        //         _juegoService.UpdateJuego(juego);
-        //         return NoContent();
-        //     }
-        //     catch (KeyNotFoundException ex)
-        //     {
+                _usuarioService.UpdateUsuario(usuario, id);
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
 
-        //         return NotFound();
-        //     }
+                return NotFound();
+            }
 
-        // }
+        }
 
-        // [HttpDelete("{id}")]
-        // public IActionResult DeleteJuego(int id)
-        // {
-        //     try
-        //     {
-        //         _juegoService.DeleteJuego(id);
-        //         return NoContent();
-        //     }
-        //     catch (KeyNotFoundException ex)
-        //     {
+        [HttpDelete("{id}")]
+        public IActionResult DeleteUsuario(int id)
+        {
+            try
+            {
+                _usuarioService.DeleteUsuario(id);
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
 
-        //         return NotFound();
-        //     }
+                return NotFound();
+            }
 
-        // }
+        }
     }
 }

@@ -8,10 +8,12 @@ namespace GalacticApi.Services
         Usuario GetUserById(int id);
 
         UsuarioDTO AddUsuario(UsuarioPostDTO usuario);
-        UsuarioDTO GetUsuario(string emailUsuario, string passwordUsuario);
-        // void UpdateUsuario(Usuario usuario); 
+        void AddUsuario(UsuarioIntranetPostDTO usuario);
 
-        // List<UsuarioDTO> GetUsuarios();
+        UsuarioDTO GetUsuario(string emailUsuario, string passwordUsuario);
+        void UpdateUsuario(UsuarioIntranetPostDTO usuario, int id); 
+        public List<GetUsuariosDTO> GetUsuariosDTOs();
+        public void DeleteUsuario(int id);
 
     }
 }

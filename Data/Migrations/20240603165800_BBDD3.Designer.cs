@@ -3,6 +3,7 @@ using GalacticApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    partial class GalacticApiContextModelSnapshot : ModelSnapshot
+    [Migration("20240603165800_BBDD3")]
+    partial class BBDD3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -339,6 +341,33 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 18,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
                             Id = 21,
                             Codigo = "XXXXXX",
                             IdAsignatura = 3,
@@ -399,6 +428,33 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 3,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
                         },
                         new
                         {
@@ -465,6 +521,33 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 38,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
                             Id = 41,
                             Codigo = "XXXXXX",
                             IdAsignatura = 3,
@@ -528,6 +611,33 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 48,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
                             Id = 51,
                             Codigo = "XXXXXX",
                             IdAsignatura = 3,
@@ -588,6 +698,33 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 6,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
                         });
                 });
 

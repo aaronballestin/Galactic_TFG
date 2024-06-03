@@ -49,5 +49,6 @@ dotnet tool install --global dotnet-ef --version 6.*
 
 dotnet ef migrations add BBDD -p ./Data/GalacticApi.Data.csproj -s ./Api/GalacticApi.Api.csproj
 
+
 dotnet ef database update  -p ./Data/GalacticApi.Data.csproj -s ./Api/GalacticApi.Api.csproj
 ```

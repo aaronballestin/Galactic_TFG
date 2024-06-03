@@ -24,6 +24,22 @@ namespace GalacticApi.Data
 
         }
 
+        public void UpdateUsuario(Usuario usuario){
+            _context.Entry(usuario).State = EntityState.Modified;
+            _context.SaveChanges();
+        }
+
+        public void DeleteUsuario(Usuario usuario){
+            _context.Usuarios.Remove(usuario);
+            SaveChanges();
+        }
+
+
+
+        public List<Usuario> GetUsuarios(){
+            return _context.Usuarios.ToList();
+        }
+
         public Usuario GetUserById(int id)
         {
             return _context.Usuarios.FirstOrDefault(u => u.Id == id);
@@ -37,7 +53,7 @@ namespace GalacticApi.Data
 
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
     }
 }

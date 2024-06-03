@@ -3,6 +3,7 @@ using GalacticApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    partial class GalacticApiContextModelSnapshot : ModelSnapshot
+    [Migration("20240603164740_BBDD2")]
+    partial class BBDD2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -339,6 +341,33 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 18,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
                             Id = 21,
                             Codigo = "XXXXXX",
                             IdAsignatura = 3,
@@ -399,6 +428,33 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 3,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
                         },
                         new
                         {
@@ -465,6 +521,33 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 38,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
                             Id = 41,
                             Codigo = "XXXXXX",
                             IdAsignatura = 3,
@@ -528,6 +611,33 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 48,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
+                        },
+                        new
+                        {
                             Id = 51,
                             Codigo = "XXXXXX",
                             IdAsignatura = 3,
@@ -588,6 +698,33 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 6,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Lengua - 2"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 6,
+                            IdTipoJuego = 1,
+                            TemaJuego = "Musica"
                         });
                 });
 
@@ -664,6 +801,18 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 9,
+                            IdJuego = 9,
+                            Name = "Plástica"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            IdJuego = 10,
+                            Name = "Musica"
+                        },
+                        new
+                        {
                             Id = 11,
                             IdJuego = 11,
                             Name = "Geografía"
@@ -708,6 +857,18 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 18,
                             IdJuego = 18,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            IdJuego = 19,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            IdJuego = 20,
                             Name = "Nombres de otras cosas pasapalabra"
                         },
                         new
@@ -760,6 +921,18 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 29,
+                            IdJuego = 29,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            IdJuego = 30,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
                             Id = 31,
                             IdJuego = 31,
                             Name = "Geografía"
@@ -798,6 +971,24 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 37,
                             IdJuego = 37,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            IdJuego = 38,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            IdJuego = 39,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            IdJuego = 40,
                             Name = "Nombres de otras cosas pasapalabra"
                         },
                         new
@@ -844,6 +1035,24 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 48,
+                            IdJuego = 48,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            IdJuego = 49,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            IdJuego = 50,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
                             Id = 51,
                             IdJuego = 51,
                             Name = "Geografía"
@@ -882,6 +1091,24 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 57,
                             IdJuego = 57,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            IdJuego = 58,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            IdJuego = 59,
+                            Name = "Nombres de otras cosas pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            IdJuego = 60,
                             Name = "Nombres de otras cosas pasapalabra"
                         });
                 });
@@ -9425,422 +9652,6 @@ namespace GalacticApi.Data.Migrations
                             Id = 1068,
                             Letra = "Z",
                             PasapalabraId = 37,
-                            Pregunta = "Empieza por Z: ¿Qué componente del lenguaje se estudia para comprender cómo se utilizan las palabras y frases en diferentes situaciones?",
-                            Respuesta = "Zona"
-                        },
-                        new
-                        {
-                            Id = 1069,
-                            Letra = "A",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por A: ¿Qué elemento gramatical se utiliza para introducir o modificar un sustantivo en una oración?",
-                            Respuesta = "Artículo"
-                        },
-                        new
-                        {
-                            Id = 1070,
-                            Letra = "B",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por B: ¿Qué tipo de texto relata la vida de una persona escrita por otra?",
-                            Respuesta = "Biografía"
-                        },
-                        new
-                        {
-                            Id = 1071,
-                            Letra = "C",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por C: ¿Qué palabra se usa para unir frases, palabras o cláusulas en una oración?",
-                            Respuesta = "Conjunción"
-                        },
-                        new
-                        {
-                            Id = 1072,
-                            Letra = "D",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por D: ¿Cómo se llama la combinación de dos vocales en una misma sílaba?",
-                            Respuesta = "Diptongo"
-                        },
-                        new
-                        {
-                            Id = 1073,
-                            Letra = "E",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por E: ¿Qué habilidad se desarrolla al escribir cartas, cuentos o poesías?",
-                            Respuesta = "Escritura"
-                        },
-                        new
-                        {
-                            Id = 1074,
-                            Letra = "F",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por F: ¿Qué representa los sonidos básicos del habla?",
-                            Respuesta = "Fonema"
-                        },
-                        new
-                        {
-                            Id = 1075,
-                            Letra = "G",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por G: ¿Qué se estudia para comprender la estructura de un idioma?",
-                            Respuesta = "Gramática"
-                        },
-                        new
-                        {
-                            Id = 1076,
-                            Letra = "H",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por H: ¿Qué palabra significa dos o más palabras que suenan igual pero tienen diferente significado o escritura?",
-                            Respuesta = "Homófono"
-                        },
-                        new
-                        {
-                            Id = 1077,
-                            Letra = "I",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por I: ¿Cómo se llama a las palabras que expresan emociones o sentimientos y no tienen una función sintáctica definida?",
-                            Respuesta = "Interjección"
-                        },
-                        new
-                        {
-                            Id = 1078,
-                            Letra = "J",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por J: ¿Qué actividad es recreativa y educativa a la vez, en la que se aplican reglas para divertirse?",
-                            Respuesta = "Juego"
-                        },
-                        new
-                        {
-                            Id = 1079,
-                            Letra = "K",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por K: ¿Qué lugar suele tener una variedad de productos y periódicos y revistas para su venta?",
-                            Respuesta = "Kiosco"
-                        },
-                        new
-                        {
-                            Id = 1080,
-                            Letra = "L",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por L: ¿Qué símbolo gráfico representa los sonidos básicos del habla?",
-                            Respuesta = "Letra"
-                        },
-                        new
-                        {
-                            Id = 1081,
-                            Letra = "M",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por M: ¿Qué unidad mínima de significado tiene un idioma?",
-                            Respuesta = "Morfema"
-                        },
-                        new
-                        {
-                            Id = 1082,
-                            Letra = "N",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por N: ¿Qué persona cuenta una historia o relato?",
-                            Respuesta = "Narrador"
-                        },
-                        new
-                        {
-                            Id = 1083,
-                            Letra = "O",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por O: ¿Qué estructura gramatical contiene un sujeto y un predicado y expresa una idea completa?",
-                            Respuesta = "Oración"
-                        },
-                        new
-                        {
-                            Id = 1084,
-                            Letra = "P",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por P: ¿Cómo se denomina a la unidad básica del lenguaje, que comunica un concepto?",
-                            Respuesta = "Palabra"
-                        },
-                        new
-                        {
-                            Id = 1085,
-                            Letra = "Q",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por Q: ¿Qué palabra se emplea para describir un juego verbal en el que se repiten los mismos sonidos?",
-                            Respuesta = "Querido"
-                        },
-                        new
-                        {
-                            Id = 1086,
-                            Letra = "R",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por R: ¿Qué componente del lenguaje se estudia para entender cómo se forman y se pronuncian los sonidos en las palabras?",
-                            Respuesta = "Rima"
-                        },
-                        new
-                        {
-                            Id = 1087,
-                            Letra = "S",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por S: ¿Qué elemento gramatical se utiliza para conectar ideas o acciones dentro de una oración o un texto?",
-                            Respuesta = "Sujeto"
-                        },
-                        new
-                        {
-                            Id = 1088,
-                            Letra = "T",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por T: ¿Qué actividad literaria implica la creación y combinación de sonidos para desafiar la pronunciación?",
-                            Respuesta = "Trabalenguas"
-                        },
-                        new
-                        {
-                            Id = 1089,
-                            Letra = "U",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por U: ¿Qué se utiliza para hacer referencia a un suceso imaginario o inventado que se relata de forma breve y con una enseñanza o moraleja?",
-                            Respuesta = "Uso"
-                        },
-                        new
-                        {
-                            Id = 1090,
-                            Letra = "V",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por V: ¿Qué se refiere a la variedad y selección de palabras que una persona conoce y utiliza en su comunicación?",
-                            Respuesta = "Vocabulario"
-                        },
-                        new
-                        {
-                            Id = 1091,
-                            Letra = "W",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por W: ¿Qué tipo de texto se compone de una serie de letras y signos que representan sonidos y que, al combinarse, forman palabras?",
-                            Respuesta = "Watusi"
-                        },
-                        new
-                        {
-                            Id = 1092,
-                            Letra = "X",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por X: ¿Qué palabra se utiliza para describir un sonido compuesto por la combinación de dos vocales en una misma sílaba?",
-                            Respuesta = "Xilófono"
-                        },
-                        new
-                        {
-                            Id = 1093,
-                            Letra = "Y",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por Y: ¿Qué figura literaria se produce cuando una palabra o grupo de palabras se repiten al inicio de dos o más versos o frases?",
-                            Respuesta = "Yod"
-                        },
-                        new
-                        {
-                            Id = 1094,
-                            Letra = "Z",
-                            PasapalabraId = 47,
-                            Pregunta = "Empieza por Z: ¿Qué componente del lenguaje se estudia para comprender cómo se utilizan las palabras y frases en diferentes situaciones?",
-                            Respuesta = "Zona"
-                        },
-                        new
-                        {
-                            Id = 1095,
-                            Letra = "A",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por A: ¿Qué elemento gramatical se utiliza para introducir o modificar un sustantivo en una oración?",
-                            Respuesta = "Artículo"
-                        },
-                        new
-                        {
-                            Id = 1096,
-                            Letra = "B",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por B: ¿Qué tipo de texto relata la vida de una persona escrita por otra?",
-                            Respuesta = "Biografía"
-                        },
-                        new
-                        {
-                            Id = 1097,
-                            Letra = "C",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por C: ¿Qué palabra se usa para unir frases, palabras o cláusulas en una oración?",
-                            Respuesta = "Conjunción"
-                        },
-                        new
-                        {
-                            Id = 1098,
-                            Letra = "D",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por D: ¿Cómo se llama la combinación de dos vocales en una misma sílaba?",
-                            Respuesta = "Diptongo"
-                        },
-                        new
-                        {
-                            Id = 1099,
-                            Letra = "E",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por E: ¿Qué habilidad se desarrolla al escribir cartas, cuentos o poesías?",
-                            Respuesta = "Escritura"
-                        },
-                        new
-                        {
-                            Id = 1100,
-                            Letra = "F",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por F: ¿Qué representa los sonidos básicos del habla?",
-                            Respuesta = "Fonema"
-                        },
-                        new
-                        {
-                            Id = 1101,
-                            Letra = "G",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por G: ¿Qué se estudia para comprender la estructura de un idioma?",
-                            Respuesta = "Gramática"
-                        },
-                        new
-                        {
-                            Id = 1102,
-                            Letra = "H",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por H: ¿Qué palabra significa dos o más palabras que suenan igual pero tienen diferente significado o escritura?",
-                            Respuesta = "Homófono"
-                        },
-                        new
-                        {
-                            Id = 1103,
-                            Letra = "I",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por I: ¿Cómo se llama a las palabras que expresan emociones o sentimientos y no tienen una función sintáctica definida?",
-                            Respuesta = "Interjección"
-                        },
-                        new
-                        {
-                            Id = 1104,
-                            Letra = "J",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por J: ¿Qué actividad es recreativa y educativa a la vez, en la que se aplican reglas para divertirse?",
-                            Respuesta = "Juego"
-                        },
-                        new
-                        {
-                            Id = 1105,
-                            Letra = "K",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por K: ¿Qué lugar suele tener una variedad de productos y periódicos y revistas para su venta?",
-                            Respuesta = "Kiosco"
-                        },
-                        new
-                        {
-                            Id = 1106,
-                            Letra = "L",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por L: ¿Qué símbolo gráfico representa los sonidos básicos del habla?",
-                            Respuesta = "Letra"
-                        },
-                        new
-                        {
-                            Id = 1107,
-                            Letra = "M",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por M: ¿Qué unidad mínima de significado tiene un idioma?",
-                            Respuesta = "Morfema"
-                        },
-                        new
-                        {
-                            Id = 1108,
-                            Letra = "N",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por N: ¿Qué persona cuenta una historia o relato?",
-                            Respuesta = "Narrador"
-                        },
-                        new
-                        {
-                            Id = 1109,
-                            Letra = "O",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por O: ¿Qué estructura gramatical contiene un sujeto y un predicado y expresa una idea completa?",
-                            Respuesta = "Oración"
-                        },
-                        new
-                        {
-                            Id = 1110,
-                            Letra = "P",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por P: ¿Cómo se denomina a la unidad básica del lenguaje, que comunica un concepto?",
-                            Respuesta = "Palabra"
-                        },
-                        new
-                        {
-                            Id = 1111,
-                            Letra = "Q",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por Q: ¿Qué palabra se emplea para describir un juego verbal en el que se repiten los mismos sonidos?",
-                            Respuesta = "Querido"
-                        },
-                        new
-                        {
-                            Id = 1112,
-                            Letra = "R",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por R: ¿Qué componente del lenguaje se estudia para entender cómo se forman y se pronuncian los sonidos en las palabras?",
-                            Respuesta = "Rima"
-                        },
-                        new
-                        {
-                            Id = 1113,
-                            Letra = "S",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por S: ¿Qué elemento gramatical se utiliza para conectar ideas o acciones dentro de una oración o un texto?",
-                            Respuesta = "Sujeto"
-                        },
-                        new
-                        {
-                            Id = 1114,
-                            Letra = "T",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por T: ¿Qué actividad literaria implica la creación y combinación de sonidos para desafiar la pronunciación?",
-                            Respuesta = "Trabalenguas"
-                        },
-                        new
-                        {
-                            Id = 1115,
-                            Letra = "U",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por U: ¿Qué se utiliza para hacer referencia a un suceso imaginario o inventado que se relata de forma breve y con una enseñanza o moraleja?",
-                            Respuesta = "Uso"
-                        },
-                        new
-                        {
-                            Id = 1116,
-                            Letra = "V",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por V: ¿Qué se refiere a la variedad y selección de palabras que una persona conoce y utiliza en su comunicación?",
-                            Respuesta = "Vocabulario"
-                        },
-                        new
-                        {
-                            Id = 1117,
-                            Letra = "W",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por W: ¿Qué tipo de texto se compone de una serie de letras y signos que representan sonidos y que, al combinarse, forman palabras?",
-                            Respuesta = "Watusi"
-                        },
-                        new
-                        {
-                            Id = 1118,
-                            Letra = "X",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por X: ¿Qué palabra se utiliza para describir un sonido compuesto por la combinación de dos vocales en una misma sílaba?",
-                            Respuesta = "Xilófono"
-                        },
-                        new
-                        {
-                            Id = 1119,
-                            Letra = "Y",
-                            PasapalabraId = 57,
-                            Pregunta = "Empieza por Y: ¿Qué figura literaria se produce cuando una palabra o grupo de palabras se repiten al inicio de dos o más versos o frases?",
-                            Respuesta = "Yod"
-                        },
-                        new
-                        {
-                            Id = 1120,
-                            Letra = "Z",
-                            PasapalabraId = 57,
                             Pregunta = "Empieza por Z: ¿Qué componente del lenguaje se estudia para comprender cómo se utilizan las palabras y frases en diferentes situaciones?",
                             Respuesta = "Zona"
                         });

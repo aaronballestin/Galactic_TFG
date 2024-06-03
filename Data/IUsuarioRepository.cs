@@ -8,9 +8,10 @@ namespace GalacticApi.Data
         
         void AddUsuario(Usuario usuario);
         Usuario GetUsuario(string emailUsuario, string passwordUsuario);
-        // void UpdateUsuario(Usuario usuario); 
+        void UpdateUsuario(Usuario usuario); 
+        List<Usuario> GetUsuarios();
 
-        // List<UsuarioDTO> GetUsuarios();
+        public void DeleteUsuario(Usuario usuario);
 
         void SaveChanges();
     }
