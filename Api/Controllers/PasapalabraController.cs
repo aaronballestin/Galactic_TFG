@@ -41,17 +41,17 @@ namespace GalacticApi.Api
             {
                 var pasaplabras = new List<GetPasapalabraDTO>();
                 
-                var pasaplabra1 = _pasapalabraService.GetPasapalabraMultijugador();
-                pasaplabra1.Name = "Multijugador - 1";
-                pasaplabra1.Id = 1;
+                var pasapalabra1 = _pasapalabraService.GetPasapalabraMultijugador();
+                pasapalabra1.Name = "Multijugador - 1";
+                pasapalabra1.Id = 1;
 
 
                 var pasapalabra2 =_pasapalabraService.GetPasapalabraMultijugador();
-                pasaplabra1.Name = "Multijugador - 2";
-                pasaplabra1.Id = 2;
+                pasapalabra2.Name = "Multijugador - 2";
+                pasapalabra2.Id = 2;
 
 
-                pasaplabras.Add(pasaplabra1);
+                pasaplabras.Add(pasapalabra1);
                 pasaplabras.Add(pasapalabra2);
                 return Ok(pasaplabras);
 
