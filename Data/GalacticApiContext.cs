@@ -34,15 +34,17 @@ namespace GalacticApi.Data
 
             modelBuilder.Entity<Asignatura>().HasData(
                 new Asignatura { Id = 1, NombreAsignatura = "Lengua" },
-                new Asignatura { Id = 2, NombreAsignatura = "Matematicas" },
+                new Asignatura { Id = 2, NombreAsignatura = "Matemáticas" },
                 new Asignatura { Id = 3, NombreAsignatura = "Conocimiento del medio" },
                 new Asignatura { Id = 4, NombreAsignatura = "Educación Artística" },
-                new Asignatura { Id = 5, NombreAsignatura = "Ingles" }
+                new Asignatura { Id = 5, NombreAsignatura = "Inglés" }
 
             );
 
             modelBuilder.Entity<TipoJuego>().HasData(
-                new TipoJuego { Id = 1, Tipo = "Pasapalabra" }
+                new TipoJuego { Id = 1, Tipo = "Pasapalabra" },
+                new TipoJuego { Id = 2, Tipo = "Ahorcado" }
+
             );
 
 
@@ -50,20 +52,20 @@ namespace GalacticApi.Data
                 new Juego { Id = 1, IdCurso = 1, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
                 new Juego { Id = 2, IdCurso = 1, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 3, IdCurso = 1, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
-                new Juego { Id = 4, IdCurso = 1, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 5, IdCurso = 1, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 6, IdCurso = 1, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 4, IdCurso = 1, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 5, IdCurso = 1, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 6, IdCurso = 1, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matemáticas - General", Codigo = "XXXXXX" },
                 new Juego { Id = 7, IdCurso = 1, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 8, IdCurso = 1, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 new Juego { Id = 9, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
-                new Juego { Id = 10, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" },
+                new Juego { Id = 10, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Música", Codigo = "XXXXXX" },
 
                 new Juego { Id = 11, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
                 new Juego { Id = 12, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 13, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
-                new Juego { Id = 14, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 15, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 16, IdCurso = 2, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 14, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 15, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 16, IdCurso = 2, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matemáticas - General", Codigo = "XXXXXX" },
                 new Juego { Id = 17, IdCurso = 2, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 // new Juego { Id = 18, IdCurso = 2, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 // new Juego { Id = 19, IdCurso = 2, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
@@ -72,9 +74,9 @@ namespace GalacticApi.Data
                 new Juego { Id = 21, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
                 new Juego { Id = 22, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 23, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
-                new Juego { Id = 24, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 25, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 26, IdCurso = 3, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 24, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 25, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 26, IdCurso = 3, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matemáticas - General", Codigo = "XXXXXX" },
                 new Juego { Id = 27, IdCurso = 3, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 // new Juego { Id = 28, IdCurso = 3, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 // new Juego { Id = 29, IdCurso = 3, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
@@ -83,9 +85,9 @@ namespace GalacticApi.Data
                 new Juego { Id = 31, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
                 new Juego { Id = 32, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 33, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
-                new Juego { Id = 34, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 35, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 36, IdCurso = 4, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 34, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 35, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 36, IdCurso = 4, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matemáticas - General", Codigo = "XXXXXX" },
                 new Juego { Id = 37, IdCurso = 4, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 // new Juego { Id = 38, IdCurso = 4, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 // new Juego { Id = 39, IdCurso = 4, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
@@ -94,9 +96,9 @@ namespace GalacticApi.Data
                 new Juego { Id = 41, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Geografía Basica", Codigo = "XXXXXX" },
                 new Juego { Id = 42, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 43, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
-                new Juego { Id = 44, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 45, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 46, IdCurso = 5, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 44, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Basic - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 45, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Inglés Animals - 1", Codigo = "XXXXXX" },
+                new Juego { Id = 46, IdCurso = 5, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matemáticas - General", Codigo = "XXXXXX" },
                 new Juego { Id = 47, IdCurso = 5, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 // new Juego { Id = 48, IdCurso = 5, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 // new Juego { Id = 49, IdCurso = 5, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
@@ -107,11 +109,50 @@ namespace GalacticApi.Data
                 new Juego { Id = 53, IdCurso = 6, IdAsignatura = 3, IdTipoJuego = 1, TemaJuego = "Cultura General - 2", Codigo = "XXXXXX" },
                 new Juego { Id = 54, IdCurso = 6, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Basic - 1", Codigo = "XXXXXX" },
                 new Juego { Id = 55, IdCurso = 6, IdAsignatura = 5, IdTipoJuego = 1, TemaJuego = "Ingles Animals - 1", Codigo = "XXXXXX" },
-                new Juego { Id = 56, IdCurso = 6, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matematicas - General", Codigo = "XXXXXX" },
-                new Juego { Id = 57, IdCurso = 6, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" }
+                new Juego { Id = 56, IdCurso = 6, IdAsignatura = 2, IdTipoJuego = 1, TemaJuego = "Matemáticas - General", Codigo = "XXXXXX" },
+                new Juego { Id = 57, IdCurso = 6, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 1", Codigo = "XXXXXX" },
                 // new Juego { Id = 58, IdCurso = 6, IdAsignatura = 1, IdTipoJuego = 1, TemaJuego = "Lengua - 2", Codigo = "XXXXXX" },
                 // new Juego { Id = 59, IdCurso = 6, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Plastica", Codigo = "XXXXXX" },
                 // new Juego { Id = 60, IdCurso = 6, IdAsignatura = 4, IdTipoJuego = 1, TemaJuego = "Musica", Codigo = "XXXXXX" }
+
+
+new Juego {Id = 61, IdCurso = 1, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego = "Lengua - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 62, IdCurso = 1, IdAsignatura = 2, IdTipoJuego = 2, TemaJuego = "Matemáticas - 2", Codigo = "XXXXXX"},
+    new Juego {Id = 63, IdCurso = 1, IdAsignatura = 3, IdTipoJuego = 2, TemaJuego = "Geografía - 3", Codigo = "XXXXXX"},
+    new Juego {Id = 64, IdCurso = 1, IdAsignatura = 4, IdTipoJuego = 2, TemaJuego = "Música - 4", Codigo = "XXXXXX"},
+    new Juego {Id = 65, IdCurso = 1, IdAsignatura = 5, IdTipoJuego = 2, TemaJuego = "Varios - 5", Codigo = "XXXXXX"},
+
+    new Juego {Id = 66, IdCurso = 2, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego = "Lengua - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 67, IdCurso = 2, IdAsignatura = 2, IdTipoJuego = 2, TemaJuego = "Matemáticas - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 68, IdCurso = 2, IdAsignatura = 3, IdTipoJuego = 2, TemaJuego = "Geografía - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 69, IdCurso = 2, IdAsignatura = 4, IdTipoJuego = 2, TemaJuego = "Música - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 70, IdCurso = 2, IdAsignatura = 5, IdTipoJuego = 2, TemaJuego = "Inglés - 1", Codigo = "XXXXXX"},
+
+    new Juego {Id = 71, IdCurso = 3, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego = "Lengua - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 72, IdCurso = 3, IdAsignatura = 2, IdTipoJuego = 2, TemaJuego = "Matemáticas - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 73, IdCurso = 3, IdAsignatura = 3, IdTipoJuego = 2, TemaJuego = "Geografía - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 74, IdCurso = 3, IdAsignatura = 4, IdTipoJuego = 2, TemaJuego = "Música - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 75, IdCurso = 3, IdAsignatura = 5, IdTipoJuego = 2, TemaJuego = "Inglés - 1", Codigo = "XXXXXX"},
+
+    new Juego {Id = 76, IdCurso = 4, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego = "Lengua - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 77, IdCurso = 4, IdAsignatura = 2, IdTipoJuego = 2, TemaJuego = "Matemáticas - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 78, IdCurso = 4, IdAsignatura = 3, IdTipoJuego = 2, TemaJuego = "Geografía - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 79, IdCurso = 4, IdAsignatura = 4, IdTipoJuego = 2, TemaJuego = "Música - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 80, IdCurso = 4, IdAsignatura = 5, IdTipoJuego = 2, TemaJuego = "Inglés - 1", Codigo = "XXXXXX"},
+
+    new Juego {Id = 81, IdCurso = 5, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego = "Lengua - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 82, IdCurso = 5, IdAsignatura = 2, IdTipoJuego = 2, TemaJuego = "Matemáticas - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 83, IdCurso = 5, IdAsignatura = 3, IdTipoJuego = 2, TemaJuego = "Geografía - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 84, IdCurso = 5, IdAsignatura = 4, IdTipoJuego = 2, TemaJuego = "Música - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 85, IdCurso = 5, IdAsignatura = 5, IdTipoJuego = 2, TemaJuego = "Inglés - 1", Codigo = "XXXXXX"},
+
+    new Juego {Id = 86, IdCurso = 6, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego = "Lengua - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 87, IdCurso = 6, IdAsignatura = 2, IdTipoJuego = 2, TemaJuego = "Matemáticas - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 88, IdCurso = 6, IdAsignatura = 3, IdTipoJuego = 2, TemaJuego = "Geografía - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 89, IdCurso = 6, IdAsignatura = 4, IdTipoJuego = 2, TemaJuego = "Música - 1", Codigo = "XXXXXX"},
+    new Juego {Id = 90, IdCurso = 6, IdAsignatura = 5, IdTipoJuego = 2, TemaJuego = "Inglés - 1", Codigo = "XXXXXX"}
+
+
 
 
             );
@@ -1342,18 +1383,85 @@ namespace GalacticApi.Data
                 new PreguntaPasapalabra { Id = 1120, PasapalabraId = 57, Letra = 'Z', Pregunta = "Empieza por Z: ¿Qué componente del lenguaje se estudia para comprender cómo se utilizan las palabras y frases en diferentes situaciones?", Respuesta = "Zona" }
 
 
+        );
+        modelBuilder.Entity<Ahorcado>().HasData(
+            new Ahorcado { Id = 61, Name = "Ahorcado de Lengua - 1", IdJuego = 61 },
+            new Ahorcado { Id = 62, Name = "Ahorcado de Matemáticas - 2", IdJuego = 62 },
+            new Ahorcado { Id = 63, Name = "Ahorcado de Geografía - 3", IdJuego = 63 },
+            new Ahorcado { Id = 64, Name = "Ahorcado de Música - 4", IdJuego = 64 },
+            new Ahorcado { Id = 65, Name = "Ahorcado de Varios - 5", IdJuego = 65 },
 
+            new Ahorcado { Id = 66, Name = "Ahorcado de Lengua - 1", IdJuego = 66 },
+            new Ahorcado { Id = 67, Name = "Ahorcado de Matemáticas - 1", IdJuego = 67 },
+            new Ahorcado { Id = 68, Name = "Ahorcado de Geografía - 1", IdJuego = 68 },
+            new Ahorcado { Id = 69, Name = "Ahorcado de Música - 1", IdJuego = 69 },
+            new Ahorcado { Id = 70, Name = "Ahorcado de Inglés - 1", IdJuego = 70 },
 
+            new Ahorcado { Id = 71, Name = "Ahorcado de Lengua - 1", IdJuego = 71 },
+            new Ahorcado { Id = 72, Name = "Ahorcado de Matemáticas - 1", IdJuego = 72 },
+            new Ahorcado { Id = 73, Name = "Ahorcado de Geografía - 1", IdJuego = 73 },
+            new Ahorcado { Id = 74, Name = "Ahorcado de Música - 1", IdJuego = 74 },
+            new Ahorcado { Id = 75, Name = "Ahorcado de Inglés - 1", IdJuego = 75 },
 
+            new Ahorcado { Id = 76, Name = "Ahorcado de Lengua - 1", IdJuego = 76 },
+            new Ahorcado { Id = 77, Name = "Ahorcado de Matemáticas - 1", IdJuego = 77 },
+            new Ahorcado { Id = 78, Name = "Ahorcado de Geografía - 1", IdJuego = 78 },
+            new Ahorcado { Id = 79, Name = "Ahorcado de Música - 1", IdJuego = 79 },
+            new Ahorcado { Id = 80, Name = "Ahorcado de Inglés - 1", IdJuego = 80 },
 
+            new Ahorcado { Id = 81, Name = "Ahorcado de Lengua - 1", IdJuego = 81 },
+            new Ahorcado { Id = 82, Name = "Ahorcado de Matemáticas - 1", IdJuego = 82 },
+            new Ahorcado { Id = 83, Name = "Ahorcado de Geografía - 1", IdJuego = 83 },
+            new Ahorcado { Id = 84, Name = "Ahorcado de Música - 1", IdJuego = 84 },
+            new Ahorcado { Id = 85, Name = "Ahorcado de Inglés - 1", IdJuego = 85 },
 
+            new Ahorcado { Id = 86, Name = "Ahorcado de Lengua - 1", IdJuego = 86 },
+            new Ahorcado { Id = 87, Name = "Ahorcado de Matemáticas - 1", IdJuego = 87 },
+            new Ahorcado { Id = 88, Name = "Ahorcado de Geografía - 1", IdJuego = 88 },
+            new Ahorcado { Id = 89, Name = "Ahorcado de Música - 1", IdJuego = 89 },
+            new Ahorcado { Id = 90, Name = "Ahorcado de Inglés - 1", IdJuego = 90 }
+                );
 
+        modelBuilder.Entity<PreguntaAhorcado>().HasData(
 
+                new PreguntaAhorcado { Id = 1, Pregunta = "¿Cuál es el género literario de 'Don Quijote de la Mancha'?", Respuesta = "Novela", AhorcadoId = 61 },
+                new PreguntaAhorcado { Id = 2, Pregunta = "¿Cómo se llama el resultado de multiplicar dos números en Matemáticas?", Respuesta = "Producto", AhorcadoId = 62 },
+                new PreguntaAhorcado { Id = 3, Pregunta = "¿Cuál es el río más largo del mundo?", Respuesta = "Amazonas", AhorcadoId = 63 },
+                new PreguntaAhorcado { Id = 4, Pregunta = "¿Quién compuso la ópera 'La flauta mágica'?", Respuesta = "Mozart", AhorcadoId = 64 },
+                new PreguntaAhorcado { Id = 5, Pregunta = "¿Cuál es el idioma más hablado en el mundo?", Respuesta = "Mandarín", AhorcadoId = 65 },
+
+                new PreguntaAhorcado { Id = 6, Pregunta = "¿Cuál es el tema del poema 'Las Rimas' de Gustavo Adolfo Bécquer?", Respuesta = "Amor", AhorcadoId = 66 },
+                new PreguntaAhorcado { Id = 7, Pregunta = "¿Cómo se llama el conjunto de puntos que están a la misma distancia de un punto fijo en Matemáticas?", Respuesta = "Circunferencia", AhorcadoId = 67 },
+                new PreguntaAhorcado { Id = 8, Pregunta = "¿Cuál es la capital de Australia?", Respuesta = "Canberra", AhorcadoId = 68 },
+                new PreguntaAhorcado { Id = 9, Pregunta = "¿Qué instrumento musical utiliza un arco y cuatro cuerdas?", Respuesta = "Violín", AhorcadoId = 69 },
+                new PreguntaAhorcado { Id = 10, Pregunta = "¿Cómo se llama el idioma oficial de Brasil?", Respuesta = "Portugués", AhorcadoId = 70 },
+
+                new PreguntaAhorcado { Id = 11, Pregunta = "¿Qué obra escribió García Márquez que ganó el Nobel?", Respuesta = "Cien", AhorcadoId = 71 },
+                new PreguntaAhorcado { Id = 12, Pregunta = "¿Cómo se llama la figura geométrica con tres lados?", Respuesta = "Triángulo", AhorcadoId = 72 },
+                new PreguntaAhorcado { Id = 13, Pregunta = "¿Cuál es el país más grande del mundo por superficie?", Respuesta = "Rusia", AhorcadoId = 73 },
+                new PreguntaAhorcado { Id = 14, Pregunta = "¿Quién compuso la Novena Sinfonía?", Respuesta = "Beethoven", AhorcadoId = 74 },
+                new PreguntaAhorcado { Id = 15, Pregunta = "¿Cuál es la ciudad capital de Inglaterra?", Respuesta = "Londres", AhorcadoId = 75 },
+
+                new PreguntaAhorcado { Id = 16, Pregunta = "¿Qué autor escribió 'La casa de Bernarda Alba'?", Respuesta = "Lorca", AhorcadoId = 76 },
+                new PreguntaAhorcado { Id = 17, Pregunta = "¿Cómo se llama el polígono con seis lados?", Respuesta = "Hexágono", AhorcadoId = 77 },
+                new PreguntaAhorcado { Id = 18, Pregunta = "¿Qué continente está completamente en el hemisferio sur?", Respuesta = "Australia", AhorcadoId = 78 },
+                new PreguntaAhorcado { Id = 19, Pregunta = "¿Qué instrumento musical tiene teclas blancas y negras?", Respuesta = "Piano", AhorcadoId = 79 },
+                new PreguntaAhorcado { Id = 20, Pregunta = "¿Cuál es la lengua oficial de Alemania?", Respuesta = "Alemán", AhorcadoId = 80 },
+
+                new PreguntaAhorcado { Id = 21, Pregunta = "¿Quién escribió 'Cien Años de Soledad'?", Respuesta = "García", AhorcadoId = 81 },
+                new PreguntaAhorcado { Id = 22, Pregunta = "¿Qué figura geométrica tiene todos sus lados iguales?", Respuesta = "Cuadrado", AhorcadoId = 82 },
+                new PreguntaAhorcado { Id = 23, Pregunta = "¿Cuál es el océano más grande del mundo?", Respuesta = "Pacífico", AhorcadoId = 83 },
+                new PreguntaAhorcado { Id = 24, Pregunta = "¿Quién es conocido como el 'Rey del Pop'?", Respuesta = "Jackson", AhorcadoId = 84 },
+                new PreguntaAhorcado { Id = 25, Pregunta = "¿Qué idioma se habla en Italia?", Respuesta = "Italiano", AhorcadoId = 85 },
+
+                new PreguntaAhorcado { Id = 26, Pregunta = "¿Quién escribió 'Don Quijote de la Mancha'?", Respuesta = "Cervantes", AhorcadoId = 86 },
+                new PreguntaAhorcado { Id = 27, Pregunta = "¿Qué es una línea que une dos puntos en una circunferencia?", Respuesta = "Cuerda", AhorcadoId = 87 },
+                new PreguntaAhorcado { Id = 28, Pregunta = "¿Cuál es el país más pequeño del mundo?", Respuesta = "Vaticano", AhorcadoId = 88 },
+                new PreguntaAhorcado { Id = 29, Pregunta = "¿Qué compositor es conocido por 'Las cuatro estaciones'?", Respuesta = "Vivaldi", AhorcadoId = 89 },
+                new PreguntaAhorcado { Id = 30, Pregunta = "¿Cuál es el idioma oficial de Francia?", Respuesta = "Francés", AhorcadoId = 90 }
 
 
         );
-
-
 
             // Relación entre Usuario y Avatar
             modelBuilder.Entity<Usuario>()
@@ -1404,6 +1512,11 @@ namespace GalacticApi.Data
                 .HasForeignKey<Pasapalabra>(p => p.IdJuego)
                 .IsRequired();
 
+            modelBuilder.Entity<Juego>()
+                .HasOne(j => j.Ahorcado)
+                .WithOne(p => p.Juego)
+                .HasForeignKey<Ahorcado>(p => p.IdJuego)
+                .IsRequired();
 
 
             // Relación entre Pasapalabra y PreguntaPasapalabra
@@ -1434,7 +1547,9 @@ namespace GalacticApi.Data
         public DbSet<TipoJuego> TipoJuegos { get; set; }
         public DbSet<Juego> Juegos { get; set; }
         public DbSet<Pasapalabra> Pasapalabras { get; set; }
+        public DbSet<Ahorcado> Ahorcados { get; set; }
         public DbSet<PreguntaPasapalabra> PreguntaPasapalabras { get; set; }
+        public DbSet<PreguntaAhorcado> PreguntaAhorcados { get; set; }
         public DbSet<Resultados> Resultados { get; set; }
 
 

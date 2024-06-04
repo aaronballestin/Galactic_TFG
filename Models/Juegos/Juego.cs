@@ -26,6 +26,8 @@ namespace GalacticApi.Models
 
         public List<Resultados> Resultados{ get; set;}
         public Pasapalabra Pasapalabra{ get; set;}
+        public Ahorcado Ahorcado{ get; set;}
+
         public Juego(){
 
         }

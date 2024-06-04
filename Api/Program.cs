@@ -16,6 +16,7 @@ builder.Services.AddScoped<IPreguntaPasapalabraService, PreguntaPasapalabraServi
 builder.Services.AddScoped<ITipoJuegoService, TipoJuegoService>(); 
 builder.Services.AddScoped<IBuscadorService, BuscadorService>(); 
 builder.Services.AddScoped<IResultadoService, ResultadoService>(); 
+builder.Services.AddScoped<IAhorcadoService, AhorcadoService>(); 
 
 
 
@@ -33,6 +34,7 @@ builder.Services.AddScoped<IPreguntaPasapalabraRepository, PreguntaPasapalabraRe
 builder.Services.AddScoped<ITipoJuegoRepository, TipoJuegoRepository>(); 
 builder.Services.AddScoped<IBuscadorRepository, BuscadorRepository>(); 
 builder.Services.AddScoped<IResultadoRepository, ResultadoRepository>(); 
+builder.Services.AddScoped<IAhorcadoRepository, AhorcadoRepository>(); 
 
 
 
