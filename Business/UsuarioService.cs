@@ -57,6 +57,11 @@ namespace GalacticApi.Services
             usuarioDTO.Falladas = usuario.Resultados.Sum(a => a.Falladas);
             usuarioDTO.Media = usuario.Resultados.Sum(a => a.Resultado)/usuario.Resultados.Count();
             usuarioDTO.Resultados = usuario.Resultados.Select(a => new GetResultadosDTO {IdJuego = a.IdJuego, IdUsuario = a.IdUsuario, Acertadas = a.Acertadas, Completado = a.Completado, Falladas = a.Falladas, Resultado = a.Resultado}).ToList();
+
+            foreach (var item in usuarioDTO.Resultados)
+            {
+                item.Juego = _usuarioRepository.NombreJuego(item.IdJuego);
+            }
             return usuarioDTO;
         }
  

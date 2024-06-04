@@ -8,6 +8,7 @@ namespace GalacticApi.Models
 
         public int IdUsuario { get; set;}
         public int IdJuego { get; set;}
+        public string Juego { get; set;}    
         public char Completado {get; set;}
         public double Resultado  {get; set;}
         public int Acertadas {get; set;}

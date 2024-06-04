@@ -8,12 +8,10 @@ namespace GalacticApi.Models
     {
         private readonly GalacticApiContext _context;
 
-        private readonly ILogger<JuegoRepository> _logger;
 
-        public JuegoRepository(ILogger<JuegoRepository> logger, GalacticApiContext context)
+        public JuegoRepository(GalacticApiContext context)
         {
             _context = context;
-            _logger = logger;
         }
 
         public Juego GetJuegoById(int id)

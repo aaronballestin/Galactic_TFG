@@ -40,7 +40,9 @@ namespace GalacticApi.Data
             return usuario;
         }
 
-
+        public string NombreJuego(int id){
+            return _context.Juegos.FirstOrDefault(u => u.Id ==id).TemaJuego;
+        }
 
         public List<Usuario> GetUsuarios(){
             return _context.Usuarios.ToList();
