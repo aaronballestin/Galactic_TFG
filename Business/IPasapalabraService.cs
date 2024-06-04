@@ -8,5 +8,6 @@ namespace GalacticApi.Services
         void DeletePasapalabra(int id);
         void AddPasapalabra(Pasapalabra pasapalabra);
         void UpdatePasapalabra(Pasapalabra pasapalabra);
+        public GetPasapalabraDTO GetPasapalabraMultijugador();
     }
 }

@@ -46,5 +46,9 @@ namespace GalacticApi.Services
         {
             _pasapalabraRepository.UpdatePasapalabra(pasapalabra);
         }
+
+        public GetPasapalabraDTO GetPasapalabraMultijugador(){
+            return _pasapalabraRepository.GetPasapalabraMultijugador();
+        }
     }
 }

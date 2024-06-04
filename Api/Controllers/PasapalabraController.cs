@@ -34,6 +34,28 @@ namespace GalacticApi.Api
 
         }
 
+        [HttpGet("/multijugador")]
+        public ActionResult<GetPasapalabraDTO> GetPasapalabrasMultijugador()
+        {
+            try
+            {
+                var pasaplabras = new List<GetPasapalabraDTO>();
+                var pasaplabra1 = _pasapalabraService.GetPasapalabraMultijugador();
+                var pasapalabra2 =_pasapalabraService.GetPasapalabraMultijugador();
+                pasaplabras.Add(pasaplabra1);
+                pasaplabras.Add(pasapalabra2);
+                return Ok(pasaplabras);
+
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound("No hay obras disponibles");
+            }
+
+        }
+
+
+
         [HttpGet("{id}")]
         public ActionResult<GetPasapalabraDTO> GetPasapalabra(int id)
         {
@@ -69,29 +91,23 @@ namespace GalacticApi.Api
 
         }
 
-        [HttpPut("{id}")]
-        public ActionResult UpdatePasapalabra(int id, Pasapalabra pasapalabra)
-        {
-            if (!ModelState.IsValid) { return BadRequest(ModelState); }
-            try
-            {
-                //Curso curso1 = _cursoService.GetCursoById(id);
-                //if (id != curso1.Id)
-                {
-                    return BadRequest();
-                }
-
+        // [HttpPut("{id}")]
+        // public ActionResult UpdatePasapalabra(int id, Pasapalabra pasapalabra)
+        // {
+        //     if (!ModelState.IsValid) { return BadRequest(ModelState); }
+        //     try
+        //     {
                 
-                _pasapalabraService.UpdatePasapalabra(pasapalabra);
-                return NoContent();
-            }
-            catch (KeyNotFoundException ex)
-            {
+        //         _pasapalabraService.UpdatePasapalabra(pasapalabra);
+        //         return NoContent();
+        //     }
+        //     catch (KeyNotFoundException ex)
+        //     {
 
-                return NotFound();
-            }
+        //         return NotFound();
+        //     }
 
-        }
+        // }
 
         [HttpDelete("{id}")]
         public IActionResult DeletePasapalabra(int id)

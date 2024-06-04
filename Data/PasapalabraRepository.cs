@@ -22,6 +22,25 @@ namespace GalacticApi.Models
             pasapalabra.PreguntaPasapalabras= _context.PreguntaPasapalabras.Where(a => a.PasapalabraId== pasapalabra.Id).ToList();
             return pasapalabra;
         }
+
+        public GetPasapalabraDTO GetPasapalabraMultijugador()
+        {
+            GetPasapalabraDTO pasapalabraDTO = new GetPasapalabraDTO();
+            List<GetPreguntasPasapalabraDTO> preguntas = new List<GetPreguntasPasapalabraDTO>();
+            var letra = 'A';
+            for (int i = 0; i < 27; i++)
+            {
+                letra++;
+                var pregunta = _context.PreguntaPasapalabras.Where(i => i.Letra == letra).OrderBy(x => Guid.NewGuid()).Take(1).ToList().Select(p=> new GetPreguntasPasapalabraDTO{Id = p.Id, Pregunta = p.Pregunta, Letra = p.Letra, Respuesta = p.Respuesta, acertado = false, contestado= false }).FirstOrDefault();
+                preguntas.Add(pregunta);
+            }
+            pasapalabraDTO.Preguntas = preguntas;
+
+            return pasapalabraDTO;
+            
+        }
+
+
         public List<Pasapalabra> GetPasapalabras()
         {
             return _context.Pasapalabras.ToList();
@@ -44,6 +63,8 @@ namespace GalacticApi.Models
             _context.SaveChanges();
 
         }
+
+
 
         public void SaveChanges()
         {
