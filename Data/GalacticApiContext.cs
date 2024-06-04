@@ -117,7 +117,7 @@ namespace GalacticApi.Data
             );
 
             modelBuilder.Entity<Resultados>().HasData(
-                new Resultados { Id = 1, IdJuego = 1, IdUsuario = 1, Completado = 'Y' }
+                new Resultados { Id = 1, IdJuego = 1, IdUsuario = 3, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 }
             );
 
             modelBuilder.Entity<Pasapalabra>().HasData(

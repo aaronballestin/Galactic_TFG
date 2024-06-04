@@ -12,7 +12,7 @@ namespace GalacticApi.Data
         List<Usuario> GetUsuarios();
 
         public void DeleteUsuario(Usuario usuario);
-
+        public Usuario UsuarioEstadisticas(int id);
         void SaveChanges();
     }
 }

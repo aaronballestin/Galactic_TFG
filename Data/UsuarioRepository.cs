@@ -34,6 +34,12 @@ namespace GalacticApi.Data
             SaveChanges();
         }
 
+        public Usuario UsuarioEstadisticas(int id){
+           var usuario =  _context.Usuarios.FirstOrDefault(u => u.Id == id);
+            usuario.Resultados = _context.Resultados.Where(u => u.IdUsuario == id).ToList();
+            return usuario;
+        }
+
 
 
         public List<Usuario> GetUsuarios(){

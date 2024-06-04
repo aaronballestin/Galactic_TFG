@@ -50,6 +50,17 @@ namespace GalacticApi.Services
             return _usuarioRepository.GetUsuarios().Select(u => new GetUsuariosDTO{Id = u.Id, Email = u.Email, Name = u.Name, Rol = u.Rol}).ToList();
         }
 
+        public UsuarioEstadisticasDTO GetUsuarioEstadisticasDTO(int id){
+            var usuario = _usuarioRepository.UsuarioEstadisticas(id);
+            var usuarioDTO = new UsuarioEstadisticasDTO {Id = usuario.Id, Name = usuario.Name, Email = usuario.Email};
+            usuarioDTO.Acertadas = usuario.Resultados.Sum(a => a.Acertadas);
+            usuarioDTO.Falladas = usuario.Resultados.Sum(a => a.Falladas);
+            usuarioDTO.Media = usuario.Resultados.Sum(a => a.Resultado)/usuario.Resultados.Count();
+            usuarioDTO.Resultados = usuario.Resultados.Select(a => new GetResultadosDTO {IdJuego = a.IdJuego, IdUsuario = a.IdUsuario, Acertadas = a.Acertadas, Completado = a.Completado, Falladas = a.Falladas, Resultado = a.Resultado}).ToList();
+            return usuarioDTO;
+        }
+ 
+
         public void DeleteUsuario(int id){
             Usuario user = _usuarioRepository.GetUserById(id);
             _usuarioRepository.DeleteUsuario(user);

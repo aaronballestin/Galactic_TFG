@@ -35,21 +35,21 @@ namespace GalacticApi.Api
 
         }
 
-        // [HttpGet("{id}")]
-        // public ActionResult<GetJuegoDTO> GetJuego(int id)
-        // {
+        [HttpGet("{id}")]
+        public ActionResult<UsuarioEstadisticasDTO> GetUsuario(int id)
+        {
 
-        //     try
-        //     {
-        //         var juego = _juegoService.GetJuegoById(id);
-        //         return Ok(juego);
-        //     }
-        //     catch (KeyNotFoundException ex)
-        //     {
-        //         return NotFound("No hay obra disponible con el id: " + id);
-        //     }
+            try
+            {
+                var usuario = _usuarioService.GetUsuarioEstadisticasDTO(id);
+                return Ok(usuario);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound("No hay obra disponible con el id: " + id);
+            }
 
-        // }
+        }
 
         [HttpPost]
         public ActionResult<UsuarioDTO> AddUsuario(UsuarioIntranetPostDTO usuarioPostDTO)
