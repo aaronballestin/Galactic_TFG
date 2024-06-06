@@ -12,6 +12,8 @@ namespace GalacticApi.Models
         public int IdAsignatura { get; set;}
         public string TemaJuego { get; set;}
 
+        //esto es un cambio
+
 
         public List<PostPreguntaPasapalabraDTO> Preguntas { get; set;}
 
