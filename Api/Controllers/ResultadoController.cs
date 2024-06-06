@@ -31,10 +31,10 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("asignaturas")]
-        public ActionResult<List<int>> GetResultadosAsignaturas(){
+        public ActionResult<List<int>> GetResultadosAsignaturas(int id){
             try
             {
-                return _resultadoService.GetResultadosAsignatura();
+                return _resultadoService.GetResultadosAsignatura(id);
             }
             catch (System.Exception)
             {
@@ -44,10 +44,10 @@ namespace GalacticApi.Api
         }
 
         [HttpGet("cursos")]
-        public ActionResult<List<int>> GetResultadosCursos(){
+        public ActionResult<List<int>> GetResultadosCursos(int id){
             try
             {
-                return _resultadoService.GetResultadosCurso();
+                return _resultadoService.GetResultadosCurso(id);
             }
             catch (System.Exception)
             {

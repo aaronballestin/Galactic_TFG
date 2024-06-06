@@ -16,6 +16,8 @@ namespace GalacticApi.Services
             return _resultadoRepository.GetResultados().Select(r => new GetResultadosDTO {IdJuego = r.IdJuego, IdUsuario = r.IdUsuario, Completado = r.Completado, Resultado = r.Resultado, Acertadas = r.Acertadas, Falladas = r.Falladas}).ToList();
         }
 
+
+
         public void AddResultado(GetPasapalabraDTO pasapalabraDTO, int id)
         {
             Resultados resultados = new Resultados();
@@ -43,9 +45,9 @@ namespace GalacticApi.Services
             _resultadoRepository.AddResultado(resultados);
         }
 
-        public List<int> GetResultadosAsignatura(){
+        public List<int> GetResultadosAsignatura(int id){
             List<int> resultados = new List<int>();
-            var resultadosDTO =_resultadoRepository.GetResultadosAsignatura();
+            var resultadosDTO =_resultadoRepository.GetResultadosAsignatura(id);
             int mates = 0, lengua = 0, ingles = 0, cono = 0, plastica = 0;
 
             foreach (var item in resultadosDTO)
@@ -79,9 +81,9 @@ namespace GalacticApi.Services
             return resultados;
         }
 
-        public List<int> GetResultadosCurso(){
+        public List<int> GetResultadosCurso(int id){
             List<int> resultados = new List<int>();
-            var resultadosDTO =_resultadoRepository.GetResultadosCurso();
+            var resultadosDTO =_resultadoRepository.GetResultadosCurso(id);
             int primero = 0, segundo = 0, tercero = 0, cuarto = 0, quinto = 0, sexto = 0;
 
             foreach (var item in resultadosDTO)

@@ -12,9 +12,10 @@ namespace GalacticApi.Models
         public string Email { get; set;}
         [Required]
         public string Password { get; set;}
-
         [Required]
         public string Rol { get; set;}
+
+        public int ClaseId { get; set;}
 
         [ForeignKey("AvatarId")]
         public int AvatarId { get; set;}

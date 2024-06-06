@@ -6,6 +6,7 @@ namespace GalacticApi.Models
         public string nombre {get; set;}
         public string avatar {get; set;}
         public string rol {get; set;}
+        public int clase {get; set;}
 
         public UsuarioDTO(){
             

@@ -42,7 +42,7 @@ namespace GalacticApi.Services
         public UsuarioDTO GetUsuario(string emailUsuario, string passwordUsuario)
         {
             var usuario = _usuarioRepository.GetUsuario(emailUsuario,passwordUsuario);
-            var usuarioDTO = new UsuarioDTO {id = usuario.Id, email = usuario.Email, nombre = usuario.Name, avatar = "textoejemplo", rol = usuario.Rol};
+            var usuarioDTO = new UsuarioDTO {id = usuario.Id, email = usuario.Email, nombre = usuario.Name, avatar = "textoejemplo", rol = usuario.Rol, clase = usuario.ClaseId};
             return usuarioDTO;
         }
 

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240603165800_BBDD3")]
-    partial class BBDD3
+    [Migration("20240606160129_BBDD")]
+    partial class BBDD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,6 +22,211 @@ namespace GalacticApi.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("GalacticApi.Models.Ahorcado", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("IdJuego")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdJuego")
+                        .IsUnique();
+
+                    b.ToTable("Ahorcados");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 61,
+                            IdJuego = 61,
+                            Name = "Ahorcado de Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            IdJuego = 62,
+                            Name = "Ahorcado de Matemáticas - 2"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            IdJuego = 63,
+                            Name = "Ahorcado de Geografía - 3"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            IdJuego = 64,
+                            Name = "Ahorcado de Música - 4"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            IdJuego = 65,
+                            Name = "Ahorcado de Varios - 5"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            IdJuego = 66,
+                            Name = "Ahorcado de Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            IdJuego = 67,
+                            Name = "Ahorcado de Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            IdJuego = 68,
+                            Name = "Ahorcado de Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            IdJuego = 69,
+                            Name = "Ahorcado de Música - 1"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            IdJuego = 70,
+                            Name = "Ahorcado de Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            IdJuego = 71,
+                            Name = "Ahorcado de Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            IdJuego = 72,
+                            Name = "Ahorcado de Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            IdJuego = 73,
+                            Name = "Ahorcado de Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            IdJuego = 74,
+                            Name = "Ahorcado de Música - 1"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            IdJuego = 75,
+                            Name = "Ahorcado de Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 76,
+                            IdJuego = 76,
+                            Name = "Ahorcado de Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            IdJuego = 77,
+                            Name = "Ahorcado de Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            IdJuego = 78,
+                            Name = "Ahorcado de Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            IdJuego = 79,
+                            Name = "Ahorcado de Música - 1"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            IdJuego = 80,
+                            Name = "Ahorcado de Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            IdJuego = 81,
+                            Name = "Ahorcado de Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            IdJuego = 82,
+                            Name = "Ahorcado de Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            IdJuego = 83,
+                            Name = "Ahorcado de Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            IdJuego = 84,
+                            Name = "Ahorcado de Música - 1"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            IdJuego = 85,
+                            Name = "Ahorcado de Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 86,
+                            IdJuego = 86,
+                            Name = "Ahorcado de Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 87,
+                            IdJuego = 87,
+                            Name = "Ahorcado de Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 88,
+                            IdJuego = 88,
+                            Name = "Ahorcado de Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 89,
+                            IdJuego = 89,
+                            Name = "Ahorcado de Música - 1"
+                        },
+                        new
+                        {
+                            Id = 90,
+                            IdJuego = 90,
+                            Name = "Ahorcado de Inglés - 1"
+                        });
+                });
 
             modelBuilder.Entity("GalacticApi.Models.Asignatura", b =>
                 {
@@ -48,7 +253,7 @@ namespace GalacticApi.Data.Migrations
                         new
                         {
                             Id = 2,
-                            NombreAsignatura = "Matematicas"
+                            NombreAsignatura = "Matemáticas"
                         },
                         new
                         {
@@ -63,7 +268,7 @@ namespace GalacticApi.Data.Migrations
                         new
                         {
                             Id = 5,
-                            NombreAsignatura = "Ingles"
+                            NombreAsignatura = "Inglés"
                         });
                 });
 
@@ -220,7 +425,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Basic - 1"
+                            TemaJuego = "Inglés Basic - 1"
                         },
                         new
                         {
@@ -229,7 +434,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Animals - 1"
+                            TemaJuego = "Inglés Animals - 1"
                         },
                         new
                         {
@@ -238,7 +443,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 2,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Matematicas - General"
+                            TemaJuego = "Matemáticas - General"
                         },
                         new
                         {
@@ -274,7 +479,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 4,
                             IdCurso = 1,
                             IdTipoJuego = 1,
-                            TemaJuego = "Musica"
+                            TemaJuego = "Música"
                         },
                         new
                         {
@@ -310,7 +515,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 2,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Basic - 1"
+                            TemaJuego = "Inglés Basic - 1"
                         },
                         new
                         {
@@ -319,7 +524,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 2,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Animals - 1"
+                            TemaJuego = "Inglés Animals - 1"
                         },
                         new
                         {
@@ -328,7 +533,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 2,
                             IdCurso = 2,
                             IdTipoJuego = 1,
-                            TemaJuego = "Matematicas - General"
+                            TemaJuego = "Matemáticas - General"
                         },
                         new
                         {
@@ -338,33 +543,6 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 2,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 1,
-                            IdCurso = 2,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Lengua - 2"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 2,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Plastica"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 2,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Musica"
                         },
                         new
                         {
@@ -400,7 +578,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 3,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Basic - 1"
+                            TemaJuego = "Inglés Basic - 1"
                         },
                         new
                         {
@@ -409,7 +587,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 3,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Animals - 1"
+                            TemaJuego = "Inglés Animals - 1"
                         },
                         new
                         {
@@ -418,7 +596,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 2,
                             IdCurso = 3,
                             IdTipoJuego = 1,
-                            TemaJuego = "Matematicas - General"
+                            TemaJuego = "Matemáticas - General"
                         },
                         new
                         {
@@ -428,33 +606,6 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 3,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 1,
-                            IdCurso = 3,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Lengua - 2"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 3,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Plastica"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 3,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Musica"
                         },
                         new
                         {
@@ -490,7 +641,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 4,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Basic - 1"
+                            TemaJuego = "Inglés Basic - 1"
                         },
                         new
                         {
@@ -499,7 +650,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 4,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Animals - 1"
+                            TemaJuego = "Inglés Animals - 1"
                         },
                         new
                         {
@@ -508,7 +659,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 2,
                             IdCurso = 4,
                             IdTipoJuego = 1,
-                            TemaJuego = "Matematicas - General"
+                            TemaJuego = "Matemáticas - General"
                         },
                         new
                         {
@@ -518,33 +669,6 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 4,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 1,
-                            IdCurso = 4,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Lengua - 2"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 4,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Plastica"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 4,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Musica"
                         },
                         new
                         {
@@ -580,7 +704,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 5,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Basic - 1"
+                            TemaJuego = "Inglés Basic - 1"
                         },
                         new
                         {
@@ -589,7 +713,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 5,
                             IdCurso = 5,
                             IdTipoJuego = 1,
-                            TemaJuego = "Ingles Animals - 1"
+                            TemaJuego = "Inglés Animals - 1"
                         },
                         new
                         {
@@ -598,7 +722,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 2,
                             IdCurso = 5,
                             IdTipoJuego = 1,
-                            TemaJuego = "Matematicas - General"
+                            TemaJuego = "Matemáticas - General"
                         },
                         new
                         {
@@ -608,33 +732,6 @@ namespace GalacticApi.Data.Migrations
                             IdCurso = 5,
                             IdTipoJuego = 1,
                             TemaJuego = "Lengua - 1"
-                        },
-                        new
-                        {
-                            Id = 48,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 1,
-                            IdCurso = 5,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Lengua - 2"
-                        },
-                        new
-                        {
-                            Id = 49,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 5,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Plastica"
-                        },
-                        new
-                        {
-                            Id = 50,
-                            Codigo = "XXXXXX",
-                            IdAsignatura = 4,
-                            IdCurso = 5,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Musica"
                         },
                         new
                         {
@@ -688,7 +785,7 @@ namespace GalacticApi.Data.Migrations
                             IdAsignatura = 2,
                             IdCurso = 6,
                             IdTipoJuego = 1,
-                            TemaJuego = "Matematicas - General"
+                            TemaJuego = "Matemáticas - General"
                         },
                         new
                         {
@@ -701,30 +798,273 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
-                            Id = 58,
+                            Id = 61,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 1,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 1,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Matemáticas - 2"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 1,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Geografía - 3"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 1,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Música - 4"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 1,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Varios - 5"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 2,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 2,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 2,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 2,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Música - 1"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 2,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 3,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 3,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 3,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 3,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Música - 1"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 3,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 4,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 4,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 4,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 4,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Música - 1"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 4,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 1,
+                            IdCurso = 5,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Lengua - 1"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 2,
+                            IdCurso = 5,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Matemáticas - 1"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 5,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 4,
+                            IdCurso = 5,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Música - 1"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 5,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Inglés - 1"
+                        },
+                        new
+                        {
+                            Id = 86,
                             Codigo = "XXXXXX",
                             IdAsignatura = 1,
                             IdCurso = 6,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Lengua - 2"
+                            IdTipoJuego = 2,
+                            TemaJuego = "Lengua - 1"
                         },
                         new
                         {
-                            Id = 59,
+                            Id = 87,
                             Codigo = "XXXXXX",
-                            IdAsignatura = 4,
+                            IdAsignatura = 2,
                             IdCurso = 6,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Plastica"
+                            IdTipoJuego = 2,
+                            TemaJuego = "Matemáticas - 1"
                         },
                         new
                         {
-                            Id = 60,
+                            Id = 88,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 3,
+                            IdCurso = 6,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Geografía - 1"
+                        },
+                        new
+                        {
+                            Id = 89,
                             Codigo = "XXXXXX",
                             IdAsignatura = 4,
                             IdCurso = 6,
-                            IdTipoJuego = 1,
-                            TemaJuego = "Musica"
+                            IdTipoJuego = 2,
+                            TemaJuego = "Música - 1"
+                        },
+                        new
+                        {
+                            Id = 90,
+                            Codigo = "XXXXXX",
+                            IdAsignatura = 5,
+                            IdCurso = 6,
+                            IdTipoJuego = 2,
+                            TemaJuego = "Inglés - 1"
                         });
                 });
 
@@ -801,6 +1141,18 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 9,
+                            IdJuego = 9,
+                            Name = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            IdJuego = 10,
+                            Name = "Musica"
+                        },
+                        new
+                        {
                             Id = 11,
                             IdJuego = 11,
                             Name = "Geografía"
@@ -843,12 +1195,6 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
-                            Id = 18,
-                            IdJuego = 18,
-                            Name = "Nombres de otras cosas pasapalabra"
-                        },
-                        new
-                        {
                             Id = 21,
                             IdJuego = 21,
                             Name = "Geografía"
@@ -887,12 +1233,6 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 27,
                             IdJuego = 27,
-                            Name = "Nombres de otras cosas pasapalabra"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            IdJuego = 28,
                             Name = "Nombres de otras cosas pasapalabra"
                         },
                         new
@@ -1020,6 +1360,245 @@ namespace GalacticApi.Data.Migrations
                             Id = 57,
                             IdJuego = 57,
                             Name = "Nombres de otras cosas pasapalabra"
+                        });
+                });
+
+            modelBuilder.Entity("GalacticApi.Models.PreguntaAhorcado", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AhorcadoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Pregunta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Respuesta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AhorcadoId")
+                        .IsUnique();
+
+                    b.ToTable("PreguntaAhorcados");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AhorcadoId = 61,
+                            Pregunta = "¿Cuál es el género literario de 'Don Quijote de la Mancha'?",
+                            Respuesta = "Novela"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AhorcadoId = 62,
+                            Pregunta = "¿Cómo se llama el resultado de multiplicar dos números en Matemáticas?",
+                            Respuesta = "Producto"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AhorcadoId = 63,
+                            Pregunta = "¿Cuál es el río más largo del mundo?",
+                            Respuesta = "Amazonas"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AhorcadoId = 64,
+                            Pregunta = "¿Quién compuso la ópera 'La flauta mágica'?",
+                            Respuesta = "Mozart"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AhorcadoId = 65,
+                            Pregunta = "¿Cuál es el idioma más hablado en el mundo?",
+                            Respuesta = "Mandarín"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AhorcadoId = 66,
+                            Pregunta = "¿Cuál es el tema del poema 'Las Rimas' de Gustavo Adolfo Bécquer?",
+                            Respuesta = "Amor"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AhorcadoId = 67,
+                            Pregunta = "¿Cómo se llama el conjunto de puntos que están a la misma distancia de un punto fijo en Matemáticas?",
+                            Respuesta = "Circunferencia"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AhorcadoId = 68,
+                            Pregunta = "¿Cuál es la capital de Australia?",
+                            Respuesta = "Canberra"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AhorcadoId = 69,
+                            Pregunta = "¿Qué instrumento musical utiliza un arco y cuatro cuerdas?",
+                            Respuesta = "Violín"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AhorcadoId = 70,
+                            Pregunta = "¿Cómo se llama el idioma oficial de Brasil?",
+                            Respuesta = "Portugués"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AhorcadoId = 71,
+                            Pregunta = "¿Qué obra escribió García Márquez que ganó el Nobel?",
+                            Respuesta = "Cien"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AhorcadoId = 72,
+                            Pregunta = "¿Cómo se llama la figura geométrica con tres lados?",
+                            Respuesta = "Triángulo"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AhorcadoId = 73,
+                            Pregunta = "¿Cuál es el país más grande del mundo por superficie?",
+                            Respuesta = "Rusia"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AhorcadoId = 74,
+                            Pregunta = "¿Quién compuso la Novena Sinfonía?",
+                            Respuesta = "Beethoven"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AhorcadoId = 75,
+                            Pregunta = "¿Cuál es la ciudad capital de Inglaterra?",
+                            Respuesta = "Londres"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AhorcadoId = 76,
+                            Pregunta = "¿Qué autor escribió 'La casa de Bernarda Alba'?",
+                            Respuesta = "Lorca"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            AhorcadoId = 77,
+                            Pregunta = "¿Cómo se llama el polígono con seis lados?",
+                            Respuesta = "Hexágono"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AhorcadoId = 78,
+                            Pregunta = "¿Qué continente está completamente en el hemisferio sur?",
+                            Respuesta = "Australia"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            AhorcadoId = 79,
+                            Pregunta = "¿Qué instrumento musical tiene teclas blancas y negras?",
+                            Respuesta = "Piano"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            AhorcadoId = 80,
+                            Pregunta = "¿Cuál es la lengua oficial de Alemania?",
+                            Respuesta = "Alemán"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            AhorcadoId = 81,
+                            Pregunta = "¿Quién escribió 'Cien Años de Soledad'?",
+                            Respuesta = "García"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            AhorcadoId = 82,
+                            Pregunta = "¿Qué figura geométrica tiene todos sus lados iguales?",
+                            Respuesta = "Cuadrado"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            AhorcadoId = 83,
+                            Pregunta = "¿Cuál es el océano más grande del mundo?",
+                            Respuesta = "Pacífico"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            AhorcadoId = 84,
+                            Pregunta = "¿Quién es conocido como el 'Rey del Pop'?",
+                            Respuesta = "Jackson"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            AhorcadoId = 85,
+                            Pregunta = "¿Qué idioma se habla en Italia?",
+                            Respuesta = "Italiano"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            AhorcadoId = 86,
+                            Pregunta = "¿Quién escribió 'Don Quijote de la Mancha'?",
+                            Respuesta = "Cervantes"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            AhorcadoId = 87,
+                            Pregunta = "¿Qué es una línea que une dos puntos en una circunferencia?",
+                            Respuesta = "Cuerda"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            AhorcadoId = 88,
+                            Pregunta = "¿Cuál es el país más pequeño del mundo?",
+                            Respuesta = "Vaticano"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            AhorcadoId = 89,
+                            Pregunta = "¿Qué compositor es conocido por 'Las cuatro estaciones'?",
+                            Respuesta = "Vivaldi"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            AhorcadoId = 90,
+                            Pregunta = "¿Cuál es el idioma oficial de Francia?",
+                            Respuesta = "Francés"
                         });
                 });
 
@@ -10022,12 +10601,12 @@ namespace GalacticApi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Acertadas = 0,
+                            Acertadas = 27,
                             Completado = "Y",
                             Falladas = 0,
                             IdJuego = 1,
-                            IdUsuario = 1,
-                            Resultado = 0.0
+                            IdUsuario = 3,
+                            Resultado = 100.0
                         });
                 });
 
@@ -10052,6 +10631,11 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 1,
                             Tipo = "Pasapalabra"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Tipo = "Ahorcado"
                         });
                 });
 
@@ -10064,6 +10648,9 @@ namespace GalacticApi.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("AvatarId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClaseId")
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
@@ -10093,6 +10680,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 1,
                             AvatarId = 1,
+                            ClaseId = 0,
                             Email = "aaron@svalero.com",
                             Name = "Aaron",
                             Password = "1234",
@@ -10102,6 +10690,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 2,
                             AvatarId = 1,
+                            ClaseId = 1,
                             Email = "antonio@svalero.com",
                             Name = "Antonio",
                             Password = "1234",
@@ -10111,11 +10700,203 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 3,
                             AvatarId = 1,
-                            Email = "alex@svalero.com",
-                            Name = "Alex",
+                            ClaseId = 1,
+                            Email = "profesor1@svalero.com",
+                            Name = "Profesor1",
+                            Password = "1234",
+                            Rol = "Profesor"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno4@svalero.com",
+                            Name = "alumno4",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno5@svalero.com",
+                            Name = "alumno5",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno6@svalero.com",
+                            Name = "alumno6",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno7@svalero.com",
+                            Name = "alumno7",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno8@svalero.com",
+                            Name = "alumno8",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno9@svalero.com",
+                            Name = "alumno9",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno10@svalero.com",
+                            Name = "alumno10",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "profesor2@svalero.com",
+                            Name = "Profesor2",
+                            Password = "1234",
+                            Rol = "Profesor"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno11@svalero.com",
+                            Name = "alumno11",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno12@svalero.com",
+                            Name = "alumno12",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno13@svalero.com",
+                            Name = "alumno13",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno14@svalero.com",
+                            Name = "alumno14",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno15@svalero.com",
+                            Name = "alumno15",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno16@svalero.com",
+                            Name = "alumno16",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno17@svalero.com",
+                            Name = "alumno17",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno18@svalero.com",
+                            Name = "alumno18",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno19@svalero.com",
+                            Name = "alumno19",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno20@svalero.com",
+                            Name = "alumno20",
                             Password = "1234",
                             Rol = "Alumno"
                         });
+                });
+
+            modelBuilder.Entity("GalacticApi.Models.Ahorcado", b =>
+                {
+                    b.HasOne("GalacticApi.Models.Juego", "Juego")
+                        .WithOne("Ahorcado")
+                        .HasForeignKey("GalacticApi.Models.Ahorcado", "IdJuego")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Juego");
                 });
 
             modelBuilder.Entity("GalacticApi.Models.Juego", b =>
@@ -10154,6 +10935,17 @@ namespace GalacticApi.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Juego");
+                });
+
+            modelBuilder.Entity("GalacticApi.Models.PreguntaAhorcado", b =>
+                {
+                    b.HasOne("GalacticApi.Models.Ahorcado", "Ahorcado")
+                        .WithOne("PreguntaAhorcado")
+                        .HasForeignKey("GalacticApi.Models.PreguntaAhorcado", "AhorcadoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ahorcado");
                 });
 
             modelBuilder.Entity("GalacticApi.Models.PreguntaPasapalabra", b =>
@@ -10197,6 +10989,12 @@ namespace GalacticApi.Data.Migrations
                     b.Navigation("Avatar");
                 });
 
+            modelBuilder.Entity("GalacticApi.Models.Ahorcado", b =>
+                {
+                    b.Navigation("PreguntaAhorcado")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("GalacticApi.Models.Asignatura", b =>
                 {
                     b.Navigation("Juegos");
@@ -10214,6 +11012,9 @@ namespace GalacticApi.Data.Migrations
 
             modelBuilder.Entity("GalacticApi.Models.Juego", b =>
                 {
+                    b.Navigation("Ahorcado")
+                        .IsRequired();
+
                     b.Navigation("Pasapalabra")
                         .IsRequired();
 

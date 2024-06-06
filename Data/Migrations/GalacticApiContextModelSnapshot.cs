@@ -1139,6 +1139,18 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
+                            Id = 9,
+                            IdJuego = 9,
+                            Name = "Plastica"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            IdJuego = 10,
+                            Name = "Musica"
+                        },
+                        new
+                        {
                             Id = 11,
                             IdJuego = 11,
                             Name = "Geografía"
@@ -1181,12 +1193,6 @@ namespace GalacticApi.Data.Migrations
                         },
                         new
                         {
-                            Id = 18,
-                            IdJuego = 18,
-                            Name = "Nombres de otras cosas pasapalabra"
-                        },
-                        new
-                        {
                             Id = 21,
                             IdJuego = 21,
                             Name = "Geografía"
@@ -1225,12 +1231,6 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 27,
                             IdJuego = 27,
-                            Name = "Nombres de otras cosas pasapalabra"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            IdJuego = 28,
                             Name = "Nombres de otras cosas pasapalabra"
                         },
                         new
@@ -10648,6 +10648,9 @@ namespace GalacticApi.Data.Migrations
                     b.Property<int>("AvatarId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ClaseId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -10675,6 +10678,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 1,
                             AvatarId = 1,
+                            ClaseId = 0,
                             Email = "aaron@svalero.com",
                             Name = "Aaron",
                             Password = "1234",
@@ -10684,6 +10688,7 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 2,
                             AvatarId = 1,
+                            ClaseId = 1,
                             Email = "antonio@svalero.com",
                             Name = "Antonio",
                             Password = "1234",
@@ -10693,8 +10698,189 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 3,
                             AvatarId = 1,
-                            Email = "alex@svalero.com",
-                            Name = "Alex",
+                            ClaseId = 1,
+                            Email = "profesor1@svalero.com",
+                            Name = "Profesor1",
+                            Password = "1234",
+                            Rol = "Profesor"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno4@svalero.com",
+                            Name = "alumno4",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno5@svalero.com",
+                            Name = "alumno5",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno6@svalero.com",
+                            Name = "alumno6",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno7@svalero.com",
+                            Name = "alumno7",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno8@svalero.com",
+                            Name = "alumno8",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno9@svalero.com",
+                            Name = "alumno9",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AvatarId = 1,
+                            ClaseId = 1,
+                            Email = "alumno10@svalero.com",
+                            Name = "alumno10",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "profesor2@svalero.com",
+                            Name = "Profesor2",
+                            Password = "1234",
+                            Rol = "Profesor"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno11@svalero.com",
+                            Name = "alumno11",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno12@svalero.com",
+                            Name = "alumno12",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno13@svalero.com",
+                            Name = "alumno13",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno14@svalero.com",
+                            Name = "alumno14",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno15@svalero.com",
+                            Name = "alumno15",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno16@svalero.com",
+                            Name = "alumno16",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno17@svalero.com",
+                            Name = "alumno17",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno18@svalero.com",
+                            Name = "alumno18",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno19@svalero.com",
+                            Name = "alumno19",
+                            Password = "1234",
+                            Rol = "Alumno"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            AvatarId = 1,
+                            ClaseId = 2,
+                            Email = "alumno20@svalero.com",
+                            Name = "alumno20",
                             Password = "1234",
                             Rol = "Alumno"
                         });
