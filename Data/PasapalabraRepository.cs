@@ -51,9 +51,25 @@ namespace GalacticApi.Models
             _context.SaveChanges();
 
         }
-        public void AddPasapalabra(Pasapalabra pasapalabra)
+        public void AddPasapalabra(PostPasapalabraDTO pasapalabraDTO)
         {
+            var juego = new Juego{TemaJuego = pasapalabraDTO.TemaJuego, Codigo = "XXXXX", IdAsignatura = pasapalabraDTO.IdAsignatura, IdCurso = pasapalabraDTO.IdCurso, IdTipoJuego = 1};
+            _context.Juegos.Add(juego);
+            _context.SaveChanges();
+
+
+            var pasapalabra = new Pasapalabra {IdJuego = juego.Id, Name = pasapalabraDTO.Name};
             _context.Pasapalabras.Add(pasapalabra);
+            _context.SaveChanges();
+
+            foreach (var item in pasapalabraDTO.Preguntas)
+            {
+                var pregunta = new PreguntaPasapalabra {PasapalabraId = pasapalabra.Id, Letra = item.Letra, Pregunta = item.Pregunta, Respuesta = item.Respuesta};
+                _context.PreguntaPasapalabras.Add(pregunta);
+                _context.SaveChanges();
+
+            }
+
             _context.SaveChanges();
 
         }
