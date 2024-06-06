@@ -179,7 +179,25 @@ new Juego { Id = 61, IdCurso = 1, IdAsignatura = 1, IdTipoJuego = 2, TemaJuego =
             );
 
             modelBuilder.Entity<Resultados>().HasData(
-                new Resultados { Id = 1, IdJuego = 1, IdUsuario = 3, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 }
+                new Resultados { Id = 1, IdJuego = 1, IdUsuario = 3, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 2, IdJuego = 1, IdUsuario = 3, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 3, IdJuego = 1, IdUsuario = 1, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 4, IdJuego = 1, IdUsuario = 1, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 5, IdJuego = 1, IdUsuario = 11, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 6, IdJuego = 1, IdUsuario = 11, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 7, IdJuego = 1, IdUsuario = 11, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 8, IdJuego = 1, IdUsuario = 11, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 9, IdJuego = 1, IdUsuario = 11, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 10, IdJuego = 1, IdUsuario = 13, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 11, IdJuego = 1, IdUsuario = 4, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 12, IdJuego = 1, IdUsuario = 5, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 13, IdJuego = 1, IdUsuario = 6, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 14, IdJuego = 1, IdUsuario = 7, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 15, IdJuego = 1, IdUsuario = 8, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 16, IdJuego = 1, IdUsuario = 9, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 17, IdJuego = 1, IdUsuario = 10, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 },
+                new Resultados { Id = 18, IdJuego = 1, IdUsuario = 17, Completado = 'Y', Acertadas = 27, Falladas = 0, Resultado = 100 }
+
             );
 
             modelBuilder.Entity<Pasapalabra>().HasData(

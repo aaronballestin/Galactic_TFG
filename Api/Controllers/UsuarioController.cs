@@ -42,7 +42,7 @@ namespace GalacticApi.Api
             try
             {
                 var usuario = _usuarioService.GetUsuarioEstadisticasDTO(id);
-                return Ok(usuario);
+                return usuario;
             }
             catch (KeyNotFoundException ex)
             {

@@ -496,7 +496,34 @@ namespace GalacticApi.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Resultados",
                 columns: new[] { "Id", "Acertadas", "Completado", "Falladas", "IdJuego", "IdUsuario", "Resultado" },
-                values: new object[] { 1, 27, "Y", 0, 1, 3, 100.0 });
+                values: new object[,]
+                {
+                    { 1, 27, "Y", 0, 1, 3, 100.0 },
+                    { 2, 27, "Y", 0, 1, 3, 100.0 },
+                    { 3, 27, "Y", 0, 1, 1, 100.0 },
+                    { 4, 27, "Y", 0, 1, 1, 100.0 },
+                    { 5, 27, "Y", 0, 1, 11, 100.0 },
+                    { 6, 27, "Y", 0, 1, 11, 100.0 },
+                    { 7, 27, "Y", 0, 1, 11, 100.0 },
+                    { 8, 27, "Y", 0, 1, 11, 100.0 },
+                    { 9, 27, "Y", 0, 1, 11, 100.0 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Resultados",
+                columns: new[] { "Id", "Acertadas", "Completado", "Falladas", "IdJuego", "IdUsuario", "Resultado" },
+                values: new object[,]
+                {
+                    { 10, 27, "Y", 0, 1, 13, 100.0 },
+                    { 11, 27, "Y", 0, 1, 4, 100.0 },
+                    { 12, 27, "Y", 0, 1, 5, 100.0 },
+                    { 13, 27, "Y", 0, 1, 6, 100.0 },
+                    { 14, 27, "Y", 0, 1, 7, 100.0 },
+                    { 15, 27, "Y", 0, 1, 8, 100.0 },
+                    { 16, 27, "Y", 0, 1, 9, 100.0 },
+                    { 17, 27, "Y", 0, 1, 10, 100.0 },
+                    { 18, 27, "Y", 0, 1, 17, 100.0 }
+                });
 
             migrationBuilder.InsertData(
                 table: "PreguntaAhorcados",
