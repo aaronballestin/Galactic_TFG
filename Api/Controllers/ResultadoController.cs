@@ -30,7 +30,7 @@ namespace GalacticApi.Api
             }
         }
 
-        [HttpGet("asignaturas")]
+        [HttpGet("asignaturas/{id}")]
         public ActionResult<List<int>> GetResultadosAsignaturas(int id){
             try
             {
@@ -43,7 +43,7 @@ namespace GalacticApi.Api
             }
         }
 
-        [HttpGet("cursos")]
+        [HttpGet("cursos/{id}")]
         public ActionResult<List<int>> GetResultadosCursos(int id){
             try
             {
