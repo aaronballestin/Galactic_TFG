@@ -55,12 +55,8 @@ namespace GalacticApi.Services
             var usuarioDTO = new UsuarioEstadisticasDTO {Id = usuario.Id, Name = usuario.Name, Email = usuario.Email};
             usuarioDTO.Acertadas = usuario.Resultados.Sum(a => a.Acertadas);
             usuarioDTO.Falladas = usuario.Resultados.Sum(a => a.Falladas);
-            if(usuario.Resultados == null){
-                usuarioDTO.Media = usuario.Resultados.Sum(a => a.Resultado)/usuario.Resultados.Count();
-
-            }else{
-                usuarioDTO.Media = 0;
-            }
+            usuarioDTO.JuegosCompletados = usuario.Resultados.Where(a => a.Completado == 'Y').Count();
+            usuarioDTO.Media = Math.Round((double)(usuarioDTO.Acertadas*100)/(usuarioDTO.Acertadas + usuarioDTO.Falladas),2);
             usuarioDTO.Resultados = usuario.Resultados.Select(a => new GetResultadosDTO {IdJuego = a.IdJuego, IdUsuario = a.IdUsuario, Acertadas = a.Acertadas, Completado = a.Completado, Falladas = a.Falladas, Resultado = a.Resultado}).ToList();
 
             foreach (var item in usuarioDTO.Resultados)

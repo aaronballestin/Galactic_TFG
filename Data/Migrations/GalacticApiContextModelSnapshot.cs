@@ -1093,37 +1093,37 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 1,
                             IdJuego = 1,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 2,
                             IdJuego = 2,
-                            Name = "Conocimientos del medio"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 3,
                             IdJuego = 3,
-                            Name = "Conocimientos del medio"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 4,
                             IdJuego = 4,
-                            Name = "Inglés Basic"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 5,
                             IdJuego = 5,
-                            Name = "Ingles Animals"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 6,
                             IdJuego = 6,
-                            Name = "Matemáticas - 1"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
@@ -1147,217 +1147,217 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 10,
                             IdJuego = 10,
-                            Name = "Musica"
+                            Name = "Música"
                         },
                         new
                         {
                             Id = 11,
                             IdJuego = 11,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 12,
                             IdJuego = 12,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 13,
                             IdJuego = 13,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 14,
                             IdJuego = 14,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 15,
                             IdJuego = 15,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 16,
                             IdJuego = 16,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 17,
                             IdJuego = 17,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 21,
                             IdJuego = 21,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 22,
                             IdJuego = 22,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 23,
                             IdJuego = 23,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 24,
                             IdJuego = 24,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 25,
                             IdJuego = 25,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 26,
                             IdJuego = 26,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 27,
                             IdJuego = 27,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 31,
                             IdJuego = 31,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 32,
                             IdJuego = 32,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 33,
                             IdJuego = 33,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 34,
                             IdJuego = 34,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 35,
                             IdJuego = 35,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 36,
                             IdJuego = 36,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 37,
                             IdJuego = 37,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 41,
                             IdJuego = 41,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 42,
                             IdJuego = 42,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 43,
                             IdJuego = 43,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 44,
                             IdJuego = 44,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 45,
                             IdJuego = 45,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 46,
                             IdJuego = 46,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 47,
                             IdJuego = 47,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 51,
                             IdJuego = 51,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 52,
                             IdJuego = 52,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 53,
                             IdJuego = 53,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 54,
                             IdJuego = 54,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 55,
                             IdJuego = 55,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 56,
                             IdJuego = 56,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 57,
                             IdJuego = 57,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         });
                 });
 

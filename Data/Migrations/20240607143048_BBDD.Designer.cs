@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalacticApi.Data.Migrations
 {
     [DbContext(typeof(GalacticApiContext))]
-    [Migration("20240606165809_BBDD")]
+    [Migration("20240607143048_BBDD")]
     partial class BBDD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1095,37 +1095,37 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 1,
                             IdJuego = 1,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 2,
                             IdJuego = 2,
-                            Name = "Conocimientos del medio"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 3,
                             IdJuego = 3,
-                            Name = "Conocimientos del medio"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 4,
                             IdJuego = 4,
-                            Name = "Inglés Basic"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 5,
                             IdJuego = 5,
-                            Name = "Ingles Animals"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 6,
                             IdJuego = 6,
-                            Name = "Matemáticas - 1"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
@@ -1149,217 +1149,217 @@ namespace GalacticApi.Data.Migrations
                         {
                             Id = 10,
                             IdJuego = 10,
-                            Name = "Musica"
+                            Name = "Música"
                         },
                         new
                         {
                             Id = 11,
                             IdJuego = 11,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 12,
                             IdJuego = 12,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 13,
                             IdJuego = 13,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 14,
                             IdJuego = 14,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 15,
                             IdJuego = 15,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 16,
                             IdJuego = 16,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 17,
                             IdJuego = 17,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 21,
                             IdJuego = 21,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 22,
                             IdJuego = 22,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 23,
                             IdJuego = 23,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 24,
                             IdJuego = 24,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 25,
                             IdJuego = 25,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 26,
                             IdJuego = 26,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 27,
                             IdJuego = 27,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 31,
                             IdJuego = 31,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 32,
                             IdJuego = 32,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 33,
                             IdJuego = 33,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 34,
                             IdJuego = 34,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 35,
                             IdJuego = 35,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 36,
                             IdJuego = 36,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 37,
                             IdJuego = 37,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 41,
                             IdJuego = 41,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 42,
                             IdJuego = 42,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 43,
                             IdJuego = 43,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 44,
                             IdJuego = 44,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 45,
                             IdJuego = 45,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 46,
                             IdJuego = 46,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 47,
                             IdJuego = 47,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         },
                         new
                         {
                             Id = 51,
                             IdJuego = 51,
-                            Name = "Geografía"
+                            Name = "Geografía Basica"
                         },
                         new
                         {
                             Id = 52,
                             IdJuego = 52,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 1"
                         },
                         new
                         {
                             Id = 53,
                             IdJuego = 53,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Cultura General - 2"
                         },
                         new
                         {
                             Id = 54,
                             IdJuego = 54,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Basic - 1"
                         },
                         new
                         {
                             Id = 55,
                             IdJuego = 55,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Inglés Animals - 1"
                         },
                         new
                         {
                             Id = 56,
                             IdJuego = 56,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Matemáticas - General"
                         },
                         new
                         {
                             Id = 57,
                             IdJuego = 57,
-                            Name = "Nombres de otras cosas pasapalabra"
+                            Name = "Lengua - 1"
                         });
                 });
 
@@ -10605,7 +10605,7 @@ namespace GalacticApi.Data.Migrations
                             Completado = "Y",
                             Falladas = 0,
                             IdJuego = 1,
-                            IdUsuario = 3,
+                            IdUsuario = 1,
                             Resultado = 100.0
                         },
                         new
@@ -10614,169 +10614,1189 @@ namespace GalacticApi.Data.Migrations
                             Acertadas = 27,
                             Completado = "Y",
                             Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 3,
+                            IdJuego = 2,
+                            IdUsuario = 2,
                             Resultado = 100.0
                         },
                         new
                         {
                             Id = 3,
-                            Acertadas = 27,
+                            Acertadas = 20,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 1,
-                            Resultado = 100.0
+                            Falladas = 7,
+                            IdJuego = 3,
+                            IdUsuario = 3,
+                            Resultado = 74.069999999999993
                         },
                         new
                         {
                             Id = 4,
-                            Acertadas = 27,
+                            Acertadas = 19,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 1,
-                            Resultado = 100.0
+                            Falladas = 8,
+                            IdJuego = 4,
+                            IdUsuario = 4,
+                            Resultado = 70.370000000000005
                         },
                         new
                         {
                             Id = 5,
-                            Acertadas = 27,
+                            Acertadas = 15,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 11,
-                            Resultado = 100.0
+                            Falladas = 12,
+                            IdJuego = 5,
+                            IdUsuario = 5,
+                            Resultado = 55.560000000000002
                         },
                         new
                         {
                             Id = 6,
-                            Acertadas = 27,
+                            Acertadas = 14,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 11,
-                            Resultado = 100.0
+                            Falladas = 13,
+                            IdJuego = 6,
+                            IdUsuario = 6,
+                            Resultado = 51.850000000000001
                         },
                         new
                         {
                             Id = 7,
-                            Acertadas = 27,
+                            Acertadas = 13,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 11,
-                            Resultado = 100.0
+                            Falladas = 14,
+                            IdJuego = 7,
+                            IdUsuario = 7,
+                            Resultado = 48.149999999999999
                         },
                         new
                         {
                             Id = 8,
-                            Acertadas = 27,
+                            Acertadas = 10,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 11,
-                            Resultado = 100.0
+                            Falladas = 17,
+                            IdJuego = 8,
+                            IdUsuario = 8,
+                            Resultado = 37.039999999999999
                         },
                         new
                         {
                             Id = 9,
-                            Acertadas = 27,
+                            Acertadas = 9,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 11,
-                            Resultado = 100.0
+                            Falladas = 18,
+                            IdJuego = 9,
+                            IdUsuario = 9,
+                            Resultado = 33.329999999999998
                         },
                         new
                         {
                             Id = 10,
-                            Acertadas = 27,
+                            Acertadas = 5,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 13,
-                            Resultado = 100.0
+                            Falladas = 22,
+                            IdJuego = 10,
+                            IdUsuario = 10,
+                            Resultado = 18.52
                         },
                         new
                         {
                             Id = 11,
-                            Acertadas = 27,
+                            Acertadas = 4,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 4,
-                            Resultado = 100.0
+                            Falladas = 23,
+                            IdJuego = 11,
+                            IdUsuario = 11,
+                            Resultado = 14.81
                         },
                         new
                         {
                             Id = 12,
-                            Acertadas = 27,
+                            Acertadas = 3,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 5,
-                            Resultado = 100.0
+                            Falladas = 24,
+                            IdJuego = 12,
+                            IdUsuario = 12,
+                            Resultado = 11.109999999999999
                         },
                         new
                         {
                             Id = 13,
-                            Acertadas = 27,
+                            Acertadas = 2,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 6,
-                            Resultado = 100.0
+                            Falladas = 25,
+                            IdJuego = 13,
+                            IdUsuario = 13,
+                            Resultado = 7.4100000000000001
                         },
                         new
                         {
                             Id = 14,
-                            Acertadas = 27,
+                            Acertadas = 1,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 7,
-                            Resultado = 100.0
+                            Falladas = 26,
+                            IdJuego = 14,
+                            IdUsuario = 14,
+                            Resultado = 3.7000000000000002
                         },
                         new
                         {
                             Id = 15,
-                            Acertadas = 27,
+                            Acertadas = 0,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 8,
-                            Resultado = 100.0
+                            Falladas = 27,
+                            IdJuego = 15,
+                            IdUsuario = 15,
+                            Resultado = 0.0
                         },
                         new
                         {
                             Id = 16,
-                            Acertadas = 27,
+                            Acertadas = 15,
                             Completado = "Y",
-                            Falladas = 0,
+                            Falladas = 12,
                             IdJuego = 1,
-                            IdUsuario = 9,
-                            Resultado = 100.0
+                            IdUsuario = 16,
+                            Resultado = 55.560000000000002
                         },
                         new
                         {
                             Id = 17,
-                            Acertadas = 27,
+                            Acertadas = 14,
                             Completado = "Y",
-                            Falladas = 0,
-                            IdJuego = 1,
-                            IdUsuario = 10,
-                            Resultado = 100.0
+                            Falladas = 13,
+                            IdJuego = 2,
+                            IdUsuario = 17,
+                            Resultado = 51.850000000000001
                         },
                         new
                         {
                             Id = 18,
-                            Acertadas = 27,
+                            Acertadas = 13,
                             Completado = "Y",
-                            Falladas = 0,
+                            Falladas = 14,
+                            IdJuego = 3,
+                            IdUsuario = 18,
+                            Resultado = 48.149999999999999
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 4,
+                            IdUsuario = 19,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Acertadas = 9,
+                            Completado = "Y",
+                            Falladas = 18,
+                            IdJuego = 5,
+                            IdUsuario = 20,
+                            Resultado = 33.329999999999998
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Acertadas = 25,
+                            Completado = "Y",
+                            Falladas = 2,
+                            IdJuego = 6,
+                            IdUsuario = 1,
+                            Resultado = 92.590000000000003
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Acertadas = 22,
+                            Completado = "Y",
+                            Falladas = 5,
+                            IdJuego = 7,
+                            IdUsuario = 2,
+                            Resultado = 81.480000000000004
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Acertadas = 18,
+                            Completado = "Y",
+                            Falladas = 9,
+                            IdJuego = 8,
+                            IdUsuario = 3,
+                            Resultado = 66.670000000000002
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Acertadas = 16,
+                            Completado = "Y",
+                            Falladas = 11,
+                            IdJuego = 9,
+                            IdUsuario = 4,
+                            Resultado = 59.259999999999998
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Acertadas = 14,
+                            Completado = "Y",
+                            Falladas = 13,
+                            IdJuego = 10,
+                            IdUsuario = 5,
+                            Resultado = 51.850000000000001
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 11,
+                            IdUsuario = 6,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 12,
+                            IdUsuario = 7,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 13,
+                            IdUsuario = 8,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Acertadas = 6,
+                            Completado = "Y",
+                            Falladas = 21,
+                            IdJuego = 14,
+                            IdUsuario = 9,
+                            Resultado = 22.219999999999999
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Acertadas = 4,
+                            Completado = "Y",
+                            Falladas = 23,
+                            IdJuego = 15,
+                            IdUsuario = 10,
+                            Resultado = 14.81
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Acertadas = 3,
+                            Completado = "Y",
+                            Falladas = 24,
+                            IdJuego = 16,
+                            IdUsuario = 11,
+                            Resultado = 11.109999999999999
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Acertadas = 2,
+                            Completado = "Y",
+                            Falladas = 25,
+                            IdJuego = 14,
+                            IdUsuario = 12,
+                            Resultado = 7.4100000000000001
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Acertadas = 1,
+                            Completado = "Y",
+                            Falladas = 26,
                             IdJuego = 1,
+                            IdUsuario = 13,
+                            Resultado = 3.7000000000000002
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Acertadas = 0,
+                            Completado = "Y",
+                            Falladas = 27,
+                            IdJuego = 3,
+                            IdUsuario = 14,
+                            Resultado = 0.0
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Acertadas = 25,
+                            Completado = "Y",
+                            Falladas = 2,
+                            IdJuego = 6,
+                            IdUsuario = 15,
+                            Resultado = 92.590000000000003
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Acertadas = 22,
+                            Completado = "Y",
+                            Falladas = 5,
+                            IdJuego = 7,
+                            IdUsuario = 16,
+                            Resultado = 81.480000000000004
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Acertadas = 18,
+                            Completado = "Y",
+                            Falladas = 9,
+                            IdJuego = 8,
                             IdUsuario = 17,
-                            Resultado = 100.0
+                            Resultado = 66.670000000000002
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Acertadas = 16,
+                            Completado = "Y",
+                            Falladas = 11,
+                            IdJuego = 9,
+                            IdUsuario = 18,
+                            Resultado = 59.259999999999998
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Acertadas = 14,
+                            Completado = "Y",
+                            Falladas = 13,
+                            IdJuego = 10,
+                            IdUsuario = 19,
+                            Resultado = 51.850000000000001
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 11,
+                            IdUsuario = 20,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Acertadas = 23,
+                            Completado = "Y",
+                            Falladas = 4,
+                            IdJuego = 12,
+                            IdUsuario = 1,
+                            Resultado = 85.189999999999998
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Acertadas = 20,
+                            Completado = "Y",
+                            Falladas = 7,
+                            IdJuego = 13,
+                            IdUsuario = 2,
+                            Resultado = 74.069999999999993
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Acertadas = 17,
+                            Completado = "Y",
+                            Falladas = 10,
+                            IdJuego = 14,
+                            IdUsuario = 3,
+                            Resultado = 62.960000000000001
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Acertadas = 14,
+                            Completado = "Y",
+                            Falladas = 13,
+                            IdJuego = 15,
+                            IdUsuario = 4,
+                            Resultado = 51.850000000000001
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 16,
+                            IdUsuario = 5,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 17,
+                            IdUsuario = 6,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 17,
+                            IdUsuario = 7,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Acertadas = 6,
+                            Completado = "Y",
+                            Falladas = 21,
+                            IdJuego = 17,
+                            IdUsuario = 8,
+                            Resultado = 22.219999999999999
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Acertadas = 4,
+                            Completado = "Y",
+                            Falladas = 23,
+                            IdJuego = 15,
+                            IdUsuario = 9,
+                            Resultado = 14.81
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Acertadas = 3,
+                            Completado = "Y",
+                            Falladas = 24,
+                            IdJuego = 21,
+                            IdUsuario = 10,
+                            Resultado = 11.109999999999999
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Acertadas = 2,
+                            Completado = "Y",
+                            Falladas = 25,
+                            IdJuego = 22,
+                            IdUsuario = 11,
+                            Resultado = 7.4100000000000001
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Acertadas = 1,
+                            Completado = "Y",
+                            Falladas = 26,
+                            IdJuego = 23,
+                            IdUsuario = 12,
+                            Resultado = 3.7000000000000002
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Acertadas = 0,
+                            Completado = "Y",
+                            Falladas = 27,
+                            IdJuego = 24,
+                            IdUsuario = 13,
+                            Resultado = 0.0
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Acertadas = 23,
+                            Completado = "Y",
+                            Falladas = 4,
+                            IdJuego = 12,
+                            IdUsuario = 14,
+                            Resultado = 85.189999999999998
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Acertadas = 20,
+                            Completado = "Y",
+                            Falladas = 7,
+                            IdJuego = 13,
+                            IdUsuario = 15,
+                            Resultado = 74.069999999999993
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Acertadas = 17,
+                            Completado = "Y",
+                            Falladas = 10,
+                            IdJuego = 14,
+                            IdUsuario = 16,
+                            Resultado = 62.960000000000001
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Acertadas = 14,
+                            Completado = "Y",
+                            Falladas = 13,
+                            IdJuego = 15,
+                            IdUsuario = 17,
+                            Resultado = 51.850000000000001
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 16,
+                            IdUsuario = 18,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 17,
+                            IdUsuario = 19,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 17,
+                            IdUsuario = 20,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Acertadas = 21,
+                            Completado = "Y",
+                            Falladas = 6,
+                            IdJuego = 25,
+                            IdUsuario = 1,
+                            Resultado = 77.780000000000001
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Acertadas = 18,
+                            Completado = "Y",
+                            Falladas = 9,
+                            IdJuego = 26,
+                            IdUsuario = 2,
+                            Resultado = 66.670000000000002
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Acertadas = 15,
+                            Completado = "Y",
+                            Falladas = 12,
+                            IdJuego = 27,
+                            IdUsuario = 3,
+                            Resultado = 55.560000000000002
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 8,
+                            IdUsuario = 4,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 9,
+                            IdUsuario = 5,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 10,
+                            IdUsuario = 6,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Acertadas = 6,
+                            Completado = "Y",
+                            Falladas = 21,
+                            IdJuego = 31,
+                            IdUsuario = 7,
+                            Resultado = 22.219999999999999
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Acertadas = 4,
+                            Completado = "Y",
+                            Falladas = 23,
+                            IdJuego = 32,
+                            IdUsuario = 8,
+                            Resultado = 14.81
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Acertadas = 3,
+                            Completado = "Y",
+                            Falladas = 24,
+                            IdJuego = 33,
+                            IdUsuario = 9,
+                            Resultado = 11.109999999999999
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Acertadas = 2,
+                            Completado = "Y",
+                            Falladas = 25,
+                            IdJuego = 34,
+                            IdUsuario = 10,
+                            Resultado = 7.4100000000000001
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Acertadas = 1,
+                            Completado = "Y",
+                            Falladas = 26,
+                            IdJuego = 35,
+                            IdUsuario = 11,
+                            Resultado = 3.7000000000000002
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Acertadas = 0,
+                            Completado = "Y",
+                            Falladas = 27,
+                            IdJuego = 36,
+                            IdUsuario = 12,
+                            Resultado = 0.0
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Acertadas = 21,
+                            Completado = "Y",
+                            Falladas = 6,
+                            IdJuego = 25,
+                            IdUsuario = 13,
+                            Resultado = 77.780000000000001
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Acertadas = 18,
+                            Completado = "Y",
+                            Falladas = 9,
+                            IdJuego = 26,
+                            IdUsuario = 14,
+                            Resultado = 66.670000000000002
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Acertadas = 15,
+                            Completado = "Y",
+                            Falladas = 12,
+                            IdJuego = 25,
+                            IdUsuario = 15,
+                            Resultado = 55.560000000000002
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 26,
+                            IdUsuario = 16,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 25,
+                            IdUsuario = 17,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 23,
+                            IdUsuario = 18,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Acertadas = 6,
+                            Completado = "Y",
+                            Falladas = 21,
+                            IdJuego = 31,
+                            IdUsuario = 19,
+                            Resultado = 22.219999999999999
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Acertadas = 4,
+                            Completado = "Y",
+                            Falladas = 23,
+                            IdJuego = 32,
+                            IdUsuario = 20,
+                            Resultado = 14.81
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Acertadas = 25,
+                            Completado = "Y",
+                            Falladas = 2,
+                            IdJuego = 51,
+                            IdUsuario = 1,
+                            Resultado = 92.590000000000003
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Acertadas = 24,
+                            Completado = "Y",
+                            Falladas = 3,
+                            IdJuego = 52,
+                            IdUsuario = 2,
+                            Resultado = 88.890000000000001
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Acertadas = 23,
+                            Completado = "Y",
+                            Falladas = 4,
+                            IdJuego = 53,
+                            IdUsuario = 3,
+                            Resultado = 85.189999999999998
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Acertadas = 22,
+                            Completado = "Y",
+                            Falladas = 5,
+                            IdJuego = 54,
+                            IdUsuario = 4,
+                            Resultado = 81.480000000000004
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Acertadas = 21,
+                            Completado = "Y",
+                            Falladas = 6,
+                            IdJuego = 55,
+                            IdUsuario = 5,
+                            Resultado = 77.780000000000001
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Acertadas = 20,
+                            Completado = "Y",
+                            Falladas = 7,
+                            IdJuego = 56,
+                            IdUsuario = 6,
+                            Resultado = 74.069999999999993
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Acertadas = 19,
+                            Completado = "Y",
+                            Falladas = 8,
+                            IdJuego = 57,
+                            IdUsuario = 7,
+                            Resultado = 70.370000000000005
+                        },
+                        new
+                        {
+                            Id = 88,
+                            Acertadas = 18,
+                            Completado = "Y",
+                            Falladas = 9,
+                            IdJuego = 51,
+                            IdUsuario = 8,
+                            Resultado = 66.670000000000002
+                        },
+                        new
+                        {
+                            Id = 89,
+                            Acertadas = 17,
+                            Completado = "Y",
+                            Falladas = 10,
+                            IdJuego = 52,
+                            IdUsuario = 9,
+                            Resultado = 62.960000000000001
+                        },
+                        new
+                        {
+                            Id = 90,
+                            Acertadas = 16,
+                            Completado = "Y",
+                            Falladas = 11,
+                            IdJuego = 53,
+                            IdUsuario = 10,
+                            Resultado = 59.259999999999998
+                        },
+                        new
+                        {
+                            Id = 91,
+                            Acertadas = 15,
+                            Completado = "Y",
+                            Falladas = 12,
+                            IdJuego = 54,
+                            IdUsuario = 11,
+                            Resultado = 55.560000000000002
+                        },
+                        new
+                        {
+                            Id = 92,
+                            Acertadas = 14,
+                            Completado = "Y",
+                            Falladas = 13,
+                            IdJuego = 55,
+                            IdUsuario = 12,
+                            Resultado = 51.850000000000001
+                        },
+                        new
+                        {
+                            Id = 93,
+                            Acertadas = 13,
+                            Completado = "Y",
+                            Falladas = 14,
+                            IdJuego = 56,
+                            IdUsuario = 13,
+                            Resultado = 48.149999999999999
+                        },
+                        new
+                        {
+                            Id = 94,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 57,
+                            IdUsuario = 14,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 95,
+                            Acertadas = 11,
+                            Completado = "Y",
+                            Falladas = 16,
+                            IdJuego = 51,
+                            IdUsuario = 15,
+                            Resultado = 40.740000000000002
+                        },
+                        new
+                        {
+                            Id = 96,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 52,
+                            IdUsuario = 16,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 97,
+                            Acertadas = 9,
+                            Completado = "Y",
+                            Falladas = 18,
+                            IdJuego = 53,
+                            IdUsuario = 17,
+                            Resultado = 33.329999999999998
+                        },
+                        new
+                        {
+                            Id = 98,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 54,
+                            IdUsuario = 18,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 99,
+                            Acertadas = 7,
+                            Completado = "Y",
+                            Falladas = 20,
+                            IdJuego = 55,
+                            IdUsuario = 19,
+                            Resultado = 25.93
+                        },
+                        new
+                        {
+                            Id = 100,
+                            Acertadas = 6,
+                            Completado = "Y",
+                            Falladas = 21,
+                            IdJuego = 56,
+                            IdUsuario = 20,
+                            Resultado = 22.219999999999999
+                        },
+                        new
+                        {
+                            Id = 101,
+                            Acertadas = 25,
+                            Completado = "Y",
+                            Falladas = 2,
+                            IdJuego = 41,
+                            IdUsuario = 1,
+                            Resultado = 92.590000000000003
+                        },
+                        new
+                        {
+                            Id = 102,
+                            Acertadas = 24,
+                            Completado = "Y",
+                            Falladas = 3,
+                            IdJuego = 42,
+                            IdUsuario = 2,
+                            Resultado = 88.890000000000001
+                        },
+                        new
+                        {
+                            Id = 103,
+                            Acertadas = 23,
+                            Completado = "Y",
+                            Falladas = 4,
+                            IdJuego = 43,
+                            IdUsuario = 3,
+                            Resultado = 85.189999999999998
+                        },
+                        new
+                        {
+                            Id = 104,
+                            Acertadas = 22,
+                            Completado = "Y",
+                            Falladas = 5,
+                            IdJuego = 44,
+                            IdUsuario = 4,
+                            Resultado = 81.480000000000004
+                        },
+                        new
+                        {
+                            Id = 105,
+                            Acertadas = 21,
+                            Completado = "Y",
+                            Falladas = 6,
+                            IdJuego = 45,
+                            IdUsuario = 5,
+                            Resultado = 77.780000000000001
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Acertadas = 20,
+                            Completado = "Y",
+                            Falladas = 7,
+                            IdJuego = 46,
+                            IdUsuario = 6,
+                            Resultado = 74.069999999999993
+                        },
+                        new
+                        {
+                            Id = 107,
+                            Acertadas = 19,
+                            Completado = "Y",
+                            Falladas = 8,
+                            IdJuego = 47,
+                            IdUsuario = 7,
+                            Resultado = 70.370000000000005
+                        },
+                        new
+                        {
+                            Id = 108,
+                            Acertadas = 18,
+                            Completado = "Y",
+                            Falladas = 9,
+                            IdJuego = 41,
+                            IdUsuario = 8,
+                            Resultado = 66.670000000000002
+                        },
+                        new
+                        {
+                            Id = 109,
+                            Acertadas = 17,
+                            Completado = "Y",
+                            Falladas = 10,
+                            IdJuego = 42,
+                            IdUsuario = 9,
+                            Resultado = 62.960000000000001
+                        },
+                        new
+                        {
+                            Id = 110,
+                            Acertadas = 16,
+                            Completado = "Y",
+                            Falladas = 11,
+                            IdJuego = 43,
+                            IdUsuario = 10,
+                            Resultado = 59.259999999999998
+                        },
+                        new
+                        {
+                            Id = 111,
+                            Acertadas = 15,
+                            Completado = "Y",
+                            Falladas = 12,
+                            IdJuego = 44,
+                            IdUsuario = 11,
+                            Resultado = 55.560000000000002
+                        },
+                        new
+                        {
+                            Id = 112,
+                            Acertadas = 14,
+                            Completado = "Y",
+                            Falladas = 13,
+                            IdJuego = 45,
+                            IdUsuario = 12,
+                            Resultado = 51.850000000000001
+                        },
+                        new
+                        {
+                            Id = 113,
+                            Acertadas = 13,
+                            Completado = "Y",
+                            Falladas = 14,
+                            IdJuego = 46,
+                            IdUsuario = 13,
+                            Resultado = 48.149999999999999
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Acertadas = 12,
+                            Completado = "Y",
+                            Falladas = 15,
+                            IdJuego = 47,
+                            IdUsuario = 14,
+                            Resultado = 44.439999999999998
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Acertadas = 11,
+                            Completado = "Y",
+                            Falladas = 16,
+                            IdJuego = 41,
+                            IdUsuario = 15,
+                            Resultado = 40.740000000000002
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Acertadas = 10,
+                            Completado = "Y",
+                            Falladas = 17,
+                            IdJuego = 42,
+                            IdUsuario = 16,
+                            Resultado = 37.039999999999999
+                        },
+                        new
+                        {
+                            Id = 117,
+                            Acertadas = 9,
+                            Completado = "Y",
+                            Falladas = 18,
+                            IdJuego = 43,
+                            IdUsuario = 17,
+                            Resultado = 33.329999999999998
+                        },
+                        new
+                        {
+                            Id = 118,
+                            Acertadas = 8,
+                            Completado = "Y",
+                            Falladas = 19,
+                            IdJuego = 44,
+                            IdUsuario = 18,
+                            Resultado = 29.629999999999999
+                        },
+                        new
+                        {
+                            Id = 119,
+                            Acertadas = 7,
+                            Completado = "Y",
+                            Falladas = 20,
+                            IdJuego = 45,
+                            IdUsuario = 19,
+                            Resultado = 25.93
+                        },
+                        new
+                        {
+                            Id = 120,
+                            Acertadas = 6,
+                            Completado = "Y",
+                            Falladas = 21,
+                            IdJuego = 46,
+                            IdUsuario = 20,
+                            Resultado = 22.219999999999999
                         });
                 });
 
