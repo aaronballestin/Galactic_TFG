@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using GalacticApi.Models;
 using Microsoft.Extensions.Logging;
-using GalacticApi.Models;
 
 namespace GalacticApi.Data
 {
