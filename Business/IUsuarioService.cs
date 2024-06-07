@@ -1,5 +1,4 @@
 using GalacticApi.Models;
-using TeatroApi.Models;
 
 namespace GalacticApi.Services
 {
