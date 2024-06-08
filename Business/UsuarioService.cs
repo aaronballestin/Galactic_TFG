@@ -1,6 +1,5 @@
 using GalacticApi.Data;
 using GalacticApi.Models;
-using GalacticApi.Models;
 
 namespace GalacticApi.Services
 {

@@ -1,4 +1,4 @@
-namespace TeatroApi.Models
+namespace GalacticApi.Models
 {
     public class UsuarioLoginDTO{
         public string email {get; set;}

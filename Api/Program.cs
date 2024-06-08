@@ -44,7 +44,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 
 var app = builder.Build();
 
@@ -58,13 +68,7 @@ var app = builder.Build();
 
 app.UseAuthorization();
 
-app.UseCors(options =>
-{
-    options.WithOrigins("http://localhost:5173")
-           .AllowAnyMethod()
-           .AllowAnyHeader()
-           .AllowCredentials();
-});
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

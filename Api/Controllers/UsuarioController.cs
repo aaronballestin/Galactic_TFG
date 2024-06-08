@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using GalacticApi.Models;
 using GalacticApi.Services;
-using TeatroApi.Models;
 
 namespace GalacticApi.Api
 {

@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY *.sln .
 COPY Models/*.csproj Models/
-COPY Services/*.csproj Services/
+COPY Business/*.csproj Business/
 COPY Data/*.csproj Data/
 COPY Api/*.csproj Api/
 RUN dotnet restore GalacticApi.sln
