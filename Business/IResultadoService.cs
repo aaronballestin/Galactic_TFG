@@ -8,5 +8,6 @@ namespace GalacticApi.Services
         public List<GetResultadosDTO> GetResultados();
         public List<int> GetResultadosCurso(int id);
         public List<int> GetResultadosAsignatura(int id);
+        public List<GetResultadosProfesorDTO> GetResultadosProfesor(int id);
     }
 }

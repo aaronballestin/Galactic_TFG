@@ -45,6 +45,11 @@ namespace GalacticApi.Services
             _resultadoRepository.AddResultado(resultados);
         }
 
+        public List<GetResultadosProfesorDTO> GetResultadosProfesor(int id){
+            return _resultadoRepository.GetResultadosProfesor(id);
+
+        }
+
         public List<int> GetResultadosAsignatura(int id){
             List<int> resultados = new List<int>();
             var resultadosDTO =_resultadoRepository.GetResultadosAsignatura(id);

@@ -6,5 +6,6 @@ namespace GalacticApi.Models
         public List<GetResultadosAsignaturaDTO> GetResultadosAsignatura(int id);
         public List<GetResultadosCursoDTO> GetResultadosCurso(int id);
         public List<Resultados> GetResultadosByClase(int id);
+        public List<GetResultadosProfesorDTO> GetResultadosProfesor(int id);
     }
 }

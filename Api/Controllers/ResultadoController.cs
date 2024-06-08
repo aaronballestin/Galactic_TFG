@@ -56,6 +56,19 @@ namespace GalacticApi.Api
             }
         }
 
+        [HttpGet("profesor/{id}")]
+        public ActionResult<List<GetResultadosProfesorDTO>> GetResultadosProfesor(int id){
+            try
+            {
+                return _resultadoService.GetResultadosProfesor(id);
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
         [HttpPost]
         public ActionResult AddResultado(GetPasapalabraDTO pasapalabraDTO, int id){
             try

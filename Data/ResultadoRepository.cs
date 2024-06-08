@@ -20,6 +20,19 @@ namespace GalacticApi.Models
             return _context.Resultados.ToList();
         }
 
+        public List<GetResultadosProfesorDTO> GetResultadosProfesor(int id){
+            var resultados = GetResultadosByClase(id);
+            var resultadosDTO = new List<GetResultadosProfesorDTO>();
+            foreach (var item in resultados)
+            {
+                string Usuario = _context.Usuarios.FirstOrDefault(u => u.Id == item.IdUsuario).Name;
+                string Juego = _context.Juegos.FirstOrDefault(u => u.Id == item.IdJuego).TemaJuego;
+                var resultadoDTO = new GetResultadosProfesorDTO {Juego = Juego, Usuario = Usuario, Acertadas = item.Acertadas, Falladas = item.Falladas, Resultado = item.Resultado};
+                resultadosDTO.Add(resultadoDTO);
+            }
+            return resultadosDTO;
+        }
+
         public List<Resultados> GetResultadosByClase(int id){
             var resultadosFiltro = new List<Resultados>();
             var resultados = _context.Resultados.ToList();
