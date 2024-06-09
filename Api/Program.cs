@@ -2,8 +2,23 @@ using GalacticApi.Data;
 using GalacticApi.Models;
 using GalacticApi.Services;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Filters;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Logger
+builder.Services.AddControllers();
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Filter.ByExcluding(Matching.FromSource("Microsoft"))
+    .WriteTo.File("../logs/errorlogs.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(dispose: true);
+
+
 
 // Add services to the container.
 

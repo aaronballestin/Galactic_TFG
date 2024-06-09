@@ -19,9 +19,19 @@ namespace GalacticApi.Models
 
         public Ahorcado GetAhorcadoById(int id)
         {
-            var ahorcado = _context.Ahorcados.FirstOrDefault(c => c.Id == id);
-            ahorcado.PreguntaAhorcado= _context.PreguntaAhorcados.FirstOrDefault(a => a.AhorcadoId == id);
-            return ahorcado;
+            try
+            {
+                var ahorcado = _context.Ahorcados.FirstOrDefault(c => c.Id == id);
+                ahorcado.PreguntaAhorcado = _context.PreguntaAhorcados.FirstOrDefault(a => a.AhorcadoId == id);
+                return ahorcado;
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
         }
 
         // public GetPasapalabraDTO GetPasapalabraMultijugador()
@@ -38,30 +48,68 @@ namespace GalacticApi.Models
         //     pasapalabraDTO.Preguntas = preguntas;
 
         //     return pasapalabraDTO;
-            
+
         // }
 
 
         public List<Ahorcado> GetAhorcados()
         {
-            return _context.Ahorcados.ToList();
+            try
+            {
+                return _context.Ahorcados.ToList();
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
         }
         public void DeleteAhorcado(Ahorcado ahorcado)
         {
-            _context.Ahorcados.Remove(ahorcado);
-            _context.SaveChanges();
+            try
+            {
+                _context.Ahorcados.Remove(ahorcado);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+
+            }
+
 
         }
         public void AddAhorcado(Ahorcado ahorcado)
         {
-            _context.Ahorcados.Add(ahorcado);
-            _context.SaveChanges();
+            try
+            {
+                _context.Ahorcados.Add(ahorcado);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void UpdateAhorcado(Ahorcado ahorcado)
         {
-            _context.Entry(ahorcado).State = EntityState.Modified;
-            _context.SaveChanges();
+            try
+            {
+                _context.Entry(ahorcado).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
 

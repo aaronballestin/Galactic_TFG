@@ -4,7 +4,8 @@ using Microsoft.Extensions.Logging;
 
 namespace GalacticApi.Data
 {
-    public class AsignaturaRepository : IAsignaturaRepository{
+    public class AsignaturaRepository : IAsignaturaRepository
+    {
         private readonly GalacticApiContext _context;
 
         private readonly ILogger<AsignaturaRepository> _logger;
@@ -17,30 +18,77 @@ namespace GalacticApi.Data
 
         public Asignatura GetAsignaturaById(int id)
         {
-            var asignatura = _context.Asignaturas.FirstOrDefault(c => c.Id == id);
-            asignatura.Juegos = _context.Juegos.Where(c => c.IdAsignatura == asignatura.Id).ToList();
-            return asignatura;
+            try
+            {
+                var asignatura = _context.Asignaturas.FirstOrDefault(c => c.Id == id);
+                asignatura.Juegos = _context.Juegos.Where(c => c.IdAsignatura == asignatura.Id).ToList();
+                return asignatura;
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
         }
         public List<Asignatura> GetAsignaturas()
         {
-            return _context.Asignaturas.ToList();
+            try
+            {
+                return _context.Asignaturas.ToList();
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
         }
         public void DeleteAsignatura(Asignatura asignatura)
         {
-            _context.Asignaturas.Remove(asignatura);
-            _context.SaveChanges();
+            try
+            {
+                _context.Asignaturas.Remove(asignatura);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void AddAsignatura(Asignatura asignatura)
         {
-            _context.Asignaturas.Add(asignatura);
-            _context.SaveChanges();
+            try
+            {
+                _context.Asignaturas.Add(asignatura);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void UpdateAsignatura(Asignatura asignatura)
         {
-            _context.Entry(asignatura).State = EntityState.Modified;
-            _context.SaveChanges();
+            try
+            {
+                _context.Entry(asignatura).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
 

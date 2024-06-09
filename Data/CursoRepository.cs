@@ -18,30 +18,77 @@ namespace GalacticApi.Models
 
         public Curso GetCursoById(int id)
         {
-            var curso = _context.Cursos.FirstOrDefault(c => c.CursoId == id);
-            curso.Juegos = _context.Juegos.Where(a => a.IdCurso== curso.CursoId).ToList();
-            return curso;
+            try
+            {
+                var curso = _context.Cursos.FirstOrDefault(c => c.CursoId == id);
+                curso.Juegos = _context.Juegos.Where(a => a.IdCurso == curso.CursoId).ToList();
+                return curso;
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
         }
         public List<Curso> GetCursos()
         {
-            return _context.Cursos.ToList();
+            try
+            {
+                return _context.Cursos.ToList();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
         }
         public void DeleteCurso(Curso curso)
         {
-            _context.Cursos.Remove(curso);
-            _context.SaveChanges();
+            try
+            {
+                _context.Cursos.Remove(curso);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void AddCurso(Curso curso)
         {
-            _context.Cursos.Add(curso);
-            _context.SaveChanges();
+            try
+            {
+                _context.Cursos.Add(curso);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void UpdateCurso(Curso curso)
         {
-            _context.Entry(curso).State = EntityState.Modified;
-            _context.SaveChanges();
+            try
+            {
+                _context.Entry(curso).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
 
         }
 

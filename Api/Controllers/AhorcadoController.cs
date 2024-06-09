@@ -47,9 +47,9 @@ namespace GalacticApi.Api
                 var pasapalabra = _ahorcadoService.GetAhorcadoById(id);
                 return Ok(pasapalabra);
             }
-            catch (KeyNotFoundException ex)
+            catch (Exception ex)
             {
-                return NotFound("No hay obra disponible con el id: " + id);
+                return NotFound("No hay ahorcado disponible con el id: " + id);
             }
 
         }

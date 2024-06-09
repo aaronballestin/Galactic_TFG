@@ -18,30 +18,77 @@ namespace GalacticApi.Models
 
         public TipoJuego GetTipoJuegoById(int id)
         {
-            var juego = _context.TipoJuegos.FirstOrDefault(c => c.Id == id);
-            juego.Juegos = _context.Juegos.Where(a => a.IdCurso== juego.Id).ToList();
-            return juego;
+            try
+            {
+                var juego = _context.TipoJuegos.FirstOrDefault(c => c.Id == id);
+                juego.Juegos = _context.Juegos.Where(a => a.IdCurso == juego.Id).ToList();
+                return juego;
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
         }
         public List<TipoJuego> GetTipoJuegos()
         {
-            return _context.TipoJuegos.ToList();
+            try
+            {
+                return _context.TipoJuegos.ToList();
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
         }
         public void DeleteTipoJuego(TipoJuego tipoJuego)
         {
-            _context.TipoJuegos.Remove(tipoJuego);
-            _context.SaveChanges();
+            try
+            {
+                _context.TipoJuegos.Remove(tipoJuego);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void AddTipoJuego(TipoJuego tipoJuego)
         {
-            _context.TipoJuegos.Add(tipoJuego);
-            _context.SaveChanges();
+            try
+            {
+                _context.TipoJuegos.Add(tipoJuego);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
         public void UpdateTipoJuego(TipoJuego tipoJuego)
         {
-            _context.Entry(tipoJuego).State = EntityState.Modified;
-            _context.SaveChanges();
+            try
+            {
+                _context.Entry(tipoJuego).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+            }
+
 
         }
 

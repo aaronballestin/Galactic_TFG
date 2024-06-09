@@ -18,29 +18,78 @@ namespace GalacticApi.Models
 
         public PreguntaPasapalabra GetPreguntaPasapalabraById(int id)
         {
-            var pregunta = _context.PreguntaPasapalabras.FirstOrDefault(c => c.Id == id);
-            return pregunta;
+            try
+            {
+                var pregunta = _context.PreguntaPasapalabras.FirstOrDefault(c => c.Id == id);
+                return pregunta;
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
         }
         public List<PreguntaPasapalabra> GetPreguntasPasapalabra()
         {
-            return _context.PreguntaPasapalabras.ToList();
+            try
+            {
+                return _context.PreguntaPasapalabras.ToList();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
         }
         public void DeletePreguntaPasapalabra(PreguntaPasapalabra pasapalabra)
         {
-            _context.PreguntaPasapalabras.Remove(pasapalabra);
-            _context.SaveChanges();
+            try
+            {
+                _context.PreguntaPasapalabras.Remove(pasapalabra);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
 
         }
         public void AddPreguntaPasapalabra(PreguntaPasapalabra pasapalabra)
         {
-            _context.PreguntaPasapalabras.Add(pasapalabra);
-            _context.SaveChanges();
+            try
+            {
+                _context.PreguntaPasapalabras.Add(pasapalabra);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
 
         }
         public void UpdatePreguntaPasapalabra(PreguntaPasapalabra pasapalabra)
         {
-            _context.Entry(pasapalabra).State = EntityState.Modified;
-            _context.SaveChanges();
+            try
+            {
+                _context.Entry(pasapalabra).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation($"Mensaje: {e.Message}");
+                _logger.LogError($"StackTrace: {e.StackTrace}");
+                throw;
+            }
+
 
         }
 
